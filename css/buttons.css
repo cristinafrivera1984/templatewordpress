@@ -1,0 +1,32 @@
+  /*BOTON ROJO QUE VA EN WORDPRESS,❌❌❌ BORRAR DESPUES DE SUBIR CDN*/
+  .btn-red-wp, a.btn-red-wp{
+    width: 100%;
+    margin: 4px 2px;
+    border: none;
+    font-size: 1rem;
+    padding: var(--btn-padding-sm);
+    color: rgba(var(--white), 1);
+    background-color: rgba(var(--red-wp), 1);
+    transition: 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgba(var(--base-blue-dark-3), 1);
+  }
+  
+  .btn-primary:active {
+    background-color: rgba(var(--base-blue-dark-4), 1);
+  }
+  
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+  }
+  
+  @media only screen and (min-width: 576px) {
+    /* Desde tablets: */
+    .btn-primary {
+      width: fit-content;
+    }
+  }
+  /*BOTON ROJO QUE VA EN WORDPRESS,❌❌❌ BORRAR DESPUES DE SUBIR CDN*/

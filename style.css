@@ -1,0 +1,295 @@
+/*
+    Theme Name: Sercotec
+    Theme URI: 
+    Author: Gerencia de Técnología y Sistemas Sercotec - Cristina Rivera L.
+    Author URI: https://www.sercotec.cl
+    Description: Theme Diseñado para sitio web de Sercotec
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: Sercotec
+    Text Domain: Sercotec, mobile first, bootstrap,
+*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Staatliches&display=swap');*/
+
+@import url("./css/buttons.css");
+@import url("./css/footer.css");
+@import url("./css/header.css");
+@import url("./css/news_modulos.css");
+
+html {
+  margin: 0;
+  /* Elimina márgenes */
+  padding: 0;
+  /* Elimina relleno */
+  overflow-x: hidden;
+  /* Oculta el scroll horizontal */
+}
+
+body {
+  margin: 0;
+  background-color: #fff !important;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  /* Elimina márgenes */
+  padding: 0;
+  /* Elimina relleno */
+  overflow-x: hidden;
+  /* Oculta el scroll horizontal */
+}
+
+body>footer {
+  position: sticky;
+  top: 100vh;
+}
+
+:root {
+  --red-wp: 232, 56, 95;
+}
+
+/*GLIDE CAROUSEL INICIO*/
+
+.glide-carousel-inicio {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .glide-carousel-inicio {
+    display: block;
+  }
+}
+
+.glide-carousel-inicio-mob {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .glide-carousel-inicio-mob {
+    display: none;
+  }
+}
+
+.glide-carousel-inicio h1,
+.container-enlaces-inst h1,
+.container-noticias-inicio h1 {
+  color: rgba(var(--font-color), 1);
+  font-size: var(--font-size-h1-mob);
+  font-family: var(--font-family-sans-s);
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+
+  .glide-carousel-inicio h1,
+  .container-enlaces-inst h1,
+  .container-noticias-inicio h1 {
+    font-size: var(--font-size-h1);
+  }
+}
+
+.glide__bullet {
+  background-color: white;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 10px 5px;
+  cursor: pointer;
+  border: 1px solid #e3e3e3 !important;
+}
+
+.glide__bullet--active {
+  background-color: #e3e3e3 !important;
+  /* Cambia el color del botón activo si es necesario */
+  border: none;
+}
+
+.glide__track {}
+
+/*GLIDE CAROUSEL INICIO*/
+
+/*GLIDE CAROUSEL INICIO VERSION MOBILE*/
+
+.glide__bullet.mobile.left {
+  width: 40px;
+  height: 40px;
+  margin: 10px 5px;
+  cursor: pointer;
+  background-image: url(img/glide_arrow_left.svg);
+  background-repeat: no-repeat;
+  background-color: #fff !important;
+  border: 1px white solid !important;
+}
+
+.glide__bullet.mobile.right {
+  width: 40px;
+  height: 40px;
+  margin: 10px 5px;
+  cursor: pointer;
+  background-image: url(img/glide_arrow_right.svg);
+  background-repeat: no-repeat;
+  background-color: #fff !important;
+  border: 1px white solid !important;
+}
+
+/*GLIDE CAROUSEL INICIO VERSION MOBILE*/
+
+/*ESTILOS ENLACES INSTUCIONALES*/
+.enlaces-inst {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 1280px;
+}
+
+div.link-enlaces-mob p,
+div.link-enlaces p {
+  padding: 16px 12px;
+  margin: 0 0 5px 0;
+  font-size: 1.125rem;
+  font-weight: normal;
+  text-align: center;
+  color: var(--font-color);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Altura más grande en móviles */
+@media (max-width: 800px) {
+  div.link-enlaces-mob p {
+    font-size: 1rem;
+  }
+}
+
+div.link-enlaces-mob a,
+div.link-enlaces a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+div.link-enlaces {
+  border: 1px solid white;
+  background-image: url(img/ei-line.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 170px 4px;
+  height: fit-content;
+  margin: 16px 8px;
+}
+
+div.link-enlaces-mob {
+  background-color: white;
+  border: 1px solid rgba(var(--grey-10), 1);
+  border-radius: 10px;
+  background-image: url(img/ei-line.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 120px 4px;
+  height: 110px;
+  margin: 16px 8px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 190px;
+  min-width: 140px;
+}
+
+/* Altura más grande en móviles */
+@media (max-width: 448px) {
+  div.link-enlaces-mob {
+    background-size: 80px 4px;
+  }
+}
+
+div.link-enlaces:hover {
+  border: 1px solid rgba(var(--grey-20), 1);
+  border-radius: 10px;
+}
+
+/*ESTILOS ENLACES INSTUCIONALES*/
+
+/*BANNER PRINCIPAL ESTILOS*/
+#bannerCarousel {
+  max-height: 370px;
+  overflow: hidden;
+}
+
+#bannerCarousel img {
+  height: auto;
+  max-height: 370px;
+  object-fit: cover;
+  /* Asegura que la imagen se vea bien sin deformarse */
+}
+
+/* Altura más grande en móviles */
+@media (max-width: 768px) {
+  #bannerCarousel {
+    max-height: 400px;
+  }
+}
+
+/*BANNER PRINCIPAL ESTILOS*/
+
+.glide__slides {
+  gap: 16px;
+  /* Ajusta el espacio entre los slides */
+}
+
+ul.glide__slides li img.calg-mob {
+  min-width: 140px;
+  margin: 8px 0;
+}
+
+/*Impulso módulo - Cuestionario*/
+
+section div.modulo-cuestionario {
+  margin: 2rem;
+  background-color: rgba(var(--base-blue-light-4), 0.3);
+  border: 1px solid rgba(var(--base-blue-light-4), 1);
+  border-radius: var(--border-radius-cards);
+  /* width: 100%;*/
+  padding: var(--padding-cards);
+}
+
+/* desde 768px */
+@media (min-width: 768px) {
+  section div.modulo-cuestionario {
+    width: 48%;
+    margin: 4rem auto 3rem auto;
+  }
+}
+
+section div.modulo-cuestionario p {
+  font-size: var(--font-size-h4-mob);
+  font-weight: 600;
+  color: rgba(var(--font-color), 1);
+}
+
+/* desde 768px */
+@media (min-width: 768px) {
+  section div.modulo-cuestionario p {
+    font-size: var(--font-size-h4);
+  }
+}
+
+/* desde 768px */
+@media (min-width: 768px) {
+  section div.modulo-cuestionario .nave {
+    position: absolute;
+    top: -117px;
+  }
+}
+
+/* desde 768px */
+@media (min-width: 768px) {
+  section div.modulo-cuestionario .red-btn-cuest {
+    position: absolute;
+    top: 34px;
+  }
+}

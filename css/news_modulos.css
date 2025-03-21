@@ -1,0 +1,100 @@
+/*NOTICIAS INICIO*/
+
+.container-noticias-inicio {
+    background-color: #FFFCF4;
+    background-image: url("../img/background-globo.svg");
+    background-position: 3% 9%;
+    background-size: 282px 282px;
+    background-repeat: no-repeat;
+    font-family: var(--font-family-sans-s);
+  
+  }
+  
+  .container-noticias-inicio .module-news-index {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .container-noticias-inicio .module-news-index h1 {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size:var(--font-size-h5-mob);
+    line-height: 1.5;
+  
+   }
+  .container-noticias-inicio .module-news-index h1 a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size:var(--font-size-h5-mob);
+   }
+   .container-noticias-inicio .module-news-index h1 a:hover {
+    text-decoration: underline;
+   }
+  
+   @media (min-width: 800px) {
+    .container-noticias-inicio .module-news-index h1 a  {
+      font-size: var( --font-size-h5);
+    }
+  } 
+  
+  .module-news-index img.main-img {
+  object-fit: cover;
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  
+  }
+  
+  .module-news-index img {
+    object-fit: cover;
+    width: 230px;
+    height:190px;
+    border-radius: 10px;
+   }
+  
+  .module-news-index .main-news {
+  
+    grid-column: 1/2;
+    grid-row: 1/3;
+  
+  }
+  .module-news-index .main-news-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width:768px) {
+    .module-news-index .main-news-2 {
+        flex-direction: row;
+        gap:16px;
+    }
+  }
+  
+  .module-news-index a.vermas {
+    font-size: var(--font-size-p);
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--font-color);
+    text-align: start;
+    /*display: block;*/
+    padding: var(--padding-btn);
+  }
+  
+  .module-news-index a.vermas:hover {
+    background-color: #E9E9E9;
+    border-radius: var(--border-radius);
+    padding: var(--padding-btn);
+  }
+  
+  
+  .module-news-index p.fecha-news {
+    font-size: var(--font-size-small);
+    color: var(--font-color);
+    /*padding: 12px 0 8px 0;*/
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  /*NOTICIAS INICIO*/
