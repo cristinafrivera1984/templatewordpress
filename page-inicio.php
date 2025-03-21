@@ -46,8 +46,8 @@ get_header();
         <div class="col-lg-5 col-md-6 col-sm-12">
             <div class="position-relative">
                 <div class="nave">
-                    <a href="">
-                        <img class="img-fluid" width="199" height="157" alt="Icono" src="<?php echo get_template_directory_uri(); ?>/img/cohete.svg">
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/cohete_2.svg" class="img-fluid" width="199" height="157" alt="Icono">
                     </a>
                 </div>
             </div>
