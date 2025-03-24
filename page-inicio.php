@@ -10,8 +10,8 @@ get_header();
         <div class="carousel-item active">
             <a href="#">
                 <picture>
-                    <source srcset="http://localhost/sercotec/wp-content/uploads/2025/03/banner_mobile_1.png" media="(max-width: 768px)">
-                    <img src="http://localhost/sercotec/wp-content/uploads/2025/03/banner_desktop_01.png" class="d-block w-100" alt="Banner 1">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/img/banner_mobile_1.png" media="(max-width: 768px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/banner_desktop_01.png" class="d-block w-100" alt="Banner 1">
                 </picture>
             </a>
         </div>
@@ -19,8 +19,8 @@ get_header();
         <div class="carousel-item">
             <a href="#">
                 <picture>
-                    <source srcset="http://localhost/sercotec/wp-content/uploads/2025/03/banner_mobile_2.png" media="(max-width: 768px)">
-                    <img src="http://localhost/sercotec/wp-content/uploads/2025/03/banner_desktop_02.png" class="d-block w-100" alt="Banner 2">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/img/banner_mobile_2.png" media="(max-width: 768px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/banner_desktop_02.png" class="d-block w-100" alt="Banner 2">
                 </picture>
             </a>
         </div>
