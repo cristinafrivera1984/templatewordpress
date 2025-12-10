@@ -4,6 +4,7 @@ header.wp-header {
   margin: 0 !important;
   padding: 0 !important;
   font-family: "Roboto", serif;
+  
 }
 
 header.wp-header .pre-header {
@@ -60,6 +61,7 @@ header.wp-header .pre-header span.ph-word {
 header.wp-header .container-header-wp {
   max-width: 1200px;
   padding: 1rem 0;
+
 }
 
 /*Header Menu Tablet - Mobile 📱 */
@@ -96,6 +98,10 @@ header.wp-header .header-menu-mob a.search-btn-header-wp span.search-icon {
     color: rgba(var(--font-color), 1);
     font-size: 1.1rem;
     padding: 0.6rem 1rem;
+box-shadow: -1px 0px 23px -1px rgba(0,0,0,0.24);
+-webkit-box-shadow: -1px 0px 23px -1px rgba(0,0,0,0.24);
+-moz-box-shadow: -1px 0px 23px -1px rgba(0,0,0,0.24);
+    
   }
   header.wp-header .header-menu-mob {
     display: none !important;

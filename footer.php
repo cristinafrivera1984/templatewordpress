@@ -11,6 +11,7 @@
                     <li><a href="#">Programas y Servicios</a></li>
                     <li><a href="#">Explorador Territorial</a></li>
                     <li><a href="#">Contáctanos OIRS</a></li>
+                    <li><a href="#">Mapa de Sitio</a></li>
                 </ul>
             </div>
         </div>
@@ -31,27 +32,27 @@
             <div class="d-flex gap-20 my-4">
                 <div>
                     <a href="https://www.facebook.com/sercotec" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_facebook.svg" width="34" height="34" alt="Sercotec Facebook" title="Sercotec Facebook">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_facebook.svg" width="30" height="30" alt="Sercotec Facebook" title="Sercotec Facebook">
                     </a>
                 </div>
                 <div>
                     <a href="https://www.instagram.com/sercotec_cl" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_instagram.svg" width="34" height="34" alt="Sercotec Instagram" title="Sercotec Instagram">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_instagram.svg" width="30" height="30" alt="Sercotec Instagram" title="Sercotec Instagram">
                     </a>
                 </div>
                 <div>
                     <a href="https://twitter.com/Sercotec_Chile" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_twitter.svg" width="32" height="32" alt="Sercotec Twitter" title="Sercotec Twitter">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_twitter.svg" width="28" height="28" alt="Sercotec Twitter" title="Sercotec Twitter">
                     </a>
                 </div>
                 <div>
                     <a href="https://www.youtube.com/user/CanalSERCOTEC" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_youtube.svg" width="40" height="40" alt="Sercotec Youtube" title="Sercotec Youtube">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_youtube.svg" width="30" height="30" alt="Sercotec Youtube" title="Sercotec Youtube">
                      </a>
                 </div>
                 <div>
                     <a href="https://cl.linkedin.com/company/sercotecchile" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_linkedin.svg" width="34" height="34" alt="Sercotec Linkedin" title="Sercotec Linkedin">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/icon_linkedin.svg" width="30" height="30" alt="Sercotec Linkedin" title="Sercotec Linkedin">
                     </a> 
                 </div>
                 <div class="box-cont-footer">
@@ -69,6 +70,8 @@
         </div>
   </div>
   <div><p class="text-center pb-3 small-text"> <a href="#">  Términos de uso</a> &#9679; <a href="#">Política de privacidad</a> &#9679; Todos los derechos reservados Sercotec <?php echo date('Y'); ?></p> </div>
+    <div><p class="text-center pb-3 small-text"> <a href="#">  Agregar check de accesibilidad y TD  </a> </div>
+
  </footer>   
 <!--FOOTER-->
 </section>

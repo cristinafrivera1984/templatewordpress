@@ -22,11 +22,68 @@
     outline: none;
     box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
   }
-  
-  @media only screen and (min-width: 576px) {
-    /* Desde tablets: */
-    .btn-primary {
-      width: fit-content;
+
+
+  /*CORREGIR EN KIT UI */
+
+.btn-primary, a.btn-primary {
+  width: 100%;
+  margin: 2px;
+  border: none;
+  font-size: 1rem;
+  padding: var(--btn-padding-sm);
+  color: rgba(var(--white),1);
+  background-color: rgba(var(--base-blue-dark-1),1);
+  transition: .3s;
+  text-align: center;
+  display: block;
+}
+
+@media only screen and (min-width: 576px) {
+   .btn-primary, a.btn-primary {
+        width: fit-content;
     }
-  }
-  /*BOTON ROJO QUE VA EN WORDPRESS,❌❌❌ BORRAR DESPUES DE SUBIR CDN*/
+}
+/*CORREGIR EN KIT UI */
+
+/*BOTON ROJO QUE VA EN WORDPRESS,❌❌❌ BORRAR DESPUES DE SUBIR CDN*/
+
+
+/*ESTE LINK TBN AGREGARLO A KIT UI*/
+a.link-blue_01 {
+    color: rgba(var(--base-blue),1);
+    font-size: var(--heading-small-mob);
+    font-weight: 700;
+
+ }
+
+ a.link-blue_01:hover {
+    color: rgba(var(--base-blue-dark-3),1);
+    font-weight: 700;
+ }
+
+ a.link-blue_01:active{
+    color: rgba(var(--font-color),1);
+ } 
+
+ a.link-blue_01:focus{
+   outline: none;
+   background-color: rgba(var(--yellow-focus), 1);
+   box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+   color: rgba(var(--font-color),1);
+ } 
+
+ a.link-blue_01:visited{
+    color: rgba(var(--link-visited),1);
+ }
+
+
+@media only screen and (min-width: 768px) {
+   a.link-blue_01 {
+      font-size: var(--heading-small);
+      margin: calc(var(--heading-small) * 1.4);
+      display: block;
+    }
+}
+
+/*ESTE LINK TBN AGREGARLO A KIT UI*/

@@ -17,6 +17,11 @@
 @import url("./css/footer.css");
 @import url("./css/header.css");
 @import url("./css/news_modulos.css");
+@import url("./css/tab_inicio.css");
+@import url("./css/banner.css");
+@import url("./css/cards.css");
+@import url("./css/menu_main.css");
+
 
 html {
   margin: 0;
@@ -308,17 +313,17 @@ section div.modulo-cuestionario p {
   --heading-medium: 1.5rem; /*un h2 de referencia 24px*/
   --heading-medium-mob:1.125rem;/*un h2 de referencia 20px*/
   --heading-small:1.18rem; /*un h3 de referencia 19px*/
-  --heading-small-mob:1rem;  /*un h3 de referencia 19px*/
-  
+  --heading-small-mob:1rem;  /*un h3 de referencia 16px*/ 
   --base-blue-dark-2: 0, 59, 141; /*Primario darken-2*/
-
   --spacing-xxl: 62px;
   --spacing-xl:  48px;
   --spacing-l: 36px;
-  --spacing-m:   24px;
+  --spacing-m:  24px;
   --spacing-s: 16px;
   --spacing-xs: 8px;
   --spacing-xxs: 4px;
+  --link-visited: 76, 44, 146; /*#4C2C92, es morado*/
+
 }
 /*ROOT QUE SE VA A EL KIT-UI*/
 
@@ -347,7 +352,7 @@ section div.modulo-cuestionario p {
 
 
 /*TÍTULOS*/
-.main-content h1, .main-content-oficinas h1 {
+.main-content h1, .main-content-oficinas h1, .content-wrapper h1, .container-programa-mobile h1 {
   font-size: var( --heading-large-mob);
   font-family: var( --font-family-sans-s);
   color: rgba(var(--font-color), 1);
@@ -366,7 +371,7 @@ section div.modulo-cuestionario p {
 
 
 
-.main-content h2, .main-content-oficinas h2, .gray-box h2 {
+.main-content h2, .main-content-oficinas h2, .gray-box h2, .light-blue-box-oficinas h2, .container-programa-mobile h {
   font-size: var(--heading-medium-mob);
   font-family: var( --font-family-sans-slab);
   color: rgba(var(--font-color), 1);
@@ -377,7 +382,43 @@ section div.modulo-cuestionario p {
 }
 
 @media (min-width: 800px) {
- .main-content h2, .main-content-oficinas h2, .gray-box h2 {
+ .main-content h2, .main-content-oficinas h2, .gray-box h2, .light-blue-box-oficinas h2 {
+    font-size: var(--heading-medium);
+    margin-bottom: calc(var(--heading-medium) * 0.7);
+  }
+}
+
+
+.main-content h3, .main-content-oficinas h3 {
+  font-size: var(--heading-small-mob);
+  font-family: var( --font-family-sans-slab);
+  color: rgba(var(--font-color), 1);
+  line-height: normal;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: calc(var(--heading-medium-mob) * 0.7);
+}
+
+@media (min-width: 800px) {
+ .main-content h3, .main-content-oficinas h3{
+    font-size: var(--heading-small);
+    margin-bottom: calc(var(--heading-small) * 0.7);
+  }
+}
+
+
+.gray-box h3 {
+  font-size: var(--heading-medium-mob);
+  font-family: var( --font-family-sans);
+  color: rgba(var(--font-color), 1);
+  line-height: normal;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: calc(var(--heading-medium-mob) * 0.7);
+}
+
+@media (min-width: 800px) {
+ .gray-box h3  {
     font-size: var(--heading-medium);
     margin-bottom: calc(var(--heading-medium) * 0.7);
   }
@@ -416,7 +457,7 @@ section div.modulo-cuestionario p {
 @media (min-width: 800px) {
 .main-content p, .main-content-oficinas p {
   font-size: var(--heading-small-mob);
-    margin-bottom: calc(var(--heading-medium) * 0.8);
+  margin-bottom: calc(var(--heading-small-mob) * 0.8);
   }
 }
 
@@ -424,9 +465,213 @@ section div.modulo-cuestionario p {
   margin-top: 36px; /* separación entre bloques */
 }
 
+
+ .inner-news h1 {
+  font-size: var( --heading-medium-mob);  
+  color: rgba(var(--font-color), 1);
+  font-family: var(--font-family-sans-slab);
+  margin-bottom: calc(var(--heading-medium-mob) * 0.8);
+}
+
+@media (min-width: 800px) {
+ .inner-news h1 {
+  font-size: var( --heading-medium);
+  margin-bottom: calc(var( --heading-medium) * 0.8);
+  color: rgba(var(--font-color), 1);
+  font-family: var(--font-family-sans-slab);
+  }
+}
+
+ .inner-news h2 {
+  font-size: var( --heading-medium-mob);  
+  color: rgba(var(--font-color), 1);
+  font-family: var(--font-family-sans-slab);
+  margin-bottom: calc(var(--heading-medium-mob) * 0.8);
+}
+
+@media (min-width: 800px) {
+ .inner-news h2 {
+  font-size: var( --heading-medium);
+  margin-bottom: calc(var( --heading-medium) * 0.8);
+  color: rgba(var(--font-color), 1);
+  font-family: var(--font-family-sans-slab);
+  }
+}
+
+ .inner-news .quotes{
+  background-color: rgba(var( --grey-5), 1);
+  border-radius: var(--border-radius-cards);
+  border: 1px solid rg;
+  font-size: var( --heading-medium-mob);  
+  color: rgba(var(--font-color), 1);
+  font-family: var(--font-family-sans-slab);
+  margin-bottom: calc(var(--heading-medium-mob) * 0.8);
+  padding: var(--padding-cards);
+  background-image: url(img/icon-quote.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  display: inline-block;
+}
+
+ .inner-news img{
+  border-radius: 8px;
+}
+
+.wp-block-image.alignleft,
+.alignleft {
+  float: left;
+  margin: 0 0.8rem 1rem 0; /* derecha + abajo */
+}
+
+.wp-block-image.alignright,
+.alignright {
+  float: right;
+  margin: 0 0 1rem 0.8rem; /* izquierda + abajo */
+}
+
+figcaption {
+  font-size: var(--heading-small-mob);
+}
+
+
+.main-content-error h1 {
+  font-size: var( --heading-large);
+  font-family: var(--font-family-sans-slab);
+  line-height: normal;
+  font-weight: 400;
+  padding: 0;
+  margin-bottom: calc(var(--heading-large-mob) * 0.8);
+  color: rgba(var(--base-blue), 1);
+}
+
+@media (min-width: 800px) {
+ .main-content-error h1 {
+    font-size: 3rem;
+    margin-bottom: calc(var(--heading-large) * 0.8);
+  }
+}
+
+.main-content-error h2 {
+  font-size: var(--heading-small-mob);
+  font-family: var(--font-family-sans-s);
+  line-height: normal;
+  font-weight: 400;
+  padding: 0;
+  margin-bottom: calc(var(--heading-large-mob) * 0.8);
+  color: rgba(var(--font-color), 1);
+}
+
+@media (min-width: 800px) {
+ .main-content-error h2 {
+    font-size: var(--heading-small);
+    margin-bottom: calc(var(--heading-small) * 0.8);
+  }
+}
+
+
+.inner-news .date  {
+  font-size: var( --font-size-small);  
+  color: rgba(var(--font-color), 1);
+  font-weight: 500;
+}
+
+
+.noticia-img {
+  width: 100%;
+  min-width: 320px; /* tamaño más bien cuadrado en móvil */
+  aspect-ratio: 1 / 1; /* mantiene forma cuadrada */
+  border-radius:var( --border-radius-cards-2); /* o el valor que prefieras */
+  object-fit: cover;
+  display: block;
+  margin-bottom: var( --spacing-s);
+}
+
+/* A partir de 800px (desktop) */
+@media (min-width: 800px) {
+  .noticia-img {
+    max-width:844px;
+    height: 340px;
+    aspect-ratio: auto; /* desactiva el cuadrado */
+  }
+}
+
+.light-blue-box-news {
+  background-color: rgba(var( --base-info-light-4), 0.6);
+  padding: var(--padding-cards);
+  border-radius: var( --border-radius-cards-2);
+  margin-bottom: var(--spacing-m);
+}
+
+
+.light-blue-box-news p.bajada {
+  font-size: var( --heading-small-mob);  
+  color: rgba(var(--font-color), 1);
+  font-family: var(--font-family-sans-slab);
+  margin-bottom: calc(var(--heading-small-mob) * 0.8);
+}
+
+@media (min-width: 800px) {
+ .light-blue-box-news p.bajada  {
+  font-size: var(--heading-small);
+  margin-bottom: calc(var( --heading-small) * 0.8);
+  color: rgba(var(--font-color), 1);
+  font-family: var(--font-family-sans-slab);
+  }
+}
+
+
+
+a img.icon-link{
+  filter: brightness(0) saturate(100%) invert(14%) sepia(65%) saturate(5568%) hue-rotate(199deg) brightness(93%) contrast(105%);
+}
+
+a:hover img.icon-link{
+filter: brightness(0) saturate(100%) invert(11%) sepia(83%) saturate(2779%) hue-rotate(214deg) brightness(91%) contrast(107%);
+}
+
+a:focus img.icon-link{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
+a:active img.icon-link{
+filter: brightness(0) saturate(100%) invert(8%) sepia(46%) saturate(4437%) hue-rotate(224deg) brightness(89%) contrast(107%);
+}
+
+a:visited img.icon-link{
+
+}
+
+
+
+
 /*ACA VAN LOS ESTILOS DE LAS CAJA DE COLUMNA DERECHA + EL SIDEBAR*/
 
 
+/*ESTILOS DE CONTAINER DE OFICINAS DESKTOP Y MOBILE*/
+
+/* Mobile first: por defecto se ve el container-mob y se oculta el de escritorio */
+.container-oficinas {
+  display: none;
+}
+
+.container-oficinas-mob {
+  display: block;
+}
+
+/* A partir de 768px (tablet/desktop) */
+@media (min-width: 768px) {
+  .container-oficinas {
+    display: block;
+  }
+
+  .container-oficinas-mob {
+    display: none;
+  }
+}
+
+
+/*ESTILOS DE CONTAINER DE OFICINAS DESKTOP Y MOBILE*/
 
 /*ACA VA EL RESTO DE ATOMOS*/
 
@@ -524,10 +769,10 @@ section div.modulo-cuestionario p {
 }
 
 
-
+/*
 .gray-box h3 {
   font-size: var(--font-size-h4-mob);
-  font-family: var( --font-family-sans-s);
+  font-family: var( --font-family-sans-slab);
   color: rgba(var(--font-color), 1);
   line-height: normal;
   font-weight: 500;
@@ -540,12 +785,13 @@ section div.modulo-cuestionario p {
     font-size: var(--font-size-h4);
   }
 }
-
+*/
 
 .gray-box p {
   color: rgba(var(--font-color), 1);
   font-size: var( --font-size-p);
   line-height: 1.5;
+  margin-bottom: calc(var(--heading-medium) * 0.8);
 }
 
 
@@ -557,6 +803,36 @@ section div.modulo-cuestionario p {
   border-radius: 8px;
   margin: 0 0 1rem 0;
 }
+
+
+
+
+.light-blue-box-oficinas {
+  background-color: rgba(var( --base-info-light-4), 0.6);
+  padding: var(--padding-cards);
+  border-radius: var( --border-radius-cards-2);
+  border: 1px solid rgba(var(--base-info-light-3), 1);
+  margin-bottom: var(--spacing-m);
+}
+
+
+/*
+.light-blue-box-oficinas h3 {
+  font-size: var(--font-size-h4-mob);
+  font-family: var( --font-family-sans-s);
+  color: rgba(var(--font-color), 1);
+  line-height: normal;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+ .light-blue-box-oficinas  h3 {
+    font-size: var(--font-size-h4);
+  }
+}
+*/
 
 
 /*OTROS*/
@@ -602,3 +878,115 @@ h2.color-blue-dark-1 {
 .tooltip.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
   border-right-color: rgba(var(--base-blue-dark-3), 1)!important; 
 }
+
+
+.bluedark-3 {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(64%) saturate(3690%) hue-rotate(215deg) brightness(96%) contrast(105%);
+}
+
+
+/*
+  --spacing-xxl: 62px;
+  --spacing-xl:  48px;
+  --spacing-l: 36px;
+  --spacing-m:   24px;
+  --spacing-s: 16px;
+  --spacing-xs: 8px;
+  --spacing-xxs: 4px;
+*/
+
+/* ESTILOS DE MARGIN Y PADDING */
+.mt-xxl { margin-top: var(--spacing-xxl); }
+.mb-xxl { margin-bottom: var(--spacing-xxl); }
+.my-xxl { margin-top: var(--spacing-xxl); margin-bottom: var(--spacing-xxl); }
+
+.mt-xl { margin-top: var(--spacing-xl); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+.my-xl { margin-top: var(--spacing-xl); margin-bottom: var(--spacing-xl); }
+
+.mt-l { margin-top: var(--spacing-l); }
+.mb-l { margin-bottom: var(--spacing-l); }
+.my-l { margin-top: var(--spacing-l); margin-bottom: var(--spacing-l); }
+
+.mt-m { margin-top: var(--spacing-m); }
+.mb-m { margin-bottom: var(--spacing-m); }
+.my-m { margin-top: var(--spacing-m); margin-bottom: var(--spacing-m); }
+
+.mt-s { margin-top: var(--spacing-s); }
+.mb-s { margin-bottom: var(--spacing-s); }
+.my-s { margin-top: var(--spacing-s); margin-bottom: var(--spacing-s); }
+
+.mt-xs { margin-top: var(--spacing-xs); }
+.mb-xs { margin-bottom: var(--spacing-xs); }
+.my-xs { margin-top: var(--spacing-xs); margin-bottom: var(--spacing-xs); }
+
+.mt-xxs { margin-top: var(--spacing-xxs); }
+.mb-xxs { margin-bottom: var(--spacing-xxs); }
+.my-xxs { margin-top: var(--spacing-xxs); margin-bottom: var(--spacing-xxs); }
+/* ESTILOS DE MARGIN Y PADDING */
+
+
+
+
+.sidebar-news h3 {
+    color: rgba(var(--font-color), 1);
+    font-size: var( --heading-medium-mob);
+    font-family:var(--font-family-sans-s);
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+.sidebar-news h3{
+    font-size: var( --heading-medium);
+    }
+}
+
+
+
+
+
+/*CONTAINERS DE ACORDEON MOBILE y CONTAINER DESKTOP PROGRAMAS*/
+
+.container-programa-mobile {
+  display: block;
+}
+
+.container-programas-desktop {
+  display: none;
+}
+
+/* A partir de 768px (tablet/desktop) */
+@media (min-width: 768px) {
+  .container-programas-desktop {
+    display: block;
+  }
+
+  .container-programa-mobile {
+    display: none;
+  }
+}
+
+/*CONTAINERS DE ACORDEON MOBILE y CONTAINER DESKTOP PROGRAMAS*/
+
+
+
+/*CONTAINERS DE ENLACES INSTITUCIONALES MOBILE y  DESKTOP*/
+.container-ei-mobile {
+  display: block;
+}
+
+.container-ei-desktop {
+  display: none;
+}
+
+/* A partir de 768px (tablet/desktop) */
+@media (min-width: 768px) {
+  .container-ei-desktop {
+    display: block;
+  }
+
+  .container-ei-mobile {
+    display: none;
+  }
+}
+/*CONTAINERS DE ENLACES INSTITUCIONALES MOBILE y  DESKTOP*/

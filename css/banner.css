@@ -1,0 +1,332 @@
+/*banner hero*/
+.hero-banner-wrapper {
+  position: relative;
+  max-height: 440px;
+  overflow: hidden;
+}
+
+.hero-banner-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* animación suave */
+}
+
+.hero-slide {
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* desktop por defecto */
+.hero-slide .desktop-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* tablet por defecto oculto */
+.hero-slide .tablet-img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+/* responsive tablet y menor */
+@media (max-width: 991px) {
+  .hero-slide .desktop-img {
+    display: none;
+  }
+  .hero-slide .tablet-img {
+    display: block;
+  }
+}
+
+/* Flechas */
+/* Flechas */
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+  transition: background 0.3s, opacity 0.3s;
+}
+
+.hero-arrow:hover:not(:disabled) {
+  background: rgba(255,255,255,0.3);
+}
+
+.hero-arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.hero-arrow.prev { left: 10px; }
+.hero-arrow.next { right: 10px; }
+
+.hero-arrow img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* animación tipo "deslizante" según dirección */
+.hero-arrow.prev:hover img:not(:disabled) {
+  transform: translateX(-4px); /* se mueve un poquito a la izquierda */
+}
+
+.hero-arrow.next:hover img:not(:disabled) {
+  transform: translateX(4px); /* se mueve un poquito a la derecha */
+}
+
+/* cuando está deshabilitada */
+.hero-arrow:disabled img {
+  opacity: 0.4;
+  cursor: default;
+}
+
+
+/* Bullets */
+.hero-bullets {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-bullets span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-bullets span.active {
+  background: rgba(255,255,255,0.9);
+}
+/*banner hero*/
+
+
+
+/*calugas escritorio*/  
+/* Contenedor general del slider */
+/* Asegúrate de que el slider tenga esta clase en tu CSS */
+#slider-calugas {
+  transition: transform 1.6s cubic-bezier(0.4, 0, 0.2, 1); /* más lenta y suave */
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* solo oculta el scroll */
+}
+
+/* La pista que contiene todas las calugas */
+.slider-wrapper {
+  display: block;              /* evitar conflictos con flex del tema */
+  white-space: nowrap;         /* todas las calugas en una fila */
+  overflow: hidden;            /* recorte lateral */
+  width: 100%;                 /* ancho completo */
+}
+
+/* El carril deslizable */
+.slider {
+  display: inline-block;       /* se ajusta al contenido */
+  white-space: nowrap;         /* mantiene horizontal */
+  transition: transform 0.3s ease;
+}
+
+/* Cada caluga */
+.slider > div {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;         /* texto normal dentro */
+  width: 250px;                /* ancho fijo como en tu demo */
+  margin-right: 12px;
+  box-sizing: border-box;
+}
+
+/* Flechas base */
+/* ---------- Flechas robustas (funciona en themes/WP viejitos) ---------- */
+.slider-arrows .arrow {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 4px;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.28s ease, filter 0.28s ease, opacity 0.28s ease;
+  transition: transform 0.28s ease, filter 0.28s ease, opacity 0.28s ease;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Para <img> */
+.slider-arrows .arrow img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: -webkit-transform 0.28s ease, filter 0.28s ease, opacity 0.28s ease;
+  transition: transform 0.28s ease, filter 0.28s ease, opacity 0.28s ease;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Para <svg> inline (muchos WP insertan SVG inline) */
+.slider-arrows .arrow svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: -webkit-transform 0.28s ease, filter 0.28s ease, opacity 0.28s ease;
+  transition: transform 0.28s ease, filter 0.28s ease, opacity 0.28s ease;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Hover direccional (cubre: atributo disabled, clase .disabled, aria-disabled) */
+.slider-arrows .arrow:hover:not([disabled]):not(.disabled):not([aria-disabled="true"]) img,
+.slider-arrows .arrow:hover:not([disabled]):not(.disabled):not([aria-disabled="true"]) svg {
+  -webkit-transform: translate3d(6px,0,0);
+  transform: translate3d(6px,0,0);
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.18));
+}
+
+/* Prev hacia la izquierda */
+.slider-arrows .arrow.prev:hover:not([disabled]):not(.disabled):not([aria-disabled="true"]) img,
+.slider-arrows .arrow.prev:hover:not([disabled]):not(.disabled):not([aria-disabled="true"]) svg {
+  -webkit-transform: translate3d(-6px,0,0);
+  transform: translate3d(-6px,0,0);
+}
+
+/* Fallback force (usar solo si otra cosa te pisa la regla) */
+/* .slider-arrows .arrow:hover img { transform: translate3d(6px,0,0) !important; } */
+
+/* Estados deshabilitados */
+.slider-arrows .arrow:disabled,
+.slider-arrows .arrow.disabled,
+.slider-arrows .arrow[aria-disabled="true"] {
+  cursor: default;
+  opacity: 0.4;
+}
+
+.slider-arrows .arrow:disabled img,
+.slider-arrows .arrow.disabled img,
+.slider-arrows .arrow[aria-disabled="true"] img,
+.slider-arrows .arrow:disabled svg,
+.slider-arrows .arrow.disabled svg,
+.slider-arrows .arrow[aria-disabled="true"] svg {
+  opacity: 0.5;
+  filter: none;
+  -webkit-transform: none;
+  transform: none;
+}
+
+/*CALUGAS VERISON MOBILE*/
+/* Ocultar desktop en mobile */
+@media (max-width: 767px) {
+  .slider-container { display: none; }
+  .slider-container-mobile { display: block; }
+}
+
+@media (min-width: 768px) {
+  .slider-container-mobile { display: none; }
+}
+
+.slider-container-mobile {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper-mobile {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-mobile {
+  transition: transform 0.4s ease;
+  width: calc(100% * 3); /* 3 páginas, cambiar según número de páginas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cada página */
+.slider-mobile .page {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 160px)); /* ancho máx */
+  justify-content: center; /* centra el grid en pantallas más anchas */
+  gap: 12px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+
+/* Desde 360px hacia arriba, controlamos el espacio */
+@media (min-width: 360px) {
+  .slider-mobile .page {
+    padding: 0 16px;       /* Más margen lateral */
+   /* column-gap: 16px;      /* Separación clara */
+    row-gap: 22px;
+    justify-items: center; /* Centra los items dentro del grid */
+  }
+}
+
+/* iPhone 5 / pantallas menores a 360px */
+@media (max-width: 359px) {
+  .slider-mobile .page {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 8px;
+    gap: 10px;
+  }
+}
+
+
+
+.slide-mobile img {
+  width: 100%;
+  max-width: 140px;
+  height: 120px !important;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Flechas (igual que escritorio) */
+.slider-arrows .arrow {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 4px;
+  display: inline-block;
+  transition: transform 0.28s ease, filter 0.28s ease, opacity 0.28s ease;
+}
+
+.slider-arrows .arrow img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.28s ease, filter 0.28s ease, opacity 0.28s ease;
+}
+
+.slider-arrows .arrow:hover:not([disabled]):not(.disabled):not([aria-disabled="true"]) img {
+  transform: translate3d(6px,0,0);
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.18));
+}
+
+.slider-arrows .arrow.prev:hover:not([disabled]):not(.disabled):not([aria-disabled="true"]) img {
+  transform: translate3d(-6px,0,0);
+}
+
+.slider-arrows .arrow:disabled,
+.slider-arrows .arrow[aria-disabled="true"] {
+  cursor: default;
+  opacity: 0.4;
+}
+
+/*CALUGAS VERISON MOBILE*/

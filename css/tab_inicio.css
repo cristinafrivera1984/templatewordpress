@@ -1,0 +1,68 @@
+/* --- Variables (ajusta colores si quieres) --- */
+:root{
+  --sct-blue: #1e73be;      /* color abierto (azul) */
+  --sct-blue-dark: #175a94; /* hover/foco */
+  --sct-red:  #ff4d4d;      /* color cerrado (rojo) */
+}
+
+/* --- Estilos generales del acordeón personalizado --- */
+/* Esto cubre 2 casos: cuando pones la clase en el container (.accordion-custom.sct-inicio)
+   o cuando la pones en el botón (.accordion-button.sct-inicio). */
+.accordion-button.sct-inicio,
+.accordion-custom.sct-inicio .accordion-button {
+  background: rgba(var(  --base-blue), 1) !important;   /* color cerrado */
+  background-image: none !important;          /* quita gradientes SVG de bootstrap */
+  color: #ffffff !important;
+  box-shadow: none !important;
+  border: none !important;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.accordion-header h2{
+    color:yellow !important ;
+}
+
+/* --- Estado ABIERTO (activo) --- */
+.accordion-button.sct-inicio:not(.collapsed),
+.accordion-custom.sct-inicio .accordion-button:not(.collapsed),
+.accordion-button.sct-inicio[aria-expanded="true"],
+.accordion-custom.sct-inicio .accordion-button[aria-expanded="true"],
+.accordion-custom.sct-inicio .accordion-item.show > .accordion-header > .accordion-button,
+.accordion-button.sct-inicio[aria-expanded="true"] + .accordion-collapse.collapse.show {
+  background: rgba(var( --base-blue-dark-2), 1) !important;
+   background-image: none !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Hover / focus */
+.accordion-button.sct-inicio:hover,
+.accordion-custom.sct-inicio .accordion-button:hover,
+.accordion-button.sct-inicio:focus,
+.accordion-custom.sct-inicio .accordion-button:focus {
+  background: rgba(var( --base-blue-dark-2), 1) !important;
+  color: #ffffff !important;
+  outline: none !important;
+}
+
+/* Flecha / icono (invirtiendo el SVG para que se vea blanco) */
+.accordion-button.sct-inicio::after,
+.accordion-custom.sct-inicio .accordion-button::after {
+  filter: invert(1) !important;
+  -webkit-filter: invert(1) !important;
+}
+
+/* Cuerpo del acordeón (opcional) */
+.accordion-custom.sct-inicio .accordion-body,
+.accordion-button.sct-inicio + .accordion-collapse .accordion-body {
+    background: #fff;
+    color: #222;
+}
+
+.main-content-oficinas .accordion.accordion-custom.sct-inicio .accordion-item h2.accordion-header button.accordion-button {
+    font-size: var(----heading-small);
+    font-family: var( --font-family-sans-s);
+    margin-bottom: 0!important;
+}
+
+  /*ESTILOS ACORDEON*/

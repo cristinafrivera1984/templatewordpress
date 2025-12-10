@@ -8,3 +8,6 @@
     <a href="<?php the_permalink(); ?>" class="btn btn-primary">Ver más</a>
   </div>
 </div>
+
+
+xccc

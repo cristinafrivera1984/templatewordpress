@@ -12,7 +12,7 @@ function sercotec_enqueue_assets() {
  
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css', array(), '5.3');
     wp_enqueue_style('glide-css-core', 'https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css', array(), '5.3');
-    wp_enqueue_style('cdn-css-kit', 'https://cdn.jsdelivr.net/gh/cristinafrivera1984/kit-ui-serc@v2.14/dist/css/estilos.min.css', array(), null, 'all');
+    wp_enqueue_style('cdn-css-kit', 'https://cdn.jsdelivr.net/gh/cristinafrivera1984/kit-ui-serc@v2.16/dist/css/estilos.min.css', array(), null, 'all');
     wp_enqueue_style('google-icons', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200', array(), null);
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(), null);
     wp_enqueue_style('sercotec-style', get_stylesheet_uri(), array(), '1.0');
