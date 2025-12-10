@@ -35,7 +35,7 @@
 
 /* Estilo para el botón activo */
 #sidebarMenu .nav-link.active {
-    background-color:rgba(var( --base-blue-dark-4), 0.9); /* Azul oscuro */
+    background-color:#0C233B; /* Azul oscuro */
     color: #fff; /* Letras blancas */
     font-family: "Roboto", sans-serif;
     font-size: 19px;
@@ -56,6 +56,7 @@
     background-image: url(../img/icons-menu-main/franja_menu.svg);
     background-repeat: no-repeat;
     background-position: top;
+    background-size: contain;
 }
 
 
@@ -276,3 +277,23 @@
   outline: none;
   box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
 }*/
+
+#sidebarMenu {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    width: 24%; /* Ajusta según sea necesario */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    padding-top: 0; /* Ajusta si es necesario */
+    height: 100vh;
+}
+
+#mainContent button.boton-cerrar {
+  background: transparent;
+  border: none;
+  display:block;
+  margin: inherit;
+
+}

@@ -38,7 +38,7 @@
     <!--Inicio Header-->
     <div class="header-menu d-flex align-items-center justify-content-evenly">
         <a type="button" data-bs-toggle="modal" data-bs-target="#fullscreenMenuModal" class="d-flex flex-column menu-btn-header-wp" href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-burger.svg" width="39" height="19">    
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-burger.svg" width="39" height="19">
             MENÚ
         </a>
         <a href="<?php echo site_url('/'); ?>">
@@ -56,7 +56,7 @@
             <a href="#" class="search-btn-header-wp">
             <span class="material-symbols-outlined align-middle search-icon">
                 search </span>
-              <span class="search-btn-header-wp">Buscar</span>               
+              <span class="search-btn-header-wp">Buscar</span>
             </a>
         </div>
     </div>
@@ -67,16 +67,19 @@
     <div class="modal fade" id="fullscreenMenuModal" tabindex="-1" aria-labelledby="fullscreenMenuModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
-                <div class="modal-header">
+                <!--
+                <div class="modal-header" style="border:none">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                </div>-->
                 <div class="modal-body p-0">
                     <div class="container-fluid">
                         <div class="row">
+
+
                             <!-- Menú lateral (24% ~ col-3) -->
-                            <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block bg-light">
-                                <div class="position-sticky franja-menu pt-3">
-                                    <ul class="nav flex-column">
+                            <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block franja-menu">
+                                <div class="position-sticky pt-3">
+                                    <ul class="nav flex-column mt-4">
                                         <li class="nav-item">
                                             <a class="nav-link active" aria-current="page" href="#" data-target="#content-financiamiento">
                                                Financiamiento
@@ -108,8 +111,12 @@
 
                             <!-- Contenido principal (76% ~ col-9) -->
                         <main id="mainContent" class="col-md-9 ms-sm-auto col-lg-9 px-md-4 content-area pt-3">
+                        <button type="button" class="boton-cerrar" data-bs-dismiss="modal" aria-label="Boton cerrar">
+                            <img class="" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/btn-cerrar.svg" width="102" height="48" alt="Boton cerrar">
+                        </button>
+
                             <!-- Contenido de Financiamiento (Visible por defecto) -->
-                            <div id="content-financiamiento" class="main-content-area active">
+                                 <div id="content-financiamiento" class="main-content-area active">
                                 <h1 class="h2 text-white">Financiamiento</h1>   
                                   <div class="row">
                                     <div class="col-lg-4">
@@ -118,11 +125,7 @@
                                         <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-finan-01.svg" width="33" height="38" alt="Icono quiero emprender">
                                         <h3 class="text-center">Quiero emprender</h3>
                                         <p>Aún no formalizó y tengo una idea de negocio. </p>
-                                        <span class="ver-mas">Conoce más aquí
-                                            <span class="material-symbols-outlined align-middle">
-                                                arrow_forward
-                                            </span>
-                                        </span>
+                                        <span class="ver-mas">Conoce más aquí<span class="material-symbols-outlined align-middle"> arrow_forward</span></span>
                                         </article>
                                         </a>
                                     </div>
@@ -132,11 +135,7 @@
                                         <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-finan-02.svg" width="32" height="32" alt="Icono Tengo una pyme">
                                         <h3 class="text-center">Quiero emprender</h3>
                                         <p>Ya tengo un negocio formalizado. </p>
-                                        <span class="ver-mas">Conoce más aquí
-                                            <span class="material-symbols-outlined align-middle">
-                                                arrow_forward
-                                            </span>
-                                        </span>
+                                        <span class="ver-mas">Conoce más aquí<span class="material-symbols-outlined align-middle"> arrow_forward</span></span>
                                         </article>
                                         </a>
                                     </div>
@@ -146,14 +145,10 @@
                                         <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-finan-03.svg" width="36" height="17" alt="Icono tenemos una asociación">
                                         <h3 class="text-center">Tenemos una asociación</h3>
                                         <p>Soy parte o quiero formar una cooperativa, gremio, asociación, feria libre o barrio comercial. </p>
-                                        <span class="ver-mas">Conoce más aquí
-                                            <span class="material-symbols-outlined align-middle">
-                                                arrow_forward
-                                            </span>
-                                        </span>
+                                        <span class="ver-mas">Conoce más aquí<span class="material-symbols-outlined align-middle"> arrow_forward</span></span>
                                         </article>
                                         </a>
-                                    </div>                                    
+                                    </div>
                                   </div>
                                 <!--CONTENIDO QUIERO EMPRENDER-->
                                   <div class="container my-4"> 
@@ -164,11 +159,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Capital Semilla Emprende</h3>
                                                     <p>Subsidio para emprendedores que buscan iniciar un negocio con oportunidad de participar en el mercado a través de su formalización. </p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -177,11 +168,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Capital Abeja Emprende</h3>
                                                     <p>Subsidio para mujeres emprendedoras que buscan iniciar un negocio con oportunidad de participar en el mercado a través de su formalización. </p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -190,11 +177,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Capital Pioneras</h3>
                                                     <p>Subsidio para mujeres emprendedoras que buscan formalizar un negocio en rubros con mayor presencia masculina. </p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -211,11 +194,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Crece</h3>
                                                     <p>Fondo concursable que financia inversiones y otras acciones para potenciar el crecimiento de un negocio y/o cooperativa. </p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -224,11 +203,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Crece Sostenible</h3>
                                                     <p>Fondo concursable que financia inversiones y otras acciones que potencien las prácticas productivas sostenibles.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -237,11 +212,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Digitaliza tu Almacén</h3>
                                                     <p>Fondo concursable para fortalecer a los pequeños negocios de barrio mediante la incorporación de herramientas digitales.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -250,11 +221,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Kit Digital</h3>
                                                     <p>Beneficio concursable para micro y pequeñas empresas que hayan realizado los cursos del programa Ruta Digital.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -263,11 +230,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Pymes Globales</h3>
                                                     <p>Programa que apoya a pymes y cooperativas para dar sus primeros pasos en plataformas de venta internacionales.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -276,11 +239,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Negocios Digitales</h3>
                                                     <p>Programa que apoya a pymes y cooperativas para ampliar sus canales de venta ingresando en marketplaces nacionales.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -289,11 +248,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>MejoraNegocios</h3>
                                                     <p>Programa que cofinancia la contratación de asesorías técnicas para mejorar la calidad de productos o servicios.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -302,11 +257,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Promoción y canales</h3>
                                                     <p>Servicio que apoya la participación de micro y pequeñas empresas, cooperativas en exposiciones, eventos, ferias u otros espacios de comercialización.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -315,11 +266,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Redes de oportunidades</h3>
                                                     <p>Fomenta redes entre pymes con encuentros para compartir conocimientos y crear vínculos comerciales.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>                                                                                        
@@ -336,11 +283,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Barrios Comerciales</h3>
                                                     <p>Fondo concursable que impulsa la competitividad de los barrios comerciales para fortalecer su desarrollo sostenible.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -349,11 +292,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Ferias Libres</h3>
                                                     <p>Fondo concursable para fortalecer ferias libres, impulsando su asociatividad, innovación y desarrollo integral. </p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -362,11 +301,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Fortalecimiento de asociaciones gremiales</h3>
                                                     <p>Fondo concursable para fortalecer organizaciones mypes, impulsando su gestión, innovación y sostenibilidad. </p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -375,11 +310,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Gremios Nacionales</h3>
                                                     <p>Fondo concursable para fortalecer gremios y cooperativas nacionales, impulsando gestión, sustentabilidad e inclusión.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>                                            
@@ -388,11 +319,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Creación y fortalecimiento de cooperativas</h3>
                                                     <p>Fondo concursable para fortalecer cooperativas, impulsar su gestión y fomentar la inclusión de mujeres.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>                                                                        
@@ -414,11 +341,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Centros de Desarrollo de Negocios</h3>
                                                     <p> Red de apoyo que ofrece asesoría experta, capacitación y orientación con el objetivo de fortalecer los negocios y fomentar su crecimiento sostenible.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -427,11 +350,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Puntos Mipe</h3>
                                                     <p>Los Puntos Mipe proporcionan asesoría integral, orientación sobre nuestros servicios y fondos concursables. Además dictan charlas y talleres para el desarrollo de las empresas.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -440,15 +359,11 @@
                                                     <article class="card-menu-main">
                                                     <h3>Asesoría Legal Virtual</h3>
                                                     <p>Servicio especializado que ofrece orientación legal en temas como leyes laborales, contratos, impuestos y propiedad intelectual.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
-                                                                        
+
                                         </div>
                                   </div>
                                 <!--CONTENIDO Asesoría Experta-->
@@ -464,11 +379,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Portal de Capacitación </h3>
                                                     <p> Plataforma que fortalece las habilidades empresariales de emprendedores y microempresarios a través de cursos gratuitos.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -477,11 +388,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Agenda de actividades CDN</h3>
                                                     <p>Calendario de actividades y talleres ofrecidos por nuestros Centros de Desarrollo de Negocios Sercotec.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -490,11 +397,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Ruta Digital</h3>
                                                     <p> Plataforma de cursos en línea  que entrega herramientas prácticas para incorporar tecnología en la gestión de sus negocios.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -503,15 +406,11 @@
                                                     <article class="card-menu-main">
                                                     <h3>Pymes en Líneas</h3>
                                                     <p> Plataforma de cursos virtuales para que las Mipymes aumenten su nivel de madurez digital.</p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>                                            
-                                                                        
+
                                         </div>
                                   </div>
                                 <!--CONTENIDO Capacitaciones-->
@@ -527,11 +426,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Quienes somos </h3>
                                                     <p>Nullam euismod, sem et tempor lacinia, turpis sem ultrices leo, sit amet molestie felis arcu sit amet purus. Praesent eu egestas elit. </p>                                      
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -540,11 +435,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Canales de atención</h3>
                                                     <p>Nullam euismod, sem et tempor lacinia, turpis sem ultrices leo, sit amet molestie felis arcu sit amet purus. Praesent eu egestas elit. </p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -553,11 +444,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Noticias</h3>
                                                     <p>Nullam euismod, sem et tempor lacinia, turpis sem ultrices leo, sit amet molestie felis arcu sit amet purus. Praesent eu egestas elit. </p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -566,11 +453,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Somos Empresarias</h3>
                                                     <p>Nullam euismod, sem et tempor lacinia, turpis sem ultrices leo, sit amet molestie felis arcu sit amet purus. Praesent eu egestas elit. </p>      
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -579,11 +462,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Barrios Comerciales</h3>
                                                     <p>Nullam euismod, sem et tempor lacinia, turpis sem ultrices leo, sit amet molestie felis arcu sit amet purus. Praesent eu egestas elit. </p> 
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>                                              
@@ -592,11 +471,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Preguntas frecuentes</h3>
                                                     <p>Nullam euismod, sem et tempor lacinia, turpis sem ultrices leo, sit amet molestie felis arcu sit amet purus. Praesent eu egestas elit. </p> 
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>                                                                        
@@ -608,11 +483,7 @@
                                                     <article class="card-menu-main">
                                                     <h3>Explorador territorial </h3>
                                                     <p>Nullam euismod, sem et tempor lacinia, turpis sem ultrices leo, sit amet molestie felis arcu sit amet purus. Praesent eu egestas elit. </p>                                      
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
@@ -621,18 +492,14 @@
                                                     <article class="card-menu-main">
                                                     <h3>Catastro Ferias Libres </h3>
                                                     <p>Nullam euismod, sem et tempor lacinia, turpis sem ultrices leo, sit amet molestie felis arcu sit amet purus. Praesent eu egestas elit. </p>
-                                                    <span class="ver-mas">Más información
-                                                        <span class="material-symbols-outlined align-middle">
-                                                            arrow_forward
-                                                        </span>
-                                                    </span>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                     </article>
                                                     </a>
                                             </div>
-                                                                 
-                                       </div>    
+
+                                       </div>
                                   </div>
-                                <!--CONTENIDO nosotros-->
+                                 <!--CONTENIDO nosotros-->
                                
                             </div>
                             <!-- Contenido de Centros de Desarrollo de Negocios 
@@ -652,14 +519,14 @@
 
 
     <!--Fin Header mobile tablet--> 
-     <div class="header-menu-mob d-flex flex-row align-items-center justify-content-evenly">
+    <div class="header-menu-mob d-flex flex-row align-items-center justify-content-evenly">
         <a href="<?php echo site_url('/'); ?>">
             <img class="img-logo-header" src="<?php echo get_template_directory_uri(); ?>/img/logo-sercotec.svg" alt="Sercotec" width="145" height="74">
-        </a>    
+        </a>
         <div>
             <a href="#" class="search-btn-header-wp">
             <span class="material-symbols-outlined align-middle search-icon">
-                search </span>
+               search </span>
               <span class="search-btn-header-wp d-none">Buscar</span>               
             </a>
         </div>
@@ -669,4 +536,6 @@
         </a>
     </div>
     <!--Fin Header mobile tablet-->  
+
 </header>
+
