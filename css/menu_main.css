@@ -46,11 +46,12 @@
     overflow-y: hidden; /* Evita el scroll en el body del modal */
 }
 
+/*
 .sidebar {
-    height: calc(100vh - 56px); /* Altura del viewport menos el header del modal */
+    height: calc(100vh - 56px); /* Altura del viewport menos el header del modal 
     overflow-y: auto;
 }
-
+*/
 
 .franja-menu {
     background-image: url(../img/icons-menu-main/franja_menu.svg);
@@ -296,4 +297,318 @@
   display:block;
   margin: inherit;
 
+}
+
+/* Contenedor base oculto */
+.subnivel {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity .35s ease, transform .35s ease;
+}
+
+/* Cuando está visible */
+.subnivel.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ocultando el nivel 1 con fade para que no sea tan brusco */
+#menu-nivel-1 {
+    transition: opacity .25s ease;
+}
+#menu-nivel-1.fade-out {
+    opacity: 0;
+}
+
+.btn-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.1875rem; /* 19px */
+    background: none;
+    border: none;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+}
+
+/* Subrayado SOLO al texto */
+.btn-volver .volver-texto {
+    text-decoration: underline;
+}
+
+/* Ícono sin subrayado garantizado */
+.btn-volver .material-symbols-outlined {
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+
+
+/**CELULAR INICIO**/
+@media (max-width: 768px) {
+  .mobile-menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    transform: translateX(100%);
+    transition: transform .3s ease;
+    z-index: 9999;
+    overflow-y: auto;
+      background: linear-gradient(
+    180deg,
+    #002673 0%,
+    #052356 100%
+  );
+  }
+
+  .mobile-menu-overlay.active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-overlay .mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    border-bottom: 1px solid #596E94;
+    background: transparent !important;
+  }
+
+  .mobile-menu-overlay .mobile-search {
+    position: relative;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  .mobile-menu-overlay .mobile-search input {
+    width: 100%;
+    padding: .8rem 1rem .8rem 2.8rem;
+  }
+  .mobile-menu-overlay .mobile-search span.material-symbols-outlined {
+    position: absolute;
+    left: 1.8rem;
+    top: 1.8rem;
+  }
+
+  .mobile-menu-overlay .menu-primary .menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+  }
+
+  .mobile-menu-overlay .menu-primary a.menu-item, .mobile-menu-overlay .menu-primary  button.menu-item  {
+    color: white;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+  }  
+
+    .mobile-menu-overlay .menu-primary a.menu-item:focus  {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+  }  
+
+  .mobile-menu-overlay .menu-item.depth {
+    justify-content: space-between;
+  }
+
+  /* Pantallas interiores */
+ .mobile-menu-overlay .menu-screen {
+    display: none;
+    padding: 1.5rem;
+  }
+ .mobile-menu-overlay .menu-screen.active {
+    display: block;
+  }
+
+ .mobile-menu-overlay .btn-back-main {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-bottom: 1.4rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Acordeón */
+/* Contenedor azul */
+.acc-module {
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 12px;
+  padding: 0 0 16px 0;
+}
+
+.acc-module.emprender {
+  background-color:rgba(var(--base-blue), 1);
+}
+
+.acc-module.tengo-pyme {
+  background-color:rgba(var(--base-blue-dark-2), 1);
+}
+
+.acc-module.soy-asociacion{
+  background-color:#3A4C68;
+}
+
+
+.acc-module span.title h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: inline;
+}
+
+.subtext-emprender {
+  margin-left: 20px;
+}
+
+/* Botón del encabezado */
+.acc-toggle {
+  width: 100%;
+  padding: 14px 16px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Flecha */
+.acc-toggle .material-icons {
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+/* Contenido cerrado por defecto */
+.acc-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding: 0 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* Links */
+
+.acc-content li a {
+  color: #fff;
+  padding: 8px 0;
+  display: block;
+  font-size: 1rem;  
+}
+
+.acc-content li a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1); 
+}
+
+.acc-content li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.acc-content li::before {
+  content: "";
+  background-image: url(../img/icons-menu-main/ul-square.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 0;
+  top: 17px;
+}
+
+/* CUANDO EL MÓDULO ESTÁ ABIERTO */
+.acc-module.open .acc-content {
+  max-height: 600px; /* dale un alto cómodo según tus listas */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.acc-module.open .material-icons {
+  transform: rotate(180deg);
+}
+
+/* Contenido colapsable */
+.acc-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding: 0 16px;
+}
+
+/* Estilos de los links */
+.acc-content a {
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 8px 0;
+  display: block;
+}
+
+/* CUANDO ESTÁ ABIERTO */
+.acc-module.open .acc-content {
+  max-height: 500px; /* mientras no uses JS, dale un alto cómodo */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.acc-module.open .acc-arrow {
+  transform: rotate(90deg);
+}
+
+}
+
+
+.module-menu-content {
+  
+}
+
+
+/* Ocultar menú mobile en pantallas grandes */
+.mobile-menu-overlay,
+.btn-mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Mostrar en mobile/tablet */
+  .btn-mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu-overlay {
+    display: block; /* pero sigue oculto por transform */
+  }
+}
+
+/*CELULAR FIN*/
+
+button.btn-transparent  {
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  color: white;
+}
+
+button.btn-transparent:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
 }

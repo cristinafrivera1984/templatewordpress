@@ -7,17 +7,17 @@ get_header();
 <div class="hero-banner-wrapper">
   <div class="hero-banner-slider" id="heroSlider" role="region" aria-label="Banner principal con actualizaciones con información relevante y convocatorias abiertas">
     <div class="hero-slide">
-      <a href="https://www.sercotec.cl/3-llamado-a-concurso-publico-para-operador-del-centro-de-desarrollo-de-negocios-especializado-en-pueblo-originario-rapa-nui/" target="_self" rel="noopener noreferrer"  aria-label="Llamado concurso público 2025 Operadores de Centros de Desarrollo de Negocios - Pueblos Originarios - Botón: Postula Aquí, se abre en la misma pestaña">
-         <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/01_Banner_PueblosOrig_escritorio.webp" alt="Llamado concurso público 2025 Operadores de Centros de Desarrollo de Negocios - Pueblos Originarios - Botón: Postula Aquí" class="desktop-img">     
-          <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/01_Banner_PueblosOrig_celular.webp" alt="Llamado concurso público 2025 Operadores de Centros de Desarrollo de Negocios - Pueblos Originarios - Botón: Postula Aquí (version celular)" class="tablet-img">
+      <a href="#" target="_self" rel="noopener noreferrer"  aria-label="Llamado concurso público 2025 Operadores de Centros de Desarrollo de Negocios - Pueblos Originarios - Botón: Postula Aquí, se abre en la misma pestaña">
+         <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/banner_catastro_escritorio.webp" alt="Llamado concurso público 2025 Operadores de Centros de Desarrollo de Negocios - Pueblos Originarios - Botón: Postula Aquí" class="desktop-img">     
+          <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/banner_catastro_celu.webp" alt="Llamado concurso público 2025 Operadores de Centros de Desarrollo de Negocios - Pueblos Originarios - Botón: Postula Aquí (version celular)" class="tablet-img">
      </a>
   </div>    
     <div class="hero-slide">
       <a href="https://www.sercotec.cl/sercotec-invita-a-utilizar-sus-canales-de-atencion-puntos-mipe/" target="_self" rel="noopener noreferrer"  aria-label="Postula ahora, se abre en la misma pestaña">
-         <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/02_escritorio.webp" alt="Atención al cliente - ¿Necesitas saber cómo contactarnos? Punto MIPE - Botón: Más información" class="desktop-img">     
-          <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/02_Banner_PuntoMipe_celular.webp" alt="Atención al cliente - ¿Necesitas saber cómo contactarnos? Punto MIPE - Botón: Más información - (version celular)" class="tablet-img">
+         <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/banner_navidad_escritorio.webp" alt="Atención al cliente - ¿Necesitas saber cómo contactarnos? Punto MIPE - Botón: Más información" class="desktop-img">     
+          <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/banner_navidad_mobile.webp" alt="Atención al cliente - ¿Necesitas saber cómo contactarnos? Punto MIPE - Botón: Más información - (version celular)" class="tablet-img">
      </a>
-  </div>       
+   </div>       
   </div>
 
   <!-- Flechas -->

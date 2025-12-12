@@ -342,3 +342,93 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+document.querySelectorAll('.card-link').forEach(card => {
+    card.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = this.dataset.target;
+
+        // fade del nivel 1
+        const menuNivel1 = document.getElementById('menu-nivel-1');
+        menuNivel1.classList.add('fade-out');
+
+        setTimeout(() => {
+            menuNivel1.classList.add('d-none');
+            menuNivel1.classList.remove('fade-out');
+
+            // Oculta subniveles
+            document.querySelectorAll('.subnivel').forEach(s => {
+                s.classList.add('d-none');
+                s.classList.remove('show');
+            });
+
+            // Muestra con animación
+            const sub = document.getElementById(target);
+            sub.classList.remove('d-none');
+            setTimeout(() => sub.classList.add('show'), 10);
+
+        }, 250); // tiempo para que termine el fade
+    });
+});
+
+// Botón volver
+document.querySelectorAll('.btn-volver').forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Oculta todos
+        document.querySelectorAll('.subnivel').forEach(s => {
+            s.classList.remove('show');
+            setTimeout(() => s.classList.add('d-none'), 300);
+        });
+
+        // Muestra el nivel 1 con fade-in suave
+        const menuNivel1 = document.getElementById('menu-nivel-1');
+        menuNivel1.classList.remove('d-none');
+        setTimeout(() => menuNivel1.classList.remove('fade-out'), 10);
+    });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const overlay = document.getElementById("mobileMenu");
+
+  document.querySelector(".btn-mobile-menu").addEventListener("click", () => {
+    overlay.classList.add("active");
+  });
+
+  document.querySelector(".btn-close-menu").addEventListener("click", () => {
+    overlay.classList.remove("active");
+  });
+
+  // Ir a pantallas internas
+  document.querySelectorAll(".menu-item.depth").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const target = btn.dataset.target;
+      document.querySelectorAll(".menu-screen").forEach(sc => sc.classList.remove("active"));
+      document.getElementById(target).classList.add("active");
+    });
+  });
+
+  // Volver al menú principal
+  document.querySelectorAll(".btn-back-main").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".menu-screen").forEach(sc => sc.classList.remove("active"));
+      document.getElementById("screen-main").classList.add("active");
+    });
+  });
+
+  // Acordeones
+  document.querySelectorAll(".acc-toggle").forEach(toggle => {
+    toggle.addEventListener("click", () => {
+      toggle.parentElement.classList.toggle("open");
+    });
+  });
+
+});
+ 
+
+
+
+});
+
+
+
