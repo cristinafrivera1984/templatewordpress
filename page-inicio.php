@@ -32,9 +32,19 @@ get_header();
 
   <!-- Bullets -->
   <div class="hero-bullets" id="heroBullets"></div>
-</div>
-<!-- Hero Banner Final -->
+  </div>
+  <!-- Hero Banner Final -->
 
+<section class="modulo-iframe-inicio" aria-labelledby="Iframe módulo: Asesoría experta, capacitaciones de Centro de Desarrollo de Negocios y Financiamiento Sercotec">
+  <div class="iframe-wrapper">
+    <iframe
+      id="iframe-inicio"
+      src="https://sctwidgets.qa.sercotec.cl/tresPestanias"
+      title="Asesoría experta, capacitaciones de Centro de Desarrollo de Negocios y Financiamiento Sercotec"
+      loading="lazy"
+    ></iframe>
+  </div>
+</section>
 
 
 <!-- Módulo Cuestionario-->
@@ -58,194 +68,199 @@ get_header();
 
 
 <!-- HTML Calugas Escritorio -->
-<div class="slider-container">
-  <div class="slider-wrapper">
-    <div class="slider" id="slider-calugas">
-      <!--Glide #1 CDN-->
-      <div class="slide">
-        <a href="https://www.sercotec.cl/centros-de-negocios/" id="caluga_cdn"  target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Centros de Negocios de Sercotec (se abre en una nueva pestaña)">
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/01_cdn_desktop_glide.svg" width="240" height="154" alt="Centros de Negocios de Sercotec">
-        </a>
-      </div>
-      <!--Glide #2 Barrios-->
-      <div class="slide">
-          <a href="https://www.sercotec.cl/barrios-comerciales/" id="caluga_barrios" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Barrios Comerciales de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/02_barrios_desktop_glide.svg" width="240" height="154" alt="Barrios Comerciales de Sercotec">
-          </a>
-      </div>
-      <!--Glide #3 Sustentabilidad-->
-      <div class="slide">
-          <a href="https://www.sercotec.cl/sello-impacta-sustentable/" id="caluga_sustentabilidad" target="_self" rel="noopener noreferrer"  aria-label="Ir al sitio de Sustentabilidad de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/03_sustentabilidad_desktop_glide.svg" width="240" height="154" alt="Sustentabilidad de Sercotec">
-          </a>
-      </div>
-     <!--Glide #4 Pymes en Línea-->
-      <div class="slide">
-          <a href="https://pymesenlinea.cl" id="caluga_pymes_en_linea" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Pymes en Línea (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/04_pymeslinea_desktop_glide.svg" width="240" height="154" alt="Pymes en Línea">
-          </a>
-      </div>
-      <!--Glide #5 Portal de Capacitación de Sercotec-->
-      <div class="slide">
-          <a href="https://capacitacion.sercotec.cl/portal" id="caluga_portal_capacitacion" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Portal de Capacitación de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/05_portalcapacitacion_desktop_glide.svg" width="240" height="154" alt="Portal de Capacitación de Sercotec">
-          </a>
-      </div>
-    <!--Glide #6 Ruta Digital de Sercotec-->
-    <div class="slide">
-        <a href="https://www.rutadigital.cl" id="caluga_ruta_digital" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Ruta Digital de Sercotec (se abre en una nueva pestaña)">
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/06_ruta_desktop_glide.svg" width="240" height="154" alt="Ruta Digital de Sercotec">
-        </a>
-      </div>
-    <!--Glide #7 Asesoría Legal Virtual de Sercotec-->
-      <div class="slide">
-          <a href="https://asesoriavirtual.sercotec.cl/Usuario/Autenticar?ReturnUrl=%2f" id="caluga_asesoria_legal" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Asesoría Legal Virtual de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/07_asesoria_legal_desktop_glide.svg" width="240" height="154" alt="Asesoría Legal Virtual de Sercotec">
-          </a>
-      </div>
-   <!--Glide #8 Explorador de Sercotec-->     
-      <div class="slide">
-          <a href="https://explorador.sercotec.cl" id="caluga_explorador" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Explorador Territorial de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/08_explorador_desktop_glide.svg" width="240" height="154" alt="Explorador Territorial de Sercotec">
-          </a>
-      </div>
+ <h1 class="text-center mt-2 mb-4">Apoyo, asesoría y acompañamiento</h1>
+ <section>
+    <div class="slider-container">
+    <div class="slider-wrapper">
+        <div class="slider" id="slider-calugas">
+        <!--Glide #1 CDN-->
+        <div class="slide">
+            <a href="https://www.sercotec.cl/centros-de-negocios/" id="caluga_cdn"  target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Centros de Negocios de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/01_cdn_desktop_glide.svg" width="240" height="154" alt="Centros de Negocios de Sercotec">
+            </a>
+        </div>
+        <!--Glide #2 Barrios-->
+        <div class="slide">
+            <a href="https://www.sercotec.cl/barrios-comerciales/" id="caluga_barrios" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Barrios Comerciales de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/02_barrios_desktop_glide.svg" width="240" height="154" alt="Barrios Comerciales de Sercotec">
+            </a>
+        </div>
+        <!--Glide #3 Sustentabilidad-->
+        <div class="slide">
+            <a href="https://www.sercotec.cl/sello-impacta-sustentable/" id="caluga_sustentabilidad" target="_self" rel="noopener noreferrer"  aria-label="Ir al sitio de Sustentabilidad de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/03_sustentabilidad_desktop_glide.svg" width="240" height="154" alt="Sustentabilidad de Sercotec">
+            </a>
+        </div>
+        <!--Glide #4 Pymes en Línea-->
+        <div class="slide">
+            <a href="https://pymesenlinea.cl" id="caluga_pymes_en_linea" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Pymes en Línea (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/04_pymeslinea_desktop_glide.svg" width="240" height="154" alt="Pymes en Línea">
+            </a>
+        </div>
+        <!--Glide #5 Portal de Capacitación de Sercotec-->
+        <div class="slide">
+            <a href="https://capacitacion.sercotec.cl/portal" id="caluga_portal_capacitacion" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Portal de Capacitación de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/05_portalcapacitacion_desktop_glide.svg" width="240" height="154" alt="Portal de Capacitación de Sercotec">
+            </a>
+        </div>
+        <!--Glide #6 Ruta Digital de Sercotec-->
+        <div class="slide">
+            <a href="https://www.rutadigital.cl" id="caluga_ruta_digital" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Ruta Digital de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/06_ruta_desktop_glide.svg" width="240" height="154" alt="Ruta Digital de Sercotec">
+            </a>
+        </div>
+        <!--Glide #7 Asesoría Legal Virtual de Sercotec-->
+        <div class="slide">
+            <a href="https://asesoriavirtual.sercotec.cl/Usuario/Autenticar?ReturnUrl=%2f" id="caluga_asesoria_legal" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Asesoría Legal Virtual de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/07_asesoria_legal_desktop_glide.svg" width="240" height="154" alt="Asesoría Legal Virtual de Sercotec">
+            </a>
+        </div>
+    <!--Glide #8 Explorador de Sercotec-->     
+        <div class="slide">
+            <a href="https://explorador.sercotec.cl" id="caluga_explorador" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Explorador Territorial de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/08_explorador_desktop_glide.svg" width="240" height="154" alt="Explorador Territorial de Sercotec">
+            </a>
+        </div>
 
-   <!--Glide #9 Somos Empresarias de Sercotec-->
-      <div class="slide">
-        <a href="https://www.sercotec.cl/somosempresarias/" id="caluga_somos_empresarias" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Somos Empresarias de Sercotec (se abre en una nueva pestaña)">
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/09_somoempresarias_desktop_glide.svg" width="240" height="154" alt="Somos Empresarias de Sercotec">
-        </a>
-      </div>
-   <!--Glide #10 Concursos públicos-->
-      <div class="slide">
-        <a href="https://www.sercotec.cl/concursos-publicos2/" id="caluga_concursos_publicos" target="_self" rel="noopener noreferrer"  aria-label="Ir a página interior Concursos públicos del sitio sercotec.cl (se abre en la misma pestaña)">
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/10_concursospublicos_desktop_glide.svg" width="240" height="154" alt="Concursos públicos de Sercotec">
-        </a>
-      </div>
-  <!--Glide #11 Canales Oficiales de contacto de Sercotec-->
-      <div class="slide">
-        <a href="https://www.sercotec.cl/sercotec-invita-a-utilizar-sus-canales-de-atencion-puntos-mipe/" id="caluga_canales_oficiales" target="_self" rel="noopener noreferrer"  aria-label="Ir a página de noticia sobre Canales Oficiales de contacto del sitio sercotec.cl (se abre en la misma pestaña)">
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/11_canales_oficiales_desktop_glide.svg" width="240" height="154" alt="Canales Oficiales de contacto de Sercotec">
-        </a>
-      </div>     
+    <!--Glide #9 Somos Empresarias de Sercotec-->
+        <div class="slide">
+            <a href="https://www.sercotec.cl/somosempresarias/" id="caluga_somos_empresarias" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Somos Empresarias de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/09_somoempresarias_desktop_glide.svg" width="240" height="154" alt="Somos Empresarias de Sercotec">
+            </a>
+        </div>
+    <!--Glide #10 Concursos públicos-->
+        <div class="slide">
+            <a href="https://www.sercotec.cl/concursos-publicos2/" id="caluga_concursos_publicos" target="_self" rel="noopener noreferrer"  aria-label="Ir a página interior Concursos públicos del sitio sercotec.cl (se abre en la misma pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/10_concursospublicos_desktop_glide.svg" width="240" height="154" alt="Concursos públicos de Sercotec">
+            </a>
+        </div>
+    <!--Glide #11 Canales Oficiales de contacto de Sercotec-->
+        <div class="slide">
+            <a href="https://www.sercotec.cl/sercotec-invita-a-utilizar-sus-canales-de-atencion-puntos-mipe/" id="caluga_canales_oficiales" target="_self" rel="noopener noreferrer"  aria-label="Ir a página de noticia sobre Canales Oficiales de contacto del sitio sercotec.cl (se abre en la misma pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/11_canales_oficiales_desktop_glide.svg" width="240" height="154" alt="Canales Oficiales de contacto de Sercotec">
+            </a>
+        </div>     
 
+        </div>
     </div>
-  </div>
 
-  <!-- Flechas debajo -->
-  <div class="slider-arrows" style="text-align:center; margin:20px 0;">
-    <button class="arrow prev" id="prevBtn">
-      <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_left.svg" width="40" height="40">
-    </button>
-    <button class="arrow next" id="nextBtn">
-      <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_right.svg" width="40" height="40">
-    </button>
-  </div>
-</div>
+    <!-- Flechas debajo -->
+    <div class="slider-arrows" style="text-align:center; margin:20px 0;">
+        <button class="arrow prev" id="prevBtn">
+        <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_left.svg" width="40" height="40">
+        </button>
+        <button class="arrow next" id="nextBtn">
+        <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_right.svg" width="40" height="40">
+        </button>
+    </div>
+    </div>
+</section>
 <!-- HTML Calugas Escritorio -->
 
 <!-- HTML Calugas Mobile -->
-<div class="slider-container-mobile">
-  <div class="slider-wrapper-mobile">
-    <div class="slider-mobile" id="slider-calugas-mobile">
+ <section>
+    <div class="slider-container-mobile">
+    <div class="slider-wrapper-mobile">
+        <div class="slider-mobile" id="slider-calugas-mobile">
 
-      <!-- Página 1 -->
-      <div class="page">
-         <!-- caluga 1 punto de atencion -->
-        <div class="slide-mobile">
-        <a href="https://www.sercotec.cl/sercotec-invita-a-utilizar-sus-canales-de-atencion-puntos-mipe/" id="caluga_canales_oficiales_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir a página de noticia sobre Canales Oficiales de contacto del sitio sercotec.cl (se abre en la misma pestaña)">
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/01_canal_mobile_glide.svg" width="140" height="120" alt="Canales Oficiales de contacto de Sercotec">
-        </a>
-        </div>
-         <!-- caluga 2 cdn -->
-        <div class="slide-mobile">
-          <a href="https://www.sercotec.cl/centros-de-negocios/" id="caluga_cdn_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Centros de Negocios de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/03_cdn_mobile_glide.svg" width="140" height="120" alt="Centros de Negocios de Sercotec">
-          </a>
+        <!-- Página 1 -->
+        <div class="page">
+            <!-- caluga 1 punto de atencion -->
+            <div class="slide-mobile">
+            <a href="https://www.sercotec.cl/sercotec-invita-a-utilizar-sus-canales-de-atencion-puntos-mipe/" id="caluga_canales_oficiales_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir a página de noticia sobre Canales Oficiales de contacto del sitio sercotec.cl (se abre en la misma pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/01_canal_mobile_glide.svg" width="140" height="120" alt="Canales Oficiales de contacto de Sercotec">
+            </a>
+            </div>
+            <!-- caluga 2 cdn -->
+            <div class="slide-mobile">
+            <a href="https://www.sercotec.cl/centros-de-negocios/" id="caluga_cdn_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Centros de Negocios de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/03_cdn_mobile_glide.svg" width="140" height="120" alt="Centros de Negocios de Sercotec">
+            </a>
+            </div>
+
+            <!-- caluga 3 barrios-->
+            <div class="slide-mobile">
+            <a href="https://www.sercotec.cl/barrios-comerciales/" id="caluga_barrios_mob" target="_blank" rel="noopener noreferrer" aria-label="Ir al sitio de Barrios Comerciales de Sercotec (se abre en nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/02_barrios_mobile_glide.svg" alt="Barrios Comerciales de Sercotec" width="140"  height="120">
+            </a>          
+            </div>
+            <!-- caluga 4 sustentabilidad -->
+            <div class="slide-mobile">
+            <a href="https://www.sercotec.cl/sello-impacta-sustentable/" id="caluga_sustentabilidad_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir al sitio de Sustentabilidad de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/04_sustentabilidad_mobile_glide.svg" width="140"  height="120" alt="Sustentabilidad de Sercotec">
+            </a>
+            </div>
         </div>
 
-        <!-- caluga 3 barrios-->
-        <div class="slide-mobile">
-          <a href="https://www.sercotec.cl/barrios-comerciales/" id="caluga_barrios_mob" target="_blank" rel="noopener noreferrer" aria-label="Ir al sitio de Barrios Comerciales de Sercotec (se abre en nueva pestaña)">
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/02_barrios_mobile_glide.svg" alt="Barrios Comerciales de Sercotec" width="140"  height="120">
-          </a>          
+        <!-- Página 2 -->
+        <div class="page">
+            <!-- caluga 5 pymes en linea -->
+            <div class="slide-mobile">
+            <a href="https://pymesenlinea.cl" id="caluga_pymes_en_linea_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Pymes en Línea (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/05_pymes_mobile_glide.svg" width="140" height="120" alt="Pymes en Línea">
+            </a>
+            </div>
+            <!-- caluga 6 Portal capacitación -->
+            <div class="slide-mobile">
+            <a href="https://capacitacion.sercotec.cl/portal" id="caluga_portal_capacitacion_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Portal de Capacitación de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/07_portal_mobile_glide.svg" width="140"  height="120" alt="Portal de Capacitación de Sercotec">
+            </a>
+            </div>
+            <!-- caluga 7 Ruta digital-->
+            <div class="slide-mobile">
+            <a href="https://www.rutadigital.cl" id="caluga_ruta_digital_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Ruta Digital de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/06_ruta_mobile_glide.svg" width="140" height="120" alt="Ruta Digital de Sercotec">
+            </a>
+            </div>
+            <!-- caluga 8 Asesoría legal-->
+            <div class="slide-mobile">
+            <a href="https://asesoriavirtual.sercotec.cl/Usuario/Autenticar?ReturnUrl=%2f" id="caluga_asesoria_legal_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Asesoría Legal Virtual de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/08_asesoria_mobile_glide.svg" width="140" height="120" alt="Asesoría Legal Virtual de Sercotec">
+            </a>
+            </div>
         </div>
-        <!-- caluga 4 sustentabilidad -->
-        <div class="slide-mobile">
-          <a href="https://www.sercotec.cl/sello-impacta-sustentable/" id="caluga_sustentabilidad_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir al sitio de Sustentabilidad de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/04_sustentabilidad_mobile_glide.svg" width="140"  height="120" alt="Sustentabilidad de Sercotec">
-          </a>
-        </div>
-      </div>
 
-      <!-- Página 2 -->
-      <div class="page">
-         <!-- caluga 5 pymes en linea -->
-        <div class="slide-mobile">
-          <a href="https://pymesenlinea.cl" id="caluga_pymes_en_linea_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Pymes en Línea (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/05_pymes_mobile_glide.svg" width="140" height="120" alt="Pymes en Línea">
-          </a>
+        <!-- Página 3 -->
+        <div class="page">
+            <!-- caluga 9 explorador-->
+            <div class="slide-mobile">
+            <a href="https://explorador.sercotec.cl" id="caluga_explorador_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Explorador Territorial de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/09_explorador_mobile_glide.svg" width="140" height="120" alt="Explorador Territorial de Sercotec">
+            </a>
+            </div>
+            <!-- caluga 10  Somos empresarias-->
+            <div class="slide-mobile">
+            <a href="https://www.sercotec.cl/somosempresarias/" id="caluga_somos_empresarias_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Somos Empresarias de Sercotec (se abre en una nueva pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/11_somos_mobile_glide.svg" width="140" height="120" alt="Somos Empresarias de Sercotec">
+            </a>
+            </div>
+            <!-- caluga 11  Concursos publicos-->
+            <div class="slide-mobile">
+            <a href="https://www.sercotec.cl/concursos-publicos2/" id="caluga_concursos_publicos_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir a página interior Concursos públicos del sitio sercotec.cl (se abre en la misma pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/10_concursos_mobile_glide.svg" width="140" height="120" alt="Concursos públicos de Sercotec">
+            </a>
+            </div>
+            <!-- caluga 12 canales oficiales-->
+            <div class="slide-mobile">
+            <a href="https://www.sercotec.cl/sercotec-invita-a-utilizar-sus-canales-de-atencion-puntos-mipe/" id="caluga_canales_oficiales_mob_2" target="_self" rel="noopener noreferrer"  aria-label="Ir a página de noticia sobre Canales Oficiales de contacto del sitio sercotec.cl (se abre en la misma pestaña)">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/01_canal_mobile_glide.svg" width="140" height="120" alt="Canales Oficiales de contacto de Sercotec">
+            </a>
+            </div>
         </div>
-        <!-- caluga 6 Portal capacitación -->
-        <div class="slide-mobile">
-          <a href="https://capacitacion.sercotec.cl/portal" id="caluga_portal_capacitacion_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Portal de Capacitación de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/07_portal_mobile_glide.svg" width="140"  height="120" alt="Portal de Capacitación de Sercotec">
-          </a>
         </div>
-        <!-- caluga 7 Ruta digital-->
-        <div class="slide-mobile">
-          <a href="https://www.rutadigital.cl" id="caluga_ruta_digital_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Ruta Digital de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/06_ruta_mobile_glide.svg" width="140" height="120" alt="Ruta Digital de Sercotec">
-          </a>
-        </div>
-        <!-- caluga 8 Asesoría legal-->
-        <div class="slide-mobile">
-          <a href="https://asesoriavirtual.sercotec.cl/Usuario/Autenticar?ReturnUrl=%2f" id="caluga_asesoria_legal_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Asesoría Legal Virtual de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/08_asesoria_mobile_glide.svg" width="140" height="120" alt="Asesoría Legal Virtual de Sercotec">
-          </a>
-        </div>
-      </div>
-
-      <!-- Página 3 -->
-      <div class="page">
-          <!-- caluga 9 explorador-->
-        <div class="slide-mobile">
-          <a href="https://explorador.sercotec.cl" id="caluga_explorador_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Explorador Territorial de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/09_explorador_mobile_glide.svg" width="140" height="120" alt="Explorador Territorial de Sercotec">
-          </a>
-        </div>
-        <!-- caluga 10  Somos empresarias-->
-        <div class="slide-mobile">
-          <a href="https://www.sercotec.cl/somosempresarias/" id="caluga_somos_empresarias_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Somos Empresarias de Sercotec (se abre en una nueva pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/11_somos_mobile_glide.svg" width="140" height="120" alt="Somos Empresarias de Sercotec">
-          </a>
-        </div>
-        <!-- caluga 11  Concursos publicos-->
-        <div class="slide-mobile">
-          <a href="https://www.sercotec.cl/concursos-publicos2/" id="caluga_concursos_publicos_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir a página interior Concursos públicos del sitio sercotec.cl (se abre en la misma pestaña)">
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/10_concursos_mobile_glide.svg" width="140" height="120" alt="Concursos públicos de Sercotec">
-          </a>
-        </div>
-        <!-- caluga 12 canales oficiales-->
-        <div class="slide-mobile">
-          <a href="https://www.sercotec.cl/sercotec-invita-a-utilizar-sus-canales-de-atencion-puntos-mipe/" id="caluga_canales_oficiales_mob_2" target="_self" rel="noopener noreferrer"  aria-label="Ir a página de noticia sobre Canales Oficiales de contacto del sitio sercotec.cl (se abre en la misma pestaña)">
-              <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/01_canal_mobile_glide.svg" width="140" height="120" alt="Canales Oficiales de contacto de Sercotec">
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Flechas -->
-  <div class="slider-arrows" style="text-align:center; margin:20px 0;">
-    <button class="arrow prev" id="prevBtnMobile" aria-label="Calugas anteriores" aria-disabled="true">
-      <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_left.svg" width="40" height="40" alt="Anterior">
-    </button>
-    <button class="arrow next" id="nextBtnMobile" aria-label="Calugas siguientes" aria-disabled="false">
-      <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_right.svg" width="40" height="40" alt="Siguiente">
-    </button>
-  </div>
-</div>
+    <!-- Flechas -->
+    <div class="slider-arrows" style="text-align:center; margin:20px 0;">
+        <button class="arrow prev" id="prevBtnMobile" aria-label="Calugas anteriores" aria-disabled="true">
+        <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_left.svg" width="40" height="40" alt="Anterior">
+        </button>
+        <button class="arrow next" id="nextBtnMobile" aria-label="Calugas siguientes" aria-disabled="false">
+        <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_right.svg" width="40" height="40" alt="Siguiente">
+        </button>
+    </div>
+    </div>
+</section>
 <!-- HTML Calugas Mobile -->
 
 <!--Noticias-->
@@ -292,206 +307,198 @@ get_header();
 <!--Noticias-->
 
 <div class="container container-enlaces-inst">
-
-
-
     <!--ENLACES Mobile-->
-    <div class="container-ei-mobile">
-        <div class="glide-carousel-inicioenlaces-mob my-4">
-            <h1 class="text-center my-4">Enlaces Institucionales</h1>
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide" style="width:260px!important;">
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Atención ciudadana
-                                </p>
-                            </a>
-                        </div>
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Gobierno Transparente
-                                </p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="glide__slide" style="width:260px!important;">
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Solicitud de información Ley de Transparencia
-                                </p>
-                            </a>
-                        </div>
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Solicitud de audiencia Ley de Lobby
-                                </p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="glide__slide" style="width:260px!important;">
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Información presupuestaria y financiera
-                                </p>
-                            </a>
-                        </div>
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Participación Ciudadana
-                                </p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="glide__slide" style="width:260px!important;">
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Cuenta Pública Gestión 2023
-                                </p>
-                            </a>
-                        </div>
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Integridad Institucional
-                                </p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="glide__slide" style="width:260px!important;">
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Programas y servicios digitalizados
-                                </p>
-                            </a>
-                        </div>
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Concursos Públicos
-                                </p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="glide__slide" style="width:260px!important;">
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Estudio Emprendimiento Femenino 2023
-                                </p>
-                            </a>
-                        </div>
-                        <div class="link-enlaces-mob">
-                            <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                <p>
-                                    Información presupuestaria y financiera
-                                </p>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="glide__bullets mobile d-flex justify-content-center my-2" data-glide-el="controls[nav]">
-                <button class="glide__bullet mobile left" data-glide-dir="<"></button>
-                <button class="glide__bullet mobile right" data-glide-dir=">"></button>
+    <section>
+        <div class="container-ei-mobile">
+            <div class="glide-carousel-inicioenlaces-mob my-4">
+                <h1 class="text-center my-4">Enlaces Institucionales</h1>
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide" style="width:260px!important;">
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Atención ciudadana
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Gobierno Transparente
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide" style="width:260px!important;">
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Solicitud de información Ley de Transparencia
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Solicitud de audiencia Ley de Lobby
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide" style="width:260px!important;">
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Información presupuestaria y financiera
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Participación Ciudadana
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide" style="width:260px!important;">
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Cuenta Pública Gestión 2023
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Integridad Institucional
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide" style="width:260px!important;">
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Programas y servicios digitalizados
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Concursos Públicos
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide" style="width:260px!important;">
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Estudio Emprendimiento Femenino 2023
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="link-enlaces-mob">
+                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                                    <p>
+                                        Información presupuestaria y financiera
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets mobile d-flex justify-content-center my-2" data-glide-el="controls[nav]">
+                    <button class="glide__bullet mobile left" data-glide-dir="<"></button>
+                    <button class="glide__bullet mobile right" data-glide-dir=">"></button>
+                </div>
             </div>
         </div>
-    </div>
+    </section>    
     <!--ENLACES Mobile-->
-
-    <div class="container-ei-desktop">
-        <h1 class="text-center" style="margin:50px 0 0 0;">Enlaces Institucionales</h1>
-        <!--ENLACES Escritorio-->
-        <div class="enlaces-inst mx-auto" style="max-width: 1280px;">
-            <div class="link-enlaces">
-                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                    <p>
-                        Atención ciudadana
-                    </p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.portaltransparencia.cl/PortalPdT/pdtta?codOrganismo=AH012" target="_blank">
-                    <p>Gobierno transparente </p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.portaltransparencia.cl/PortalPdT/ingreso-sai-v2?idOrg=58300" target="_blank">
-                    <p> Solicitud de información Ley de Transparencia </p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.leylobby.gob.cl/admin/auth/prelogin?redirect_int=https://www.leylobby.gob.cl/solicitud/audiencia/403" target="_blank">
-                    <p> Solicitud de audiencia Ley de Lobby </p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.sercotec.cl/descargas/" target="_self">
-                    <p> Información presupuestaria y financiera</p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.sercotec.cl/participacion-ciudadana/" target="_self">
-                    <p>Participación ciudadana</p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.sercotec.cl/cuenta-publica-de-la-gestion-2022" target="_self">
-                    <p> Cuenta pública Gestión 2023</p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://sites.google.com/sercotec.cl/integridad-institucional" target="_self">
-                    <p>Integridad Institucional</p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.sercotec.cl/programas-y-servicios-digitalizados/" target="_self">
-                    <p>Programas y servicios digitalizados</p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.sercotec.cl/ley-21-288-fondo-de-emergencia-transitorio-covid-19/" target="_self">
-                    <p>Fondo de emergencia transitorio</p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.sercotec.cl/concursos-publicos2/" target="_self">
-                    <p>Concursos públicos</p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.sercotec.cl/wp-content/uploads/2024/12/Estudio-de-emprendimiento-y-microempresa_v2.pdf" target="_blank">
-                    <img class="mx-auto d-block" src="<?php echo get_template_directory_uri(); ?>/img/ei-line.png" width="170" height="4" alt="Linea">
-                    <p>Estudio Emprendimiento Femenino 2023</p>
-                </a>
-            </div>
-            <div class="link-enlaces">
-                <a href="https://www.sercotec.cl/wp-content/uploads/2024/12/Estudio-de-emprendimiento-y-microempresa_v2.pdf" target="_blank">
-                    <img class="mx-auto d-block" src="<?php echo get_template_directory_uri(); ?>/img/ei-line.png" width="170" height="4" alt="Linea">
-                    <p>Diagnóstico mujeres beneficiaras 2023 / 2024 Capital Semilla y Abeja</p>
-                </a>
-            </div>
-        </div>
-    </div>
     <!--ENLACES Escritorio-->
-
-    <?php
-
-    while (have_posts()): the_post();
-
-    endwhile;
-
-    ?>
-
+    <section> 
+        <div class="container-ei-desktop">
+            <h1 class="text-center" style="margin:50px 0 0 0;">Enlaces Institucionales</h1>
+            <!--ENLACES Escritorio-->
+            <div class="enlaces-inst mx-auto" style="max-width: 1280px;">
+                <div class="link-enlaces">
+                    <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                        <p>
+                            Atención ciudadana
+                        </p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.portaltransparencia.cl/PortalPdT/pdtta?codOrganismo=AH012" target="_blank">
+                        <p>Gobierno transparente </p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.portaltransparencia.cl/PortalPdT/ingreso-sai-v2?idOrg=58300" target="_blank">
+                        <p> Solicitud de información Ley de Transparencia </p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.leylobby.gob.cl/admin/auth/prelogin?redirect_int=https://www.leylobby.gob.cl/solicitud/audiencia/403" target="_blank">
+                        <p> Solicitud de audiencia Ley de Lobby </p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.sercotec.cl/descargas/" target="_self">
+                        <p> Información presupuestaria y financiera</p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.sercotec.cl/participacion-ciudadana/" target="_self">
+                        <p>Participación ciudadana</p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.sercotec.cl/cuenta-publica-de-la-gestion-2022" target="_self">
+                        <p> Cuenta pública Gestión 2023</p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://sites.google.com/sercotec.cl/integridad-institucional" target="_self">
+                        <p>Integridad Institucional</p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.sercotec.cl/programas-y-servicios-digitalizados/" target="_self">
+                        <p>Programas y servicios digitalizados</p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.sercotec.cl/ley-21-288-fondo-de-emergencia-transitorio-covid-19/" target="_self">
+                        <p>Fondo de emergencia transitorio</p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.sercotec.cl/concursos-publicos2/" target="_self">
+                        <p>Concursos públicos</p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.sercotec.cl/wp-content/uploads/2024/12/Estudio-de-emprendimiento-y-microempresa_v2.pdf" target="_blank">
+                        <img class="mx-auto d-block" src="<?php echo get_template_directory_uri(); ?>/img/ei-line.png" width="170" height="4" alt="Linea">
+                        <p>Estudio Emprendimiento Femenino 2023</p>
+                    </a>
+                </div>
+                <div class="link-enlaces">
+                    <a href="https://www.sercotec.cl/wp-content/uploads/2024/12/Estudio-de-emprendimiento-y-microempresa_v2.pdf" target="_blank">
+                        <img class="mx-auto d-block" src="<?php echo get_template_directory_uri(); ?>/img/ei-line.png" width="170" height="4" alt="Linea">
+                        <p>Diagnóstico mujeres beneficiaras 2023 / 2024 Capital Semilla y Abeja</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ENLACES Escritorio-->
 </div>
 
 <?php

@@ -426,6 +426,31 @@ document.addEventListener("DOMContentLoaded", () => {
 });
  
 
+  const modalVideo = document.getElementById('modalVideoPostulacion');
+  const video = modalVideo.querySelector('video');
+
+  modalVideo.addEventListener('hidden.bs.modal', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("message", function (event) {
+    // 👉 cuando funcione, cambia "*" por el dominio real
+    // if (event.origin !== "https://sitio-iframe.cl") return;
+
+    const iframe = document.getElementById("iframe-inicio");
+    if (!iframe) return;
+
+    if (event.data && event.data.height) {
+      iframe.style.height = event.data.height + "px";
+    }
+  });
+});
+
+
+
 
 
 });

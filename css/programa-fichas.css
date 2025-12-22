@@ -1,0 +1,237 @@
+
+
+.accordion.accordion-custom.sct-inicio .accordion-item h2.accordion-header.fichas button.accordion-button {
+    font-size: var(--heading-small);
+    font-family: var( --font-family-sans-slab);
+    border-bottom: red 2px solid;
+}
+
+
+@media (min-width: 768px) {
+.accordion.accordion-custom.sct-inicio .accordion-item h2.accordion-header.fichas button.accordion-button {
+    font-size: var(--heading-large-mob);
+  }
+}
+
+
+
+
+
+ /*Box Bases documentos*/
+
+div.gray-box-bases {
+  background-color: rgba(var( --grey-5), 1);
+  padding: var(--padding-cards);
+  border-radius: var( --border-radius-cards-2);
+  border: 1px solid rgba(var(--grey-20), 1);
+  margin-bottom: var(--spacing-m);
+  margin-top: var(--spacing-m);
+}
+
+div.gray-box-bases h3 {
+  font-size: var(--heading-medium-mob);
+  font-family: var( --font-family-sans-slab);
+  color: rgba(var(--font-color), 1);
+  line-height: normal;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: calc(var(--heading-medium-mob) * 0.9);
+  margin-top: calc(var(--heading-medium-mob) * 0.9);
+}
+
+@media (min-width: 800px) {
+div.gray-box-bases h3  {
+    font-size: var(--heading-medium);
+  margin-bottom: calc(var(--heading-medium) * 0.9);
+  margin-top: calc(var(--heading-medium) * 0.9);
+  }
+}
+
+
+
+.download-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 6px;
+}
+
+.download-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.download-list li a {
+ color:rgba(var(--font-color), 1);
+ text-decoration: underline;
+}
+
+.download-list li a:hover {
+ color:rgba(var(--base-blue), 1);
+ text-decoration: underline;
+}
+
+.download-list li a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
+.download-list li a:visited {
+  color: rgba(var( --link-visited), 1);
+}
+
+
+
+.download-list li::before {
+  content: "";
+  background-image: url(../img/icon-download-bases.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -7px;
+  top: 0px;
+}
+
+ /*Box Bases documentos*/
+
+
+ .icon-base {
+  display: none;
+}
+
+@media (min-width: 800px) {
+.icon-base {
+  display: block;
+  margin: 0 12px 0 0;
+  }
+}
+
+
+ .container-bases{
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+.container-bases {
+  margin: 0 0 0 51px;
+  }
+} 
+
+
+
+ /*Gray boxes - sidebar convocatorias*/
+
+div.gray-box-postular {
+  background-color: rgba(var( --grey-5), 1);
+  background-image: none;
+  padding: 36px 24px;
+  border-radius: var( --border-radius-cards-2);
+  border: 1px solid rgba(var(--grey-20), 1);
+  margin-bottom: var(--spacing-m);
+  /* margin-top: var(--spacing-m);*/
+}
+
+@media (min-width: 800px) {
+  div.gray-box-postular {
+  background-color: rgba(var( --grey-5), 1);
+  background-image: url(../img/ilustracion-comopostular.webp);
+  background-repeat: no-repeat;
+  background-size: 100px 133px;
+  background-position:right 108px;
+  padding:var(--padding-cards);
+  border-radius: var( --border-radius-cards-2);
+  border: 1px solid rgba(var(--grey-20), 1);
+  margin-bottom: var(--spacing-m);
+  margin-top: var(--spacing-m);
+}
+}
+
+div.gray-box-postular h3 {
+  font-size: var(--heading-medium-mob);
+  color: rgba(var(--font-color), 1);
+  line-height: normal;
+  font-weight: 700;
+  padding: 0;
+}
+
+@media (min-width: 800px) {
+div.gray-box-postular h3  {
+  font-size: var(--heading-medium);
+  margin-bottom: calc(var(--heading-medium) * 0.9);
+  }
+}
+
+div.gray-box-postular p {
+  font-size: var( --heading-small-mob);
+  color: rgba(var(--font-color), 1);
+  line-height: normal;
+  font-weight: normal;
+  padding: 0;
+  margin-bottom: calc(var(--heading-medium-mob) * 0.9);
+  margin-top: calc(var(--heading-medium-mob) * 0.9);
+}
+
+@media (min-width: 800px) {
+div.gray-box-postular  p  {
+    font-size: var(- --heading-small);
+  margin-bottom: calc(var(--heading-medium) * 0.9);
+  margin-top: calc(var(--heading-medium) * 0.9);
+  }
+}
+
+ /*Gray boxes - sidebar convocatorias*/
+
+
+ /* Container fijo abajo */
+.postular-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(var(--base-blue-dark-3), 1);
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
+
+/* Botón POSTULAR */
+.btn-postular {
+  background-color: rgba(var(--acento-red-dark-3), 1);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 32px;
+  border-radius: 44px;
+  text-align: center;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  font-size: var(--heading-medium-mob);
+  font-family: var( --font-family-sans-slab);
+
+}
+
+/* Desde 768px */
+@media (min-width: 768px) {
+  .btn-postular {
+    font-size: var(--heading-medium);
+  }
+}
+
+/* Hover */
+.btn-postular:hover {
+  background-color: rgba(var(--acento-red-dark-3), 0.85);
+  text-decoration: none;
+}
+
+/* Focus accesible */
+.btn-postular:focus,
+.btn-postular:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(var(--acento-red-dark-3), 0.4);
+}
+/* Botón POSTULAR */

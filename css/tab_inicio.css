@@ -65,4 +65,17 @@
     margin-bottom: 0!important;
 }
 
+
+.accordion-custom.sct-inicio .accordion-body, .accordion-button.sct-inicio + .accordion-collapse .accordion-body:last-of-type{
+  border-bottom: 1px solid #dee2e6!important;
+}
+
+
+button.accordion-button,
+button.accordion-button.collapsed {
+  padding: 1.25rem 1.25rem;
+}
+
+
+
   /*ESTILOS ACORDEON*/

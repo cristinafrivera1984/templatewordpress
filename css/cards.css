@@ -11,6 +11,7 @@ div.card-resultado h2  {
   color: rgba(var(--font-color), 1);
   font-family: var(--font-family-sans-s);
   margin-bottom: calc(var(--heading-small-mob) * 0.6);
+  line-height: 1.5;
 }
 
 @media (min-width: 800px) {
@@ -39,14 +40,44 @@ div.card-resultado a.categoria, div.card-last-news a.categoria, .card-last-news-
   color: rgba(var(--base-blue-dark-1), 1);
   margin-bottom: 0;
   font-weight: 700;
+  /*margin-right: 12px;*/
+}
+
+div.card-resultado a.categoria:hover , div.card-last-news a.categoria:hover, .card-last-news-mobile a.categoria:hover  {
+  color: rgba(var(--base-blue-dark-4), 1);
+
 }
 
 
-div.card-resultado h3  {
+
+div.card-resultado a.categoria:last-child, div.card-last-news a.categoria:last-child, .card-last-news-mobile a.categoria:last-child {
+  margin-left: 0px;
+}
+
+
+.card-resultado img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 12px;
+
+}
+
+@media (min-width: 768px) {
+.card-resultado img  {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 12px;
+
+  }
+}
+
+/*div.card-resultado h3  {
   margin-bottom: 0!important;
   font-size: var( --font-size-small);  
 }
-/*Card resultado de búsqueda*/
+Card resultado de búsqueda*/
 
 
 .card-grey-1 {

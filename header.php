@@ -121,7 +121,7 @@
                                 <!-- NIVEL 1: LAS CARDS -->
                                     <div id="menu-nivel-1" class="row">
                                         <div class="col-lg-4">
-                                            <a href="#" class="card-link card-fin-1"  data-target="nivel-2-emprender" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                            <a href="#" class="card-link card-fin-1"  data-target="nivel-2-emprender">
                                             <article class="card-menu-main">
                                             <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-finan-01.svg" width="33" height="38" alt="Icono quiero emprender">
                                             <h3 class="text-center">Quiero emprender</h3>
@@ -132,7 +132,7 @@
                                         </div>
 
                                         <div class="col-lg-4">
-                                            <a href="#" class="card-link card-fin-2" data-target="nivel-2-pyme" aria-label="Quiero empre: Ir a etapa: Quiero emprender">
+                                            <a href="#" class="card-link card-fin-2" data-target="nivel-2-pyme">
                                                 <article class="card-menu-main">
                                                 <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-finan-02.svg" width="32" height="32" alt="Icono Tengo una pyme">
                                                 <h3 class="text-center">Tengo una Pyme</h3>
@@ -143,7 +143,7 @@
                                         </div>
 
                                         <div class="col-lg-4">
-                                            <a href="#" class="card-link card-fin-3" data-target="nivel-2-asociacion" aria-label="Financimiamiento: Ir a etapa: Tengo una Pyme">
+                                            <a href="#" class="card-link card-fin-3" data-target="nivel-2-asociacion">
                                                 <article class="card-menu-main">
                                                 <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-finan-03.svg" width="36" height="17" alt="Icono tenemos una asociación">
                                                 <h3 class="text-center">Tenemos una asociación</h3>
@@ -165,7 +165,7 @@
                                                 <h3 class="title card-fin-1"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-finan-01.svg" width="32" height="32" alt="Icono Quiero Emprender"> Quiero Emprender</h3>
                                                     <div class="row">
                                                         <div class="col-md-6 col-lg-4">
-                                                                <a href="/capital-semilla-emprende/" class="card-link-borderless card-emprender" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                                <a href="/capital-semilla-emprende/" class="card-link-borderless card-emprender">
                                                                 <article class="card-menu-main">
                                                                 <h3>Capital Semilla Emprende</h3>
                                                                 <p>Subsidio para emprendedores que buscan iniciar un negocio con oportunidad de participar en el mercado a través de su formalización. </p>
@@ -174,7 +174,7 @@
                                                                 </a>
                                                         </div>
                                                         <div class="col-md-6 col-lg-4">
-                                                                <a href="/capital-abeja-emprende/" class="card-link-borderless card-emprender" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                                <a href="/capital-abeja-emprende/" class="card-link-borderless card-emprender">
                                                                 <article class="card-menu-main">
                                                                 <h3>Capital Abeja Emprende</h3>
                                                                 <p>Subsidio para mujeres emprendedoras que buscan iniciar un negocio con oportunidad de participar en el mercado a través de su formalización. </p>
@@ -183,7 +183,7 @@
                                                                 </a>
                                                         </div>
                                                         <div class="col-md-6 col-lg-4">
-                                                                <a href="/capital-pioneras/" class="card-link-borderless card-emprender" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                                <a href="/capital-pioneras/" class="card-link-borderless card-emprender">
                                                                 <article class="card-menu-main">
                                                                 <h3>Capital Pioneras</h3>
                                                                 <p>Subsidio para mujeres emprendedoras que buscan formalizar un negocio en rubros con mayor presencia masculina. </p>
@@ -206,7 +206,7 @@
                                     <h3 class="title card-fin-2"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-finan-02.svg" width="32" height="32" alt="Icono Tengo una Pyme"> Tengo una pyme</h3>
                                         <div class="row">
                                             <div class="col-md-6 col-lg-4">
-                                                    <a href="/crece/" class="card-link-borderless card-tengo-pyme" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                    <a href="/crece/" class="card-link-borderless card-tengo-pyme">
                                                     <article class="card-menu-main">
                                                     <h3>Crece</h3>
                                                     <p>Fondo concursable que financia inversiones y otras acciones para potenciar el crecimiento de un negocio y/o cooperativa. </p>
@@ -215,7 +215,7 @@
                                                     </a>
                                             </div>
                                             <div class="col-md-6 col-lg-4">
-                                                    <a href="/crece-sostenible/" class="card-link-borderless card-tengo-pyme" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                    <a href="/crece-sostenible/" class="card-link-borderless card-tengo-pyme">
                                                     <article class="card-menu-main">
                                                     <h3>Crece Sostenible</h3>
                                                     <p>Fondo concursable que financia inversiones y otras acciones que potencien las prácticas productivas sostenibles.</p>
@@ -224,7 +224,7 @@
                                                     </a>
                                             </div>
                                             <div class="col-md-6 col-lg-4">
-                                                    <a href="/digitaliza-tu-almacen/" class="card-link-borderless card-tengo-pyme" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                    <a href="/digitaliza-tu-almacen/" class="card-link-borderless card-tengo-pyme">
                                                     <article class="card-menu-main">
                                                     <h3>Digitaliza tu Almacén</h3>
                                                     <p>Fondo concursable para fortalecer a los pequeños negocios de barrio mediante la incorporación de herramientas digitales.</p>
@@ -233,7 +233,7 @@
                                                     </a>
                                             </div>
                                             <div class="col-md-6 col-lg-4">
-                                                    <a href="/ruta-digital/" class="card-link-borderless card-tengo-pyme" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                    <a href="/ruta-digital/" class="card-link-borderless card-tengo-pyme">
                                                     <article class="card-menu-main">
                                                     <h3>Kit Digital</h3>
                                                     <p>Beneficio concursable para micro y pequeñas empresas que hayan realizado los cursos del programa Ruta Digital.</p>
@@ -242,7 +242,7 @@
                                                     </a>
                                             </div>
                                             <div class="col-md-6 col-lg-4">
-                                                    <a href="/pymes-globales-2025/" class="card-link-borderless card-tengo-pyme" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                    <a href="/pymes-globales-2025/" class="card-link-borderless card-tengo-pyme">
                                                     <article class="card-menu-main">
                                                     <h3>Pymes Globales</h3>
                                                     <p>Programa que apoya a pymes y cooperativas para dar sus primeros pasos en plataformas de venta internacionales.</p>
@@ -251,7 +251,7 @@
                                                     </a>
                                             </div>
                                             <div class="col-md-6 col-lg-4">
-                                                    <a href="/negocios-digitales-2025/" class="card-link-borderless card-tengo-pyme" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                    <a href="/negocios-digitales-2025/" class="card-link-borderless card-tengo-pyme">
                                                     <article class="card-menu-main">
                                                     <h3>Negocios Digitales</h3>
                                                     <p>Programa que apoya a pymes y cooperativas para ampliar sus canales de venta ingresando en marketplaces nacionales.</p>
@@ -260,7 +260,7 @@
                                                     </a>
                                             </div>
                                             <div class="col-md-6 col-lg-4">
-                                                    <a href="/mejora-negocios/" class="card-link-borderless card-tengo-pyme" aria-label="Financimiamiento: Ir a etapa: Quiero Emprender">
+                                                    <a href="/mejora-negocios/" class="card-link-borderless card-tengo-pyme">
                                                     <article class="card-menu-main">
                                                     <h3>MejoraNegocios</h3>
                                                     <p>Programa que cofinancia la contratación de asesorías técnicas para mejorar la calidad de productos o servicios.</p>
@@ -554,18 +554,15 @@
               <span class="search-btn-header-wp d-none">Buscar</span>               
             </a>
         </div>
-        <a class="d-flex flex-column menu-btn-header-wp" href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-burger.svg" width="39" height="19">    
-            MENÚ
-        </a>
+         <!-- Botón que abre el menú (visible sólo en mobile) -->
+          <button class="btn-mobile-menu btn-transparent">
+            <a class="d-flex flex-column menu-btn-header-wp" href="#" aria-label="Abrir menú móvil">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon-burger.svg" width="39" height="19">    
+                MENÚ
+            </a>
+          </button>
     </div>
     <!--Fin Header mobile tablet-->  
-
-
- <!-- Botón que abre el menú (visible sólo en mobile) -->
-<button class="btn-mobile-menu" aria-label="Abrir menú móvil">
-  <span class="material-icons">menu</span>
-</button>
 
 <!-- MODAL / OVERLAY -->
 <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
@@ -741,63 +738,70 @@
     </button>
 
     <!--modulo Asesoría Experta-->
-      <div class="acc-module tengo-pyme">
+      <div class="module-menu-content">
           <span class="title"><img class="img-fluid me-2 align-middle" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-ase-01.svg" width="23" height="21" alt="Icono quiero emprender"> <h2>Asesoría Experta</h2> </span>
-         
-          <p class="subtext-emprender">Ya tengo un negocio formalizado</p>
 
-        <div class="acc-content">
-              <ul class="acc-content">
-                <li><a href="/crece/">Crece</a></li>
-                <li><a href="/crece-sostenible/">Crece Sostenible</a></li>
-                <li><a href="/digitaliza-tu-almacen/">Digitaliza tu Almacén</a></li>
-                <li><a href="/ruta-digital/">Kit Digital</a></li>
-                <li><a href="/pymes-globales-2025/">Pymes Globales</a></li>
-                <li><a href="/negocios-digitales-2025/">Negocios Digitales</a></li>
-                <li><a href="/mejora-negocios/">MejoraNegocios</a></li>
-                <li><a href="/promocion-y-canales-de-comercializacion/">Promoción y canales</a></li>
-                <li><a href="/redes-de-oportunidades-de-negocios/">Redes de oportunidades</a></li>
-              </ul>
-        </div>
+      
+              <ul class="module-menu-content">
+                <li><a href="/centros-de-negocios/" target="_blank" rel="noopener noreferrer">Centros de Desarrollo de Negocios</a></li>
+                <li><a href="/contacto/">Puntos Mipe</a></li>
+                <li><a href="https://asesoriavirtual.sercotec.cl/Usuario/Autenticar?ReturnUrl=%2f" target="_blank" rel="noopener noreferrer">Asesoría Legal Virtual</a></li>
+              </ul>       
       </div>
     <!--modulo Asesoría Experta-->  
   </section>
 
   <!-- PANTALLA: CAPACITACIONES -->
   <section class="menu-screen" id="screen-capacitaciones">
-    <button class="btn-back-main">
-      <span class="material-icons">arrow_back</span> Volver al menú principal
+       <button class="btn-back-main">
+      <span class="material-symbols-outlined align-middle"> arrow_back </span> Volver al menú principal
     </button>
 
-    <h2>Capacitaciones</h2>
+    <!--modulo CAPACITACIONES-->
+      <div class="module-menu-content">
+          <span class="title"><img class="img-fluid me-2 align-middle" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-cap-01.svg" width="23" height="21" alt="Icono quiero emprender"> <h2> Capacitaciones</h2> </span>
 
-    <ul class="simple-list">
-      <li><a href="#">Página 1</a></li>
-      <li><a href="#">Página 2</a></li>
-      <li><a href="#">Página 3</a></li>
-      <li><a href="#">Página 4</a></li>
-    </ul>
+      
+              <ul class="module-menu-content">
+                <li><a href="https://capacitacion.sercotec.cl/portal/" target="_blank" rel="noopener noreferrer">Portal de Capacitación</a></li>
+                <li><a href="https://agendaeventos.sercotec.cl/Centro/Detalle?regionId=0">Agenda de actividades Centros de Desarrollo de Negocios </a></li>
+                <li><a href="https://www.rutadigital.cl" target="_blank" rel="noopener noreferrer">Ruta Digital </a></li>
+                <li><a href="https://pymesenlinea.cl" target="_blank" rel="noopener noreferrer">Pymes en Líneas</a></li>                
+              </ul>       
+      </div>
   </section>
+ <!-- PANTALLA: CAPACITACIONES -->
 
-  <!-- PANTALLA: NOSOTROS -->
+
+ <!-- PANTALLA: Nosotros -->
   <section class="menu-screen" id="screen-nosotros">
-    <button class="btn-back-main">
-      <span class="material-icons">arrow_back</span> Volver al menú principal
+       <button class="btn-back-main">
+      <span class="material-symbols-outlined align-middle"> arrow_back </span> Volver al menú principal
     </button>
 
-    <h2>Nosotros</h2>
-
-    <ul class="simple-list">
-      <li><a href="#">Página 1</a></li>
-      <li><a href="#">Página 2</a></li>
-      <li><a href="#">Página 3</a></li>
-      <li><a href="#">Página 4</a></li>
-      <li><a href="#">Página 5</a></li>
-      <li><a href="#">Página 6</a></li>
-      <li><a href="#">Página 7</a></li>
-      <li><a href="#">Página 8</a></li>
-    </ul>
+    <!--modulo CAPACITACIONES-->
+      <div class="module-menu-content">
+          <span class="title"><h2> Nosotros</h2> </span>  
+              <ul class="module-menu-content">
+                <li><a href="https://www.sercotec.cl/quienes-somos">Quienes somos</a></li>
+                <li><a href="https://www.sercotec.cl/oficinas">Canales de atención</a></li>
+                <li><a href="https://www.sercotec.cl/noticias">Noticias</a></li>
+                <li><a href="https://www.sercotec.cl/somosempresarias/" target="_blank" rel="noopener noreferrer">Somos Empresarias</a></li>
+                <li><a  href="https://www.sercotec.cl/sustentabilidad/">Sustentabilidad</a></li>
+                <li><a href="https://www.sercotec.cl/barrios-comerciales/" target="_blank" rel="noopener noreferrer">Barrios Comerciales</a></li>
+                <li><a href="https://www.sercotec.cl/preguntas-frecuentes/">Preguntas frecuentes</a></li>
+                <li><a href="#" class="text-decoration-none">Informes interactivos </a>
+                    <ul style="list-style: none;">
+                      <li><a href="https://explorador.sercotec.cl/" target="_blank" rel="noopener noreferrer">Explorador territorial</a></li>
+                      <li><a href="https://www.catastroferiaslibres.cl/" target="_blank" rel="noopener noreferrer">Catastro Ferias Libres</a></li>
+                    </ul>
+                </li>                                              
+              </ul>       
+      </div>
   </section>
+ <!-- PANTALLA: Nosotros -->
+
+
 
 </div>
    

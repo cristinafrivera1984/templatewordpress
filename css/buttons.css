@@ -6,7 +6,7 @@
     font-size: 1rem;
     padding: var(--btn-padding-sm);
     color: rgba(var(--white), 1);
-    background-color: rgba(var(--red-wp), 1);
+    background-color: rgba(var(--acento-red-dark-3), 1);
     transition: 0.3s;
   }
   
@@ -50,30 +50,30 @@
 
 
 /*ESTE LINK TBN AGREGARLO A KIT UI*/
-a.link-blue_01 {
+a.link-blue_01, button.link-blue_01 {
     color: rgba(var(--base-blue),1);
     font-size: var(--heading-small-mob);
     font-weight: 700;
 
  }
 
- a.link-blue_01:hover {
+ a.link-blue_01:hover, button.link-blue_01:hover {
     color: rgba(var(--base-blue-dark-3),1);
     font-weight: 700;
  }
 
- a.link-blue_01:active{
+ a.link-blue_01:active, button.link-blue_01:active {
     color: rgba(var(--font-color),1);
  } 
 
- a.link-blue_01:focus{
+ a.link-blue_01:focus, button.link-blue_01:focus {
    outline: none;
    background-color: rgba(var(--yellow-focus), 1);
    box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
    color: rgba(var(--font-color),1);
  } 
 
- a.link-blue_01:visited{
+ a.link-blue_01:visited, button.link-blue_01:visited {
     color: rgba(var(--link-visited),1);
  }
 
@@ -87,3 +87,7 @@ a.link-blue_01 {
 }
 
 /*ESTE LINK TBN AGREGARLO A KIT UI*/
+
+.white-space-fix, button.white-space-fix , a.white-space-fix {
+  white-space: nowrap!important;
+}

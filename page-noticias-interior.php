@@ -67,23 +67,23 @@ get_header();
 
               <div class="d-flex flex-row justify-content-between my-1 redes-desktop">
                 <p class="me-2">Comparte: </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en Whatsapp (se abre en una nueva pestaña)">
-                      <img class="icon-link me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp_2.svg" width="24" height="24" alt="Icono whatsapp">
+                  <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en Whatsapp (se abre en una nueva pestaña)">
+                      <img class="icon-link" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp_2.svg" width="24" height="24" alt="Icono whatsapp">
                   </a> 
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en Facebook (se abre en una nueva pestaña)">
-                      <img class="icon-link me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_facebook.svg" width="24" height="24" alt="Ícono Facebook">
+                  <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en Facebook (se abre en una nueva pestaña)">
+                      <img class="icon-link" src="<?php echo get_template_directory_uri(); ?>/img/icon_facebook.svg" width="24" height="24" alt="Ícono Facebook">
                   </a>  
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en Instagram (se abre en una nueva pestaña)">
-                      <img class="icon-link me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_instagram.svg" width="24" height="24" alt="Ícono Instagram">
+                  <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en Instagram (se abre en una nueva pestaña)">
+                      <img class="icon-link" src="<?php echo get_template_directory_uri(); ?>/img/icon_instagram.svg" width="24" height="24" alt="Ícono Instagram">
                   </a>  
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en X / Twitter(se abre en una nueva pestaña)">
-                      <img class="icon-link me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_twitter.svg" width="22" height="22" alt="Ícono X / Twitter">
+                  <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en X / Twitter(se abre en una nueva pestaña)">
+                      <img class="icon-link" src="<?php echo get_template_directory_uri(); ?>/img/icon_twitter.svg" width="22" height="22" alt="Ícono X / Twitter">
                   </a>           
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en Linkedin(se abre en una nueva pestaña)">
-                      <img class="icon-link me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_linkedin.svg" width="22" height="22" alt="Ícono Linkedin">
+                  <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Compatir noticia en Linkedin(se abre en una nueva pestaña)">
+                      <img class="icon-link" src="<?php echo get_template_directory_uri(); ?>/img/icon_linkedin.svg" width="22" height="22" alt="Ícono Linkedin">
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Compatir enlace de la noticia (se abre en una nueva pestaña)">
-                    <img class="icon-link me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_enlace.svg" width="24" height="24" alt="Ícono enlace">
+                  <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Compatir enlace de la noticia (se abre en una nueva pestaña)">
+                    <img class="icon-link" src="<?php echo get_template_directory_uri(); ?>/img/icon_enlace.svg" width="24" height="24" alt="Ícono enlace">
                   </a>                                       
               </div>
           </div>
@@ -142,8 +142,8 @@ get_header();
 </section>
 
 
-    <aside class="sidebar sidebar-news mt-4 mt-lg-0">
-        <h3 class="my-4">Últimas noticias</h3>
+    <aside class="sidebar sidebar-news">
+        <h3>Últimas noticias</h3>
         <div class="ultimas-noticias">
             <!--Ultimas 6 noticias-->
                   <div class="d-flex flex-row card-last-news">
@@ -177,19 +177,19 @@ get_header();
         <div class="my-xxl">  
             <h3 class="my-4">Síguenos en redes sociales:</h3>
             <div class="d-flex flex-row justify-content-start align-items-center gap-3">
-                    <a href="https://www.facebook.com/sercotec" target="_blank">
+                    <a class="social-link" href="https://www.facebook.com/sercotec" target="_blank" aria-label="Ir a Facebook de Sercotec (se abre en una nueva pestaña)">
                         <img class="icon-link" src="http://localhost/sercotec/wp-content/themes/sercotec/img/icon_facebook.svg" width="26" height="26" alt="Sercotec Facebook" title="Sercotec Facebook">
                     </a>
-                    <a href="https://www.instagram.com/sercotec_cl" target="_blank">
+                    <a class="social-link" href="https://www.instagram.com/sercotec_cl" target="_blank" aria-label="Ir a Instagram de Sercotec (se abre en una nueva pestaña)">
                         <img class="icon-link" src="http://localhost/sercotec/wp-content/themes/sercotec/img/icon_instagram.svg" width="26" height="26" alt="Sercotec Instagram" title="Sercotec Instagram">
                     </a>
-                    <a href="https://twitter.com/Sercotec_Chile" target="_blank">
-                        <img class="icon-link" src="http://localhost/sercotec/wp-content/themes/sercotec/img/icon_twitter.svg" width="22" height="23" alt="Sercotec Twitter" title="Sercotec Twitter">
+                    <a class="social-link" href="https://twitter.com/Sercotec_Chile" target="_blank" aria-label="Ir a X / Twitter de Sercotec (se abre en una nueva pestaña)">
+                        <img class="icon-link" src="http://localhost/sercotec/wp-content/themes/sercotec/img/icon_twitter.svg" width="22" height="23" alt="Sercotec Twitter" title="Sercotec Twitter" >
                     </a>
-                    <a href="https://www.youtube.com/user/CanalSERCOTEC" target="_blank">
+                    <a class="social-link" href="https://www.youtube.com/user/CanalSERCOTEC" target="_blank" aria-label="Ir a canal de Youtube de Sercotec (se abre en una nueva pestaña)">
                         <img class="icon-link" src="http://localhost/sercotec/wp-content/themes/sercotec/img/icon_youtube.svg" width="28" height="19" alt="Sercotec Youtube" title="Sercotec Youtube">
                     </a>
-                    <a href="https://cl.linkedin.com/company/sercotecchile" target="_blank">
+                    <a class="social-link" href="https://cl.linkedin.com/company/sercotecchile" target="_blank" aria-label="Ir a Linkedin de Sercotec (se abre en una nueva pestaña)">
                         <img class="icon-link" src="http://localhost/sercotec/wp-content/themes/sercotec/img/icon_linkedin.svg" width="24" height="25" alt="Sercotec Linkedin" title="Sercotec Linkedin">
                     </a>                        
                 </div>
