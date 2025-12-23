@@ -51,27 +51,19 @@ get_header();
                       <div class="me-3"> <img src="<?php echo get_template_directory_uri(); ?>/img/noticia-1-ejemplo.png"></div>
                       <div class=""> 
                         <span class="small-text me-3 date">29/08/2025</span>
-                       
+                        <a href="#" class="categoria">Los Lagos</a>
                         <h4><a href="">Firma de contratos de ayudas económicas para pymes tras tornado en Puerto..</a></h4>
                       </div>
                   </div>
+                  <div class="d-flex flex-row card-last-news">
+                      <div class="me-3"> <img src="<?php echo get_template_directory_uri(); ?>/img/noticia-1-ejemplo.png"></div>
+                      <div class=""> 
+                        <span class="small-text me-3 date">29/08/2025</span>
+                        <a href="#" class="categoria">Los Lagos</a>
+                        <h4><a href="">Firma de contratos de ayudas económicas para pymes tras tornado en Puerto..</a></h4>
+                      </div>
+                  </div>                                       
 
-                  <div class="d-flex flex-row card-last-news">
-                      <div class="me-3"> <img src="<?php echo get_template_directory_uri(); ?>/img/noticia-1-ejemplo.png"></div>
-                      <div class=""> 
-                        <span class="small-text me-3 date">29/08/2025</span>
-                        <a href="#" class="categoria">Los Lagos</p>
-                        <h4><a href="">Firma de contratos de ayudas económicas para pymes tras tornado en Puerto..</a></h4>
-                      </div>
-                  </div>
-                  <div class="d-flex flex-row card-last-news">
-                      <div class="me-3"> <img src="<?php echo get_template_directory_uri(); ?>/img/noticia-1-ejemplo.png"></div>
-                      <div class=""> 
-                        <span class="small-text me-3 date">29/08/2025</span>
-                        <a href="#" class="categoria">Los Lagos</p>
-                        <h4><a href="">Firma de contratos de ayudas económicas para pymes tras tornado en Puerto..</a></h4>
-                      </div>
-                  </div>
             <!--Ultimas 6 noticias-->
             <a href="#" class="link-blue_01 text-center">Ver todas las noticias </a>
         <!--SIGUENOS EN REDES SOCIALES-->

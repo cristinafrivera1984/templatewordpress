@@ -116,8 +116,7 @@ get_header();
             </div>
         </div>
         <div class="content-block">
-          <h1>Revisa las convocatorias disponibles en tu región:</h1>
-          <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjlydTdhdHFreHhyNnE0c2ZzbWIxZ3RwOTlmczRzZ2RxMThkcDdidyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1OrIIOIcRTDaNidc5p/giphy.gif" width="50%" height="50%">
+          <h3>Revisa las convocatorias disponibles en tu región:</h3>
         </div>
      </section>
  </div>
@@ -161,8 +160,7 @@ get_header();
             </div>
         </div>
         <div class="content-block">
-          <h1>Revisa las convocatorias disponibles en tu región:</h1>
-          <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjlydTdhdHFreHhyNnE0c2ZzbWIxZ3RwOTlmczRzZ2RxMThkcDdidyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1OrIIOIcRTDaNidc5p/giphy.gif" width="50%" height="50%">
+          <h2>Revisa las convocatorias disponibles en tu región:</h2>
         </div>
      </section>
     </section>
@@ -172,7 +170,7 @@ get_header();
       <div class="gray-box">
         <h3>Programas relacionados</h3>
           <ul class="square-list"> 
-              <li><a href="#">  Crece</a></li>
+              <li><a href="#">Crece</a></li>
               <li><a href="#">Pymes Globales</a></li>
               <li><a href="#">Negocios Digitales</a></li>
               <li><a href="#">Kit Digital – Ruta Digital</a></li>
@@ -184,7 +182,7 @@ get_header();
       </div>
      <div class="gray-box" style="margin: 70px 0 0 0; padding-bottom: 40px;">
                       <div style="position: relative;">
-                          <img style="position: absolute; top:-61px; right:45%;" src="<?php echo get_template_directory_uri(); ?>/img/icon_interrogacion.svg"> 
+                          <img style="position: absolute; top:-61px; right:45%;" src="<?php echo get_template_directory_uri(); ?>/img/icon_interrogacion.svg" role="presentation" alt=""> 
                       </div>
         <h3 class="text-center mt-3 pb-2">¿Tienes dudas?</h3>                
             <a href="" class="btn-primary rounded-pill text-decoration-none mx-auto">Comunícate con tu Punto Mipe <span class="material-symbols-outlined align-middle"> arrow_right_alt </span></a>

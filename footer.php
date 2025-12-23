@@ -18,8 +18,8 @@
 
         <div class="col-lg-4 col-md-6 my-2 d-flex justify-content-center">
             <div class="d-flex flex-row align-items-center">
-                <a href="https://www.selloee.cl" target="_blank"><img class="mx-2 my-1" src="<?php echo get_template_directory_uri(); ?>/img/icon-sello-excelencia-energetica.png" width="164"  height="51" alt="Sello de Excelencia Energética" title="Sello de Excelencia Energética"></a>
-                <a href="https://plataforma-indice.lab.gob.cl" target="_blank"><img class="mx-2 my-1" src="<?php echo get_template_directory_uri(); ?>/img/icon-sello-compromiso-innovacion.png" width="90" height="90" alt="Sello Compromiso con la Innovación" title="Sello Compromiso con la Innovación"></a>
+                <a href="https://www.selloee.cl" target="_blank" aria-label="Sitio web Sello de Excelencia Energética, abre en una nueva pestaña"><img class="mx-2 my-1" src="<?php echo get_template_directory_uri(); ?>/img/icon-sello-excelencia-energetica.png" width="164"  height="51" alt="Sello de Excelencia Energética" title="Sello de Excelencia Energética"></a>
+                <a href="https://plataforma-indice.lab.gob.cl" target="_blank" aria-label="Sitio web Sello Compromiso con la Innovación, abre en una nueva pestaña"><img class="mx-2 my-1" src="<?php echo get_template_directory_uri(); ?>/img/icon-sello-compromiso-innovacion.png" width="90" height="90" alt="Sello Compromiso con la Innovación" title="Sello Compromiso con la Innovación"></a>
             </div>
         </div>
         
@@ -31,39 +31,39 @@
           </div>
             <div class="d-flex gap-20 my-4">
                 <div>
-                    <a href="https://www.facebook.com/sercotec" target="_blank">
+                    <a href="https://www.facebook.com/sercotec" target="_blank" aria-label="Facebook de Sercotec, abre en una nueva pestaña">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_facebook.svg" width="30" height="30" alt="Sercotec Facebook" title="Sercotec Facebook">
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.instagram.com/sercotec_cl" target="_blank">
+                    <a href="https://www.instagram.com/sercotec_cl" target="_blank" aria-label="Instagram de Sercotec, abre en una nueva pestaña">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_instagram.svg" width="30" height="30" alt="Sercotec Instagram" title="Sercotec Instagram">
                     </a>
                 </div>
                 <div>
-                    <a href="https://twitter.com/Sercotec_Chile" target="_blank">
+                    <a href="https://twitter.com/Sercotec_Chile" target="_blank" aria-label="X / Twitter de Sercotec, abre en una nueva pestaña">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_twitter.svg" width="28" height="28" alt="Sercotec Twitter" title="Sercotec Twitter">
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.youtube.com/user/CanalSERCOTEC" target="_blank">
+                    <a href="https://www.youtube.com/user/CanalSERCOTEC" aria-label="Canal de Youtube de Sercotec, abre en una nueva pestaña" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_youtube.svg" width="30" height="30" alt="Sercotec Youtube" title="Sercotec Youtube">
                      </a>
                 </div>
                 <div>
-                    <a href="https://cl.linkedin.com/company/sercotecchile" target="_blank">
+                    <a href="https://cl.linkedin.com/company/sercotecchile" aria-label="Linkedin de Sercotec, abre en una nueva pestaña" target="_blank" >
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_linkedin.svg" width="30" height="30" alt="Sercotec Linkedin" title="Sercotec Linkedin">
                     </a> 
                 </div>
                 <div class="box-cont-footer">
                     <a href="https://www.sercotec.cl/contacto" target="_self">
-                        <img class="me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon-contactanos.svg" width="26" height="20" alt="Contáctanos" title="Contáctanos">Contáctanos
+                        <img class="me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon-contactanos.svg" width="26" height="20" alt="Ícono Contáctanos" title="Contáctanos">Contáctanos
                     </a>                     
                 </div>                                                    
             </div>
             <div class="box-cont-footer2"> 
                 <a href="https://www.sercotec.cl/contacto" target="_self">
-                    <img class="me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon-contactanos.svg" width="26" height="20" alt="Contáctanos" title="Contáctanos">Contáctanos
+                    <img class="me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon-contactanos.svg" width="26" height="20" alt="Ícono Contáctanos" title="Contáctanos">Contáctanos
                 </a> 
            </div>
 

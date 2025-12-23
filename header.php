@@ -13,19 +13,19 @@
     <div class="pre-header">
         <div class="d-flex justify-content-center flex-row justify-content-md-end align-items-center gap-3 mx-2">
             <p class="ph-word">Síguenos:</p>
-            <a href="https://www.facebook.com/sercotec" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/sercotec" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Sercotec, se abre en una nueva pestaña">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/icon_facebook.svg" width="26" height="26" alt="Sercotec Facebook" title="Sercotec Facebook">
             </a>
-            <a href="https://www.instagram.com/sercotec_cl" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/sercotec_cl" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Sercotec, se abre en una nueva pestaña">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/icon_instagram.svg" width="26" height="26" alt="Sercotec Instagram" title="Sercotec Instagram">
             </a>
-            <a href="https://twitter.com/Sercotec_Chile" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/Sercotec_Chile" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X de Sercotec, se abre en una nueva pestaña">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/icon_twitter.svg" width="22" height="23" alt="Sercotec Twitter" title="Sercotec Twitter">
             </a>
-            <a href="https://www.youtube.com/user/CanalSERCOTEC" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/user/CanalSERCOTEC" target="_blank" rel="noopener noreferrer" aria-label="Canal de Youtube de Sercotec, se abre en una nueva pestaña">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/icon_youtube.svg" width="28" height="19" alt="Sercotec Youtube" title="Sercotec Youtube">
             </a>
-            <a href="https://cl.linkedin.com/company/sercotecchile" target="_blank" rel="noopener noreferrer">
+            <a href="https://cl.linkedin.com/company/sercotecchile" target="_blank" rel="noopener noreferrer" aria-label="Linkedin de Sercotec, se abre en una nueva pestaña">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/icon_linkedin.svg" width="24" height="25" alt="Sercotec Linkedin" title="Sercotec Linkedin">
             </a>
             <a href="https://www.sercotec.cl/contacto" target="_self">
@@ -38,10 +38,10 @@
     <!--Inicio Header-->
     <div class="header-menu d-flex align-items-center justify-content-evenly">
         <a type="button" data-bs-toggle="modal" data-bs-target="#fullscreenMenuModal" class="d-flex flex-column menu-btn-header-wp" href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-burger.svg" width="39" height="19">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-burger.svg" width="39" height="19" role="presentation" alt="">
             MENÚ
         </a>
-        <a href="<?php echo site_url('/'); ?>">
+        <a href="<?php echo site_url('/'); ?>" aria-label="Enlace a inicio de sitio web">
             <img class="img-logo-header" src="<?php echo get_template_directory_uri(); ?>/img/logo-sercotec.svg" alt="Sercotec" width="145" height="74">
         </a>
             <ul class="menu-inicio">
@@ -557,7 +557,7 @@
          <!-- Botón que abre el menú (visible sólo en mobile) -->
           <button class="btn-mobile-menu btn-transparent">
             <a class="d-flex flex-column menu-btn-header-wp" href="#" aria-label="Abrir menú móvil">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon-burger.svg" width="39" height="19">    
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon-burger.svg" width="39" height="19" role="presentation" alt="">    
                 MENÚ
             </a>
           </button>
