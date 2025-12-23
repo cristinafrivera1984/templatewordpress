@@ -144,6 +144,33 @@ get_header();
                <section>
       <div class="content-block" style="margin-top: 48px;">
            <h2>¡Revisa estos videos!</h2>
+                <!--GABO: NUEVA FORMA-->
+                <div class="row">
+                  <div class="col-md-6">
+                      <div class="ratio ratio-16x9">
+                        <iframe
+                          class="rounded-3"
+                          src="https://www.youtube.com/embed/r8J6oi3afds"
+                          title="Video de YouTube"
+                          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen>
+                        </iframe>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="ratio ratio-16x9">
+                        <iframe
+                          class="rounded-3"
+                          src="https://www.youtube.com/embed/r8J6oi3afds"
+                          title="Video de YouTube"
+                          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen>
+                        </iframe>
+                      </div>
+                  </div>
+                </div>
+                <!--GABO: NUEVA FORMA-->
+
             <div class="d-flex flex-column flex-md-row gap-3">
               <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/r8J6oi3afds?si=c35_bQ0nXM5bQnXM5bC1MZ"

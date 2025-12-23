@@ -423,10 +423,10 @@ section div.modulo-cuestionario p {
 
 .gray-box h3 {
   font-size: var(--heading-medium-mob);
-  font-family: var( --font-family-sans);
-  color: rgba(var(--font-color), 1);
+font-family: var( --font-family-sans-slab);
+  color:rgba(var(--base-blue-dark-1), 1);
   line-height: normal;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0;
   margin-bottom: calc(var(--heading-medium-mob) * 0.7);
 }
@@ -991,3 +991,34 @@ h2.color-blue-dark-1 {
   min-height: 600px; /* fallback mientras carga */
 }
 /*IFRAME MODULO 3 PESTAÑAS*/
+
+
+/*ACORDEON PREGUNTAS FRECUENTES*/
+
+.accordion-button.preguntas:not(.collapsed) {
+  background-color: #F2F2F2;
+}
+/* quitar sombra azul solo en este acordeón */
+.accordion-button.preguntas:focus {
+  box-shadow: none;
+}
+
+/* mantener color en hover cuando está abierto */
+.accordion-button.preguntas:not(.collapsed):hover {
+  background-color: #F2F2F2;
+}
+.accordion .accordion-item:last-child {
+  border-bottom: 1px solid #dee2e6!important; /* o el color que uses */
+  border-radius: 0 0 8px 8px!important;
+}
+
+.accordion-button.preguntas:not(.collapsed) {
+  background-color: #F2F2F2;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-button.preguntas:not(.collapsed):last-child {
+  border-bottom: none!important;
+}
+
+/*ACORDEON PREGUNTAS FRECUENTES*/

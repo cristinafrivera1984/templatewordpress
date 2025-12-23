@@ -2,11 +2,6 @@
 get_header();
 ?>
 
-
-
-
-
-
 <main class="mx-2 container-oficinas-mob">
   <!--MIGAS DE PAN-->
   <div class="d-flex justify-content-between flex-column flex-md-row">
@@ -64,7 +59,7 @@ get_header();
               <p>Nuestros centros de atención e información -Puntos Mipe- te orientarán sobre Sercotec, sus fondos concursables, bases y requisitos, talleres, charlas y capacitaciones. </p>
               <section>
                 <div class="gray-box">
-                  <h2 class="color-blue-dark-1">Punto Mipe Valparaíso</h2>
+                  <h3 class="color-blue-dark-1">Punto Mipe Valparaíso</h3>
                   <p>
                     <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
                       phone_in_talk
@@ -72,7 +67,7 @@ get_header();
                     23242 5218 – 23242 5219 – + 569 54378663
                   </p>
                   <p>
-                    <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23">
+                    <img class="align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23" alt="ícono de whatsapp">
                     23242 5218 – 23242 5219 – + 569 54378663
                   </p>
                   <p>
@@ -97,7 +92,7 @@ get_header();
                     23242 5218 – 23242 5219 – + 569 54378663
                   </p>
                   <p>
-                    <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23">
+                    <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23" alt="ícono de whatsapp">
                     23242 5218 – 23242 5219 – + 569 54378663
                   </p>
                   <p>
@@ -279,13 +274,14 @@ get_header();
 
 
       <div class="map-oficina-wrap">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1IJhBqAzlQ9mQZ7WSaQn5UXNHh-A2Sn_m&ehbc=2E312F"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1IJhBqAzlQ9mQZ7WSaQn5UXNHh-A2Sn_m&ehbc=2E312F" title="Mapa de Oficinas Sercotec"
+      loading="lazy"></iframe>
       </div>
       <h2 class="fs-3">Resuelve tus dudas con el Punto Mipe</h2>
       <p>Nuestros centros de atención e información a emprendedores, emprendedoras, microempresarios y microempresarias te orientarán sobre Sercotec, sus fondos concursables, bases y requisitos, talleres, charlas y capacitaciones. </p>
       <section>
         <div class="gray-box">
-          <h2 class="color-blue-dark-1">Punto Mipe Valparaíso</h2>
+          <h3 class="color-blue-dark-1">Punto Mipe Valparaíso</h3>
           <p>
             <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
               phone_in_talk
@@ -293,7 +289,7 @@ get_header();
             23242 5218 – 23242 5219 – + 569 54378663
           </p>
           <p>
-            <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23">
+            <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23" alt="ícono Whatsapp">
             23242 5218 – 23242 5219 – + 569 54378663
           </p>
           <p>
@@ -310,7 +306,7 @@ get_header();
           </p>
         </div>
         <div class="gray-box">
-          <h2 class="color-blue-dark-1">Punto Mipe Valparaíso 2</h2>
+          <h3 class="color-blue-dark-1">Punto Mipe Valparaíso 2</h3>
           <p>
             <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
               phone_in_talk
@@ -318,7 +314,7 @@ get_header();
             23242 5218 – 23242 5219 – + 569 54378663
           </p>
           <p>
-            <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23">
+            <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23" alt="ícono Whatsapp">
             23242 5218 – 23242 5219 – + 569 54378663
           </p>
           <p>
@@ -347,12 +343,12 @@ get_header();
 <div class="container-fluid gray-box border border-0 rounded-0">
   <div class="row justify-content-center">
     <div class="col-lg-8 mt-3">
-      <h2 class="color-blue-dark-1"> <img class="me-1 align-middle" height="21" width="23" alt="Logo Centro de Desarrollo de Negocios" src="<?php echo get_template_directory_uri(); ?>/img/icon-isotipo-cdn.svg"> Encuentra tu Centro de Desarrollo de Negocios Sercotec de:
+      <h3 class="color-blue-dark-1"> <img class="me-1 align-middle" height="21" width="23" alt="Logo Centro de Desarrollo de Negocios" src="<?php echo get_template_directory_uri(); ?>/img/icon-isotipo-cdn.svg" alt="Logo Centros de Desarrollo de Negocios"> Encuentra tu Centro de Desarrollo de Negocios Sercotec de:
 
         <button type="button" class="border border-0 bg-transparent" data-bs-toggle="tooltip" data-bs-toggle="tooltip a la derecha" data-bs-placement="right" data-bs-title="Recibe asesoría experta, sin costo y permanente en el tiempo para potenciar tu negocio." aria-label="Recibe asesoría experta, sin costo y permanente en el tiempo para potenciar tu negocio.">
           <img class="me-1" height="30" width="30" alt="Ícono de información" src="<?php echo get_template_directory_uri(); ?>/img/icon-tooltip.svg">
         </button>
-      </h2>
+      </h3>
       <ul class="square-list">
         <li><a href="" class="text-decoration-underline"> Quillota</a></li>
         <li><a href="" class="text-decoration-underline"> Aconcagua</a></li>
@@ -363,11 +359,11 @@ get_header();
       </ul>
       <div class="my-xxl" style="border-bottom: 1px solid rgba(var(--grey-20), 1);"></div>
 
-      <h2 class="color-blue-dark-1"> Conoce tu dirección regional:
+      <h3 class="color-blue-dark-1"> Conoce tu dirección regional:
         <button type="button" class="border border-0 bg-transparent" data-bs-toggle="tooltip" data-bs-toggle="tooltip a la derecha" data-bs-placement="right" data-bs-title="Sercotec, a través de sus Direcciones Regionales, gestiona recursos e impulsa iniciativas locales." aria-label="Sercotec, a través de sus Direcciones Regionales, gestiona recursos e impulsa iniciativas locales.">
           <img class="me-1" height="30" width="30" alt="Ícono de información" src="<?php echo get_template_directory_uri(); ?>/img/icon-tooltip.svg">
         </button>
-      </h2>
+      </h3>
 
 
       <h3>Dirección Regional</h3>
