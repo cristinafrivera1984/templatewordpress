@@ -171,7 +171,7 @@ get_header();
 
             <p> Sercotec, a través de sus Direcciones Regionales, gestiona recursos e impulsa iniciativas locales. </p>
 
-              <h3>Dirección Regional</h3>
+              <h4>Dirección Regional</h4>
               <p>
                 <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
                   phone_in_talk
@@ -186,7 +186,7 @@ get_header();
                 Errázuriz 1178, piso 8, oficina 85. Valparaíso <span style="white-space: nowrap;" class="chips-main sucess-light">Visita previa coordinación telefónica</span>
               </p>
 
-              <h3>Oficina Provincial de San Felipe</h3>
+              <h4>Oficina Provincial de San Felipe</h4>
               <p>
                 <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
                   phone_in_talk
@@ -254,87 +254,87 @@ get_header();
   <!--MIGAS DE PAN-->
 
   <div class="container">
-  <div class="row justify-content-center main-content-oficinas">
-    <div class="col-lg-8 mb-4">
-      <h1>Oficinas</h1>
-      <div class="col-12 col-md-6">
-        <label for="..." class="form-label kit-gob">Selecciona tu región: </label>
-        <select class="form-select kit-gob" id="..." aria-describedby="validationServer04Feedback">
-          <option selected disabled value="">Selecciona</option>
-          <option value="1">...</option>
-        </select>
-      </div>
-      <h2 class="color-blue-dark-1 my-4">Sercotec se encuentra desplegado en todo el país. Aquí encontrarás nuestra información de contacto para:</h2>
-      <ul class="check-list">
-        <li>Resolver dudas sobre nuestro Servicio, sus financiamientos y capacitaciones </li>
-        <li>Recibir asesoría experta, sin costo y permanente en el tiempo</li>
-      </ul>
-
-      <p style="color:crimson; background-color:darksalmon; padding:20px 0; text-align:center; margin:0 0 30px 0;">acá abajo es lo que aparece cuando seleccionas la región con su info</p>
-
-
-      <div class="map-oficina-wrap">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1IJhBqAzlQ9mQZ7WSaQn5UXNHh-A2Sn_m&ehbc=2E312F" title="Mapa de Oficinas Sercotec"
-      loading="lazy"></iframe>
-      </div>
-      <h2 class="fs-3">Resuelve tus dudas con el Punto Mipe</h2>
-      <p>Nuestros centros de atención e información a emprendedores, emprendedoras, microempresarios y microempresarias te orientarán sobre Sercotec, sus fondos concursables, bases y requisitos, talleres, charlas y capacitaciones. </p>
-      <section>
-        <div class="gray-box">
-          <h3 class="color-blue-dark-1">Punto Mipe Valparaíso</h3>
-          <p>
-            <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
-              phone_in_talk
-            </span>
-            23242 5218 – 23242 5219 – + 569 54378663
-          </p>
-          <p>
-            <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23" alt="ícono Whatsapp">
-            23242 5218 – 23242 5219 – + 569 54378663
-          </p>
-          <p>
-            <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
-              location_on
-            </span>
-            Errázuriz 1178, piso 8, oficina 85. Valparaíso
-          </p>
-          <p>
-            <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
-              schedule
-            </span>
-            Lunes a jueves de 09:00 – 13:00 horas / 14:30 – 18:00 hrs. / Viernes de 09:00 – 12:30 / 14:30 – 16:00
-          </p>
+    <div class="row justify-content-center main-content-oficinas">
+      <div class="col-lg-8 mb-4">
+        <h1>Oficinas</h1>
+        <div class="col-12 col-md-6">
+          <label for="..." class="form-label kit-gob">Selecciona tu región: </label>
+          <select class="form-select kit-gob" id="..." aria-describedby="validationServer04Feedback">
+            <option selected disabled value="">Selecciona</option>
+            <option value="1">...</option>
+          </select>
         </div>
-        <div class="gray-box">
-          <h3 class="color-blue-dark-1">Punto Mipe Valparaíso 2</h3>
-          <p>
-            <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
-              phone_in_talk
-            </span>
-            23242 5218 – 23242 5219 – + 569 54378663
-          </p>
-          <p>
-            <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23" alt="ícono Whatsapp">
-            23242 5218 – 23242 5219 – + 569 54378663
-          </p>
-          <p>
-            <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
-              location_on
-            </span>
-            Errázuriz 1178, piso 8, oficina 85. Valparaíso
-          </p>
-          <p>
-            <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
-              schedule
-            </span>
-            Lunes a jueves de 09:00 – 13:00 horas / 14:30 – 18:00 hrs. / Viernes de 09:00 – 12:30 / 14:30 – 16:00
-          </p>
+        <h2 class="color-blue-dark-1 my-4">Sercotec se encuentra desplegado en todo el país. Aquí encontrarás nuestra información de contacto para:</h2>
+        <ul class="check-list">
+          <li>Resolver dudas sobre nuestro Servicio, sus financiamientos y capacitaciones </li>
+          <li>Recibir asesoría experta, sin costo y permanente en el tiempo</li>
+        </ul>
+
+        <p style="color:crimson; background-color:darksalmon; padding:20px 0; text-align:center; margin:0 0 30px 0;">acá abajo es lo que aparece cuando seleccionas la región con su info</p>
+
+
+        <div class="map-oficina-wrap">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1IJhBqAzlQ9mQZ7WSaQn5UXNHh-A2Sn_m&ehbc=2E312F" title="Mapa de Oficinas Sercotec"
+        loading="lazy"></iframe>
         </div>
-      </section>
-      <h4>Si tienes otras consultas, reclamos, sugerencias o felicitaciones escríbenos a:  </h4>
-      <a href="" class="btn-primary rounded-pill text-decoration-none"><span class="material-symbols-outlined align-middle">mail </span> Contáctanos </a>
+        <h2 class="fs-3">Resuelve tus dudas con el Punto Mipe</h2>
+        <p>Nuestros centros de atención e información a emprendedores, emprendedoras, microempresarios y microempresarias te orientarán sobre Sercotec, sus fondos concursables, bases y requisitos, talleres, charlas y capacitaciones. </p>
+        <section>
+          <div class="gray-box">
+            <h3 class="color-blue-dark-1">Punto Mipe Valparaíso</h3>
+            <p>
+              <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
+                phone_in_talk
+              </span>
+              23242 5218 – 23242 5219 – + 569 54378663
+            </p>
+            <p>
+              <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23" alt="ícono Whatsapp">
+              23242 5218 – 23242 5219 – + 569 54378663
+            </p>
+            <p>
+              <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
+                location_on
+              </span>
+              Errázuriz 1178, piso 8, oficina 85. Valparaíso
+            </p>
+            <p>
+              <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
+                schedule
+              </span>
+              Lunes a jueves de 09:00 – 13:00 horas / 14:30 – 18:00 hrs. / Viernes de 09:00 – 12:30 / 14:30 – 16:00
+            </p>
+          </div>
+          <div class="gray-box">
+            <h3 class="color-blue-dark-1">Punto Mipe Valparaíso 2</h3>
+            <p>
+              <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
+                phone_in_talk
+              </span>
+              23242 5218 – 23242 5219 – + 569 54378663
+            </p>
+            <p>
+              <img class=" align-middle me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon_whatapp.svg" width="23" height="23" alt="ícono Whatsapp">
+              23242 5218 – 23242 5219 – + 569 54378663
+            </p>
+            <p>
+              <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
+                location_on
+              </span>
+              Errázuriz 1178, piso 8, oficina 85. Valparaíso
+            </p>
+            <p>
+              <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
+                schedule
+              </span>
+              Lunes a jueves de 09:00 – 13:00 horas / 14:30 – 18:00 hrs. / Viernes de 09:00 – 12:30 / 14:30 – 16:00
+            </p>
+          </div>
+        </section>
+        <h4>Si tienes otras consultas, reclamos, sugerencias o felicitaciones escríbenos a:  </h4>
+        <a href="" class="btn-primary rounded-pill text-decoration-none"><span class="material-symbols-outlined align-middle">mail </span> Contáctanos </a>
+      </div>
     </div>
-  </div>
   </div>
 
 
@@ -366,7 +366,7 @@ get_header();
       </h3>
 
 
-      <h3>Dirección Regional</h3>
+      <h4>Dirección Regional</h4>
       <p>
         <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
           phone_in_talk
@@ -381,7 +381,7 @@ get_header();
         Errázuriz 1178, piso 8, oficina 85. Valparaíso <span style="white-space: nowrap;" class="chips-main sucess-light">Visita previa coordinación telefónica</span>
       </p>
 
-      <h3>Oficina Provincial de San Felipe</h3>
+      <h4>Oficina Provincial de San Felipe</h4>
       <p>
         <span class="material-symbols-outlined align-middle me-2 color-blue-dark-2">
           phone_in_talk

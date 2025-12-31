@@ -31,27 +31,27 @@
           </div>
             <div class="d-flex gap-20 my-4">
                 <div>
-                    <a href="https://www.facebook.com/sercotec" target="_blank" aria-label="Facebook de Sercotec, abre en una nueva pestaña">
+                    <a href="https://www.facebook.com/sercotec" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Sercotec, abre en una nueva pestaña">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_facebook.svg" width="30" height="30" alt="Sercotec Facebook" title="Sercotec Facebook">
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.instagram.com/sercotec_cl" target="_blank" aria-label="Instagram de Sercotec, abre en una nueva pestaña">
+                    <a href="https://www.instagram.com/sercotec_cl" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Sercotec, abre en una nueva pestaña">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_instagram.svg" width="30" height="30" alt="Sercotec Instagram" title="Sercotec Instagram">
                     </a>
                 </div>
                 <div>
-                    <a href="https://twitter.com/Sercotec_Chile" target="_blank" aria-label="X / Twitter de Sercotec, abre en una nueva pestaña">
+                    <a href="https://twitter.com/Sercotec_Chile" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter de Sercotec, abre en una nueva pestaña">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_twitter.svg" width="28" height="28" alt="Sercotec Twitter" title="Sercotec Twitter">
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.youtube.com/user/CanalSERCOTEC" aria-label="Canal de Youtube de Sercotec, abre en una nueva pestaña" target="_blank">
+                    <a href="https://www.youtube.com/user/CanalSERCOTEC" aria-label="Canal de Youtube de Sercotec, abre en una nueva pestaña" target="_blank" rel="noopener noreferrer">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_youtube.svg" width="30" height="30" alt="Sercotec Youtube" title="Sercotec Youtube">
                      </a>
                 </div>
                 <div>
-                    <a href="https://cl.linkedin.com/company/sercotecchile" aria-label="Linkedin de Sercotec, abre en una nueva pestaña" target="_blank" >
+                    <a href="https://cl.linkedin.com/company/sercotecchile" aria-label="Linkedin de Sercotec, abre en una nueva pestaña" target="_blank" rel="noopener noreferrer">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_linkedin.svg" width="30" height="30" alt="Sercotec Linkedin" title="Sercotec Linkedin">
                     </a> 
                 </div>

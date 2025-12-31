@@ -1,0 +1,138 @@
+/*Acá van los estilos de los container del template*/
+
+
+/*ESTILOS DE CONTAINER DE OFICINAS DESKTOP Y MOBILE*/
+/* Mobile first: por defecto se ve el container-mob y se oculta el de escritorio */
+.container-oficinas {
+  display: none;
+}
+
+.container-oficinas-mob {
+  display: block;
+}
+
+/* A partir de 768px (tablet/desktop) */
+@media (min-width: 768px) {
+  .container-oficinas {
+    display: block;
+  }
+
+  .container-oficinas-mob {
+    display: none;
+  }
+}
+/*ESTILOS DE CONTAINER DE OFICINAS DESKTOP Y MOBILE*/
+
+
+
+.gray-box {
+  background-color: rgba(var( --grey-5), 1);
+  padding: var(--padding-cards);
+  border-radius: var( --border-radius-cards-2);
+  border: 1px solid rgba(var(--grey-20), 1);
+  margin-bottom: var(--spacing-m);
+}
+
+.gray-box:last-child {
+  margin-bottom:20px!important;
+}
+
+
+
+.light-blue-box-oficinas {
+  background-color: rgba(var( --base-info-light-4), 0.6);
+  padding: var(--padding-cards);
+  border-radius: var( --border-radius-cards-2);
+  border: 1px solid rgba(var(--base-info-light-3), 1);
+  margin-bottom: var(--spacing-m);
+}
+
+
+
+/*Estilos de cuenta pública*/
+
+.content-cta-publica p {
+  font-size: var(--heading-small-mob);
+  color: rgba(var(--font-color), 1);
+  line-height:1.5;
+}
+
+
+@media (min-width: 768px) {
+  .content-cta-publica p {
+    font-size: 18px;
+
+  }
+}
+
+.content-cta-publica h1{
+  font-size: var( --heading-x-large-mob);
+  margin-bottom: calc(var( --heading-x-large-mob) * 0.5);
+  font-family: var( --font-family-sans-s);
+  line-height: normal;
+  color: rgba(var(--font-color), 1);
+}
+
+
+@media (min-width: 768px) {
+  .content-cta-publica h1 {
+  font-size: var( --heading-x-large);
+  margin-bottom: calc(var( --heading-x-large) * 0.5);
+    color: rgba(var(--font-color), 1);
+
+  }
+}
+
+.content-cta-publica h2{
+    font-size: var( --heading-large-mob);
+    margin-bottom: calc(var(--heading-large-mob) * 0.7);
+    font-family: var(--font-family-sans-slab);
+    line-height: normal;
+    color: rgba(var(--font-color), 1);
+}
+
+
+@media (min-width: 768px) {
+  .content-cta-publica h2 {
+    font-size: var( --heading-large);
+    margin-bottom: calc(var(--heading-large) * 0.7);
+    color: rgba(var(--font-color), 1);
+  }
+}
+
+.content-cta-publica h3{
+  font-size: var(--heading-medium-mob);
+  margin-bottom: calc(var( --heading-medium-mob) * 0.7);
+  font-family: var(--font-family-sans-slab);
+  line-height: normal;
+}
+
+
+@media (min-width: 768px) {
+  .content-cta-publica h3 {
+  font-size: var(--heading-medium);
+  margin-bottom: calc(var(--heading-medium) * 0.7);
+  }
+}
+
+.table-custom th,
+.table-custom td {
+  padding: 1rem 1.25rem;
+  font-weight: normal;
+}
+
+
+.table-custom tr {
+  border-bottom: 1px solid rgba(var(--grey-10), 1);
+}
+.table-custom tr:last-child {
+  border-bottom:none;
+}
+
+.table-custom th,
+.table-custom td:last-child {
+  border-bottom:none;
+}
+
+/*Estilos de cuenta pública*/
+

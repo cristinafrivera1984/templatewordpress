@@ -24,6 +24,41 @@
   }
 
 
+
+
+  .btn-white-01, a.btn-white-01{
+    width: 100%;
+    margin: 4px 2px;
+    border: none;
+    font-size: 1rem;
+    padding: var(--btn-padding-sm);
+    color: rgba(var(--base-blue-dark-1), 1);
+    background-color: white;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  @media only screen and (min-width: 576px) {
+    .btn-white-01, a.btn-white-01 {
+        width: fit-content;
+    }
+}
+  
+  .btn-white-01:hover {
+    background-color: white;
+    color: rgba(var(--base-blue-dark-3), 1);
+  }
+  
+  .btn-white-01:active {
+    background-color: white;
+    color: rgba(var(--base-blue-dark-4), 1);
+  }
+  
+  .btn-white-01:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+  }  
+
   /*CORREGIR EN KIT UI */
 
 .btn-primary, a.btn-primary {
@@ -54,7 +89,6 @@ a.link-blue_01, button.link-blue_01 {
     color: rgba(var(--base-blue),1);
     font-size: var(--heading-small-mob);
     font-weight: 700;
-
  }
 
  a.link-blue_01:hover, button.link-blue_01:hover {
@@ -85,6 +119,9 @@ a.link-blue_01, button.link-blue_01 {
       display: block;
     }
 }
+
+
+
 
 /*ESTE LINK TBN AGREGARLO A KIT UI*/
 

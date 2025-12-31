@@ -299,7 +299,16 @@ figcaption {
 /* IMAGEN */
 .card-image-link {
   display: block;
-  overflow: hidden; /* clave para el zoom */
+  overflow: hidden;
+  position: relative; /* necesario para el pseudo-elemento */
+}
+
+.card-image-link:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 4px; /* separa el borde del borde real */
+  border: 2px solid rgba(var(--yellow-focus), 1);
+  pointer-events: none;
 }
 
 .card-news img {
@@ -313,6 +322,7 @@ figcaption {
 .card-image-link:focus-visible img {
   transform: scale(1.05);
 }
+
 @media (prefers-reduced-motion: reduce) {
   .card-news img {
     transition: none;
@@ -419,8 +429,6 @@ figcaption {
   }
 }
 
-
-
 button.select-news-categoria {
   border: 1px solid rgba(var(--black), 1);
   border-radius: 0;
@@ -429,6 +437,13 @@ button.select-news-categoria {
   padding: 4px 16px;
   background-color: white;
 }
+
+
+button.select-news-categoria:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
 
 
 button.select-news-categoria.dropdown-toggle::after {
@@ -444,21 +459,95 @@ button.select-news-categoria.dropdown-toggle::after {
   vertical-align: middle;
 }
 
-
-
-
-
 .margin-btn-newsletter {
    margin-top:0 ;
 }
-
-
 @media only screen and (min-width: 768px) {
  .margin-btn-newsletter {
    margin-top:24px ;
     }
 }
-
-
-
 /*CARDS NOTICIAS PÁGINA GENERAL*/
+
+
+
+/*MÓDULO CONTACTANOS*/
+
+  .modulo-contacto{
+  width: 100%;
+    background-image:
+        /* capa de color (transparente para ver la textura) */
+        linear-gradient(rgb(0, 19, 90, 0.9), rgba(0, 59, 141, 0.9)),
+        /* degradado */
+        linear-gradient(to bottom, #00135A, #003B8D);
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  background-position: center, center;
+  padding: var(--padding-cards);
+  color: white;
+}
+
+
+@media (min-width: 768px) {
+  .modulo-contacto {
+    background-image:
+
+      /* capa de color (overlay SOLO para fondo) */
+      linear-gradient(
+        rgba(0, 19, 90, 0.9),
+        rgba(0, 59, 141, 0.9)
+      ),
+      /* degradado base */
+      linear-gradient(to bottom, #00135A, #003B8D);
+
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      repeat,
+      no-repeat;
+
+    background-size:
+      auto,
+      auto,
+      cover,
+      auto,
+      cover;
+
+    background-position:
+      left center,
+      right bottom,
+      center,
+      center,
+      center;
+  }
+}
+
+
+  .modulo-contacto p{
+    font-size: var(--heading-small-mob);
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+  .modulo-contacto p{
+    font-size: var(--heading-small);
+
+  }
+}
+
+
+.modulo-contacto img.contacto {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .modulo-contacto img.contacto{
+   display: block;
+   position: absolute;
+   bottom: -48px;
+   right:0;
+  }
+}
+/*MÓDULO CONTACTANOS*/

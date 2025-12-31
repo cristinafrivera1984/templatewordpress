@@ -106,7 +106,7 @@ get_header();
                     </a>
                   </span>
                 </div>
-                <h3 class="card-title">
+                <h2 class="card-title">
                   <a href="/detalle-noticia">
                     <!--🐧​Gabo: dejar hasta 78 caracteres por fa.-->
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et mi tincidunt.
@@ -130,7 +130,7 @@ get_header();
                     </a>
                   </span>
                 </div>
-                <h3 class="card-title">
+                <h2 class="card-title">
                   <a href="/detalle-noticia">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et mi tincidunt.
                   </a>
@@ -153,7 +153,7 @@ get_header();
                     </a>
                   </span>
                 </div>
-                <h3 class="card-title">
+                <h2 class="card-title">
                   <a href="/detalle-noticia">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et mi tincidunt.
                   </a>
@@ -176,7 +176,7 @@ get_header();
                     </a>
                   </span>
                 </div>
-                <h3 class="card-title">
+                <h2 class="card-title">
                   <a href="/detalle-noticia">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et mi tincidunt.
                   </a>
@@ -199,7 +199,7 @@ get_header();
                     </a>
                   </span>
                 </div>
-                <h3 class="card-title">
+                <h2 class="card-title">
                   <a href="/detalle-noticia">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et mi tincidunt.
                   </a>
@@ -222,7 +222,7 @@ get_header();
                     </a>
                   </span>
                 </div>
-                <h3 class="card-title">
+                <h2 class="card-title">
                   <a href="/detalle-noticia">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et mi tincidunt.
                   </a>
@@ -245,7 +245,7 @@ get_header();
                     </a>
                   </span>
                 </div>
-                <h3 class="card-title">
+                <h2 class="card-title">
                   <a href="/detalle-noticia">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et mi tincidunt.
                   </a>
@@ -268,7 +268,7 @@ get_header();
                     </a>
                   </span>
                 </div>
-                <h3 class="card-title">
+                <h2 class="card-title">
                   <a href="/detalle-noticia">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et mi tincidunt.
                   </a>

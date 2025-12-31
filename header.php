@@ -47,7 +47,7 @@
             <ul class="menu-inicio">
                 <li><a href="">Iniciar sesión</a></li>
                 <li><a href="">Nosotros</a></li>
-                <li><a href="">Oficinas</a></li>
+                <li><a href="<?php echo site_url('/oficinas'); ?>">Oficinas</a></li>
             </ul>
         <a class="btn-secondary rounded-pill text-decoration-none fw-semibold btn-open-post" href="#">
             <span class="material-symbols-outlined align-middle"> campaign </span> Postulaciones abiertas

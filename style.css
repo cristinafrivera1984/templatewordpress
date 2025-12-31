@@ -22,6 +22,7 @@
 @import url("./css/cards.css");
 @import url("./css/menu_main.css");
 @import url("./css/programa-fichas.css");
+@import url("./css/container.css");
 
 
 html {
@@ -366,18 +367,18 @@ section div.modulo-cuestionario p {
 
 
 /*TÍTULOS*/
-.main-content h1, .main-content-oficinas h1, .content-wrapper h1, .container-programa-mobile h1 {
+.main-content h1, .main-content-oficinas h1, .content-wrapper h1, .container-programa-mobile h1, .main-preguntas h1 {
   font-size: var( --heading-large-mob);
   font-family: var( --font-family-sans-s);
   color: rgba(var(--font-color), 1);
   line-height: normal;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0;
   margin-bottom: calc(var(--heading-large-mob) * 0.8);
 }
 
 @media (min-width: 800px) {
- .main-content h1, .main-content-oficinas h1 {
+ .main-content h1, .main-content-oficinas h1, .main-preguntas h1 {
     font-size: var( --heading-large);
     margin-bottom: calc(var(--heading-large) * 0.8);
   }
@@ -401,6 +402,25 @@ section div.modulo-cuestionario p {
     margin-bottom: calc(var(--heading-medium) * 0.7);
   }
 }
+
+
+ .gray-box h4{
+  font-size: var(--heading-small-mob);
+  font-family: var( --font-family-sans-slab);
+  color: rgba(var(--font-color), 1);
+  line-height: normal;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: calc(var(--heading-small-mob) * 0.7);
+}
+
+@media (min-width: 800px) {
+ .gray-box h4 {
+    font-size: var( --heading-small);
+    margin-bottom: calc(var( --heading-small) * 0.7);
+  }
+}
+
 
 
 .main-content h3, .main-content-oficinas h3 {
@@ -609,30 +629,6 @@ filter: brightness(0) saturate(100%) invert(8%) sepia(46%) saturate(4437%) hue-r
 /*ACA VAN LOS ESTILOS DE LAS CAJA DE COLUMNA DERECHA + EL SIDEBAR*/
 
 
-/*ESTILOS DE CONTAINER DE OFICINAS DESKTOP Y MOBILE*/
-
-/* Mobile first: por defecto se ve el container-mob y se oculta el de escritorio */
-.container-oficinas {
-  display: none;
-}
-
-.container-oficinas-mob {
-  display: block;
-}
-
-/* A partir de 768px (tablet/desktop) */
-@media (min-width: 768px) {
-  .container-oficinas {
-    display: block;
-  }
-
-  .container-oficinas-mob {
-    display: none;
-  }
-}
-
-
-/*ESTILOS DE CONTAINER DE OFICINAS DESKTOP Y MOBILE*/
 
 /*ACA VA EL RESTO DE ATOMOS*/
 
@@ -667,6 +663,33 @@ filter: brightness(0) saturate(100%) invert(8%) sepia(46%) saturate(4437%) hue-r
   top: 0.4rem;
 }
 
+
+.check-list-white {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check-list-white li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.check-list-white li::before {
+  content: "";
+  background-image: url(img/check-list-white.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  left: 0;
+  top: 0.4rem;
+}
+
+
+
 .square-list {
   list-style: none;
   padding: 0;
@@ -678,16 +701,32 @@ filter: brightness(0) saturate(100%) invert(8%) sepia(46%) saturate(4437%) hue-r
   padding-left: 1.2rem;
   margin-bottom: 0.9rem;
 }
+ 
 
-.square-list li a {
- color:rgba(var(--font-color), 1);
- text-decoration: none;
+ul.square-list li a:link {
+  color: rgba(var(--font-color), 1);
+  text-decoration: none;
 }
 
-.square-list li a:hover {
- color:rgba(var(--base-blue), 1);
- text-decoration: underline;
+ul.square-list li a:visited {
+  color: rgba(var(--link-visited), 1); /
 }
+
+ul.square-list li a:hover {
+  color: rgba(var(--base-blue), 1);
+  text-decoration: underline;
+}
+
+ul.square-list li a:active {
+  color: rgba(var(--base-blue-dark-3), 1);
+}
+
+ul.square-list li a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
+
 
 .square-list li::before {
   content: "";
@@ -700,6 +739,18 @@ filter: brightness(0) saturate(100%) invert(8%) sepia(46%) saturate(4437%) hue-r
   left: 0;
   top: 0.6rem;
 }
+
+.square-list li.is-active a {
+  color: rgba(var(--base-blue-dark-3), 1);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.square-list li.is-active a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* ==========  LIST ESTILO ========== */
 
@@ -720,18 +771,6 @@ filter: brightness(0) saturate(100%) invert(8%) sepia(46%) saturate(4437%) hue-r
   border-radius: 10px;
 }
 
-
-.gray-box {
-  background-color: rgba(var( --grey-5), 1);
-  padding: var(--padding-cards);
-  border-radius: var( --border-radius-cards-2);
-  border: 1px solid rgba(var(--grey-20), 1);
-  margin-bottom: var(--spacing-m);
-}
-
-.gray-box:last-child {
-  margin-bottom:20px!important;
-}
 
 
 
@@ -772,14 +811,6 @@ filter: brightness(0) saturate(100%) invert(8%) sepia(46%) saturate(4437%) hue-r
 
 
 
-
-.light-blue-box-oficinas {
-  background-color: rgba(var( --base-info-light-4), 0.6);
-  padding: var(--padding-cards);
-  border-radius: var( --border-radius-cards-2);
-  border: 1px solid rgba(var(--base-info-light-3), 1);
-  margin-bottom: var(--spacing-m);
-}
 
 
 /*
@@ -1019,6 +1050,46 @@ h2.color-blue-dark-1 {
 
 .accordion-button.preguntas:not(.collapsed):last-child {
   border-bottom: none!important;
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom: 1px solid #dee2e6!important; /* o el color que uses */
+}
+
+.accordion-item:last-of-type>.accordion-collapse {
+      border-bottom: 1px solid #dee2e6!important; /* o el color que uses */
+      border-radius: 0 0 8px 8px!important;
+}
+
+.accordion.preguntas a {
+  color: rgba(var(--base-blue-dark-2), 1);
+  font-weight: 700;
+}
+
+
+.accordion.preguntas a:hover {
+  color: rgba(var(--base-blue-dark-3),1);
+}
+
+.accordion.preguntas a:active  {
+    color: rgba(var(--font-color),1);
+}
+
+.accordion.preguntas a:focus  {
+   outline: none;
+   background-color: rgba(var(--yellow-focus), 1);
+   box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+   color: rgba(var(--font-color),1);
+}
+
+.accordion.preguntas a:visited   {
+    color: rgba(var(--link-visited),1);
+}
+
+
+button.accordion-button.preguntas {
+  font-weight:500;
+  font-size: var(--heading-small);
 }
 
 /*ACORDEON PREGUNTAS FRECUENTES*/
