@@ -1,15 +1,33 @@
 /*NOTICIAS INICIO*/
 
+
+/* Mobile first: por defecto se ve el container-mob y se oculta el de escritorio */
 .container-noticias-inicio {
-    background-color: #FFFCF4;
-    background-image: url("../img/background-globo.svg");
-    background-position: 3% 9%;
-    background-size: 282px 282px;
-    background-repeat: no-repeat;
-    font-family: var(--font-family-sans-s);
-  
+  display: none;
+  background-color: #FFFCF4;
+  background-image: url("../img/background-globo.svg");
+  background-position: 3% 9%;
+  background-size: 282px 282px;
+  background-repeat: no-repeat;
+  font-family: var(--font-family-sans-s);
+}
+
+.container-noticias-inicio-mob {
+  display: block;
+}
+
+/* A partir de 834px , referencia iPad Pro 11 (tablet/desktop) */
+@media (min-width: 834px) {
+  .container-noticias-inicio {
+    display: block;
   }
-  
+
+  .container-noticias-inicio-mob {
+    display: none;
+  }
+}
+
+
   .container-noticias-inicio .module-news-index {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -95,6 +113,7 @@
     /*padding: 12px 0 8px 0;*/
     margin: 0;
     font-weight: normal;
+    font-family: var(--font-family-sans-s);
   }
   
   /*NOTICIAS INICIO*/
@@ -462,7 +481,7 @@ button.select-news-categoria.dropdown-toggle::after {
 .margin-btn-newsletter {
    margin-top:0 ;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 540px) {
  .margin-btn-newsletter {
    margin-top:24px ;
     }

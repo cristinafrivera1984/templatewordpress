@@ -42,7 +42,7 @@ $historicos = new WP_Query([
 ]);
 ?>
 
-<section class="page-historicos">
+<section class="page-historicos my-2 my-md-5">
 <div class="container content-cta-publica">
   <div class="row">    
   <h3 class="color-blue-dark-1">Encuentra nuestras Cuentas Públicas Participativas anteriores aquí </h3>

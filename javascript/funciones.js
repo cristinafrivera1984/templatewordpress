@@ -311,6 +311,76 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+//Calugas Enlaces institucionales Inicio Mobile
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.getElementById("slider-calugas-mobile-ei");
+  const prevBtn = document.getElementById("prevBtnMobile-ei");
+  const nextBtn = document.getElementById("nextBtnMobile-ei");
+
+  const pages = slider.children.length;
+  let currentPage = 0;
+
+  // ⚡ Configura ancho del slider y flex de cada página dinámicamente
+  slider.style.width = `${pages * 100}%`;
+  Array.from(slider.children).forEach(page => {
+    page.style.flex = `0 0 ${100 / pages}%`;
+  });
+
+  function updateSlider() {
+    const wrapperWidth = slider.closest(".slider-wrapper-mobile").offsetWidth;
+    slider.style.transform = `translateX(-${currentPage * wrapperWidth}px)`;
+
+    // Actualiza estado de botones
+    prevBtn.disabled = currentPage === 0;
+    nextBtn.disabled = currentPage === pages - 1;
+
+    prevBtn.setAttribute("aria-disabled", prevBtn.disabled);
+    nextBtn.setAttribute("aria-disabled", nextBtn.disabled);
+  }
+
+  // Flechas
+  prevBtn.addEventListener("click", () => {
+    if (currentPage > 0) {
+      currentPage--;
+      updateSlider();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentPage < pages - 1) {
+      currentPage++;
+      updateSlider();
+    }
+  });
+
+  // Swipe táctil
+  let startX = 0;
+  slider.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+  slider.addEventListener("touchend", e => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if (diff > 50 && currentPage > 0) {
+      currentPage--;
+      updateSlider();
+    } else if (diff < -50 && currentPage < pages - 1) {
+      currentPage++;
+      updateSlider();
+    }
+  });
+
+  // Actualiza slider al cambiar tamaño
+  window.addEventListener("resize", updateSlider);
+
+  // Inicializa
+  updateSlider();
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const sidebarMenu = document.getElementById('sidebarMenu');
     if (!sidebarMenu) {
@@ -426,13 +496,39 @@ document.addEventListener("DOMContentLoaded", () => {
 });
  
 
+
+//Funciones para modal de video postulacion
+document.addEventListener('DOMContentLoaded', function () {
+
   const modalVideo = document.getElementById('modalVideoPostulacion');
+
+  if (!modalVideo) return; // 👈 clave
+
   const video = modalVideo.querySelector('video');
 
-  modalVideo.addEventListener('hidden.bs.modal', () => {
+  if (!video) return; // 👈 por si es iframe
+
+  modalVideo.addEventListener('hidden.bs.modal', function () {
     video.pause();
     video.currentTime = 0;
   });
+
+});
+
+//Funciones para modal de video quienes somos
+  const modalVideo = document.getElementById('modalVideoQuienes');
+
+  if (!modalVideo) return; // 👈 clave
+
+  const iframe = modalVideo.querySelector('iframe');
+  const iframeSrc = iframe.src;
+
+  modalVideo.addEventListener('hidden.bs.modal', () => {
+    iframe.src = '';
+    iframe.src = iframeSrc;
+  });
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -451,6 +547,114 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.querySelector('.track');
+  const slides = document.querySelectorAll('.slide');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+
+  let index = 0;
+
+  function update() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    prev.disabled = index === 0;
+    next.disabled = index === slides.length - 1;
+  }
+
+  prev.addEventListener('click', () => {
+    index--;
+    update();
+  });
+
+  next.addEventListener('click', () => {
+    index++;
+    update();
+  });
+
+  update();
+});
+ 
+ 
+ 
+
+
+
+ const carouselEl = document.getElementById('puntosCarousel');
+  const carousel = new bootstrap.Carousel(carouselEl);
+  const slides = carouselEl.querySelectorAll('.carousel-item');
+  const total = slides.length;
+
+  carouselEl.querySelectorAll('.slider-arrow.next').forEach(btn => {
+    btn.addEventListener('click', () => carousel.next());
+  });
+
+  carouselEl.querySelectorAll('.slider-arrow.prev').forEach(btn => {
+    btn.addEventListener('click', () => carousel.prev());
+  });
+
+  carouselEl.addEventListener('slid.bs.carousel', () => {
+    const activeIndex = [...slides].findIndex(s => s.classList.contains('active')) + 1;
+
+    carouselEl.querySelectorAll('.counter').forEach(c => {
+      c.innerHTML = `<strong>${activeIndex}</strong> / ${total}`;
+    });
+
+    carouselEl.querySelectorAll('.slider-arrow.prev').forEach(b => {
+      b.disabled = activeIndex === 1;
+    });
+
+    carouselEl.querySelectorAll('.slider-arrow.next').forEach(b => {
+      b.disabled = activeIndex === total;
+    });
+  });
+
+
+
+
+
+
+
+//buscador de header:
+document.addEventListener('DOMContentLoaded', () => {
+  const modalEl = document.getElementById('searchModal');
+  if (!modalEl) return;
+
+  const searchInput = document.getElementById('searchInput');
+  const searchError = document.getElementById('searchError');
+  const form = modalEl.querySelector('form');
+
+  // Foco automático
+modalEl.addEventListener('shown.bs.modal', () => {
+  setTimeout(() => {
+    searchInput.focus();
+  }, 50);
+});
+
+  // Reset al cerrar
+  modalEl.addEventListener('hidden.bs.modal', () => {
+    form.reset();
+    searchInput.classList.remove('is-error');
+    searchError.hidden = true;
+  });
+
+  // Validación simple
+  form.addEventListener('submit', (e) => {
+    if (!searchInput.value.trim()) {
+      e.preventDefault();
+      searchInput.classList.add('is-error');
+      searchError.hidden = false;
+      searchInput.focus();
+    }
+  });
+});
+
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('searchInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
 
 
 });

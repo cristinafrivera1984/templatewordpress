@@ -8,8 +8,19 @@
     color: rgba(var(--white), 1);
     background-color: rgba(var(--acento-red-dark-3), 1);
     transition: 0.3s;
+    display: block;
+    text-align: center;
+    text-decoration: none;
   }
   
+ @media only screen and (min-width: 576px) {
+   .btn-red-wp, a.btn-red-wp{
+        width: fit-content;
+    }
+}
+  
+
+
   .btn-primary:hover {
     background-color: rgba(var(--base-blue-dark-3), 1);
   }

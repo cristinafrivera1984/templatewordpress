@@ -263,7 +263,7 @@ get_header();
 </section>
 <!-- HTML Calugas Mobile -->
 
-<!--Noticias-->
+<!--Noticias Escritorio-->
 <section class="">
     <div class="container-noticias-inicio">
         <div class="mx-auto" style="max-width: 1280px; padding: 20px 0;">
@@ -300,126 +300,213 @@ get_header();
                 </div>
 
             </div>
+             <a href="<?php echo site_url('/noticias'); ?>" class="btn-red-wp rounded-pill my-4 mx-auto">Ver todas las noticias</a>
         </div>
     </div>
     <!--NOTICIAS INICIO-->
 </section>
-<!--Noticias-->
+<!--Noticias Escritorio-->
 
-<div class="container container-enlaces-inst">
-    <!--ENLACES Mobile-->
-    <section>
-        <div class="container-ei-mobile">
-            <div class="glide-carousel-inicioenlaces-mob my-4">
-                <h1 class="text-center my-4">Enlaces Institucionales</h1>
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide" style="width:260px!important;">
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Atención ciudadana
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Gobierno Transparente
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="glide__slide" style="width:260px!important;">
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Solicitud de información Ley de Transparencia
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Solicitud de audiencia Ley de Lobby
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="glide__slide" style="width:260px!important;">
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Información presupuestaria y financiera
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Participación Ciudadana
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="glide__slide" style="width:260px!important;">
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Cuenta Pública Gestión 2023
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Integridad Institucional
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="glide__slide" style="width:260px!important;">
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Programas y servicios digitalizados
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Concursos Públicos
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="glide__slide" style="width:260px!important;">
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Estudio Emprendimiento Femenino 2023
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="link-enlaces-mob">
-                                <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
-                                    <p>
-                                        Información presupuestaria y financiera
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+
+<!--Noticias Mobile-->
+<section>
+    <div class="container-noticias-inicio-mob mb-4 mx-2">
+        <div class="sidebar-carrusel-mobile">
+            <div id="newsCarousel" class="carousel slide mb-xl" data-bs-ride="false" aria-label="Carrusel de noticias">
+
+              <!-- Dots -->
+              <div class="carousel-indicators carousel-indicators-place mb-4">
+                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Noticia 1"></button>
+                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Noticia 2"></button>
+                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Noticia 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="card-last-news-mobile p-1">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/img-card-noticia.jpg" class="card-img-top" alt="Imagen Noticia 1">
+                    <div class="card-body">
+                      <div class="d-flex flex-row align-items-center justify-content-between mt-2">
+                          <span class="small-text date">29/08/2025</span>
+                          <a href="#" class="categoria">Categoria</a>
+                      </div>
+                    
+                      <h4 class="card-title mt-2">
+                        <a href="#">Firma de contratos de ayudas económicas para pymes...</a>
+                      </h4>
+                    </div>
+                  </div>
                 </div>
-                <div class="glide__bullets mobile d-flex justify-content-center my-2" data-glide-el="controls[nav]">
-                    <button class="glide__bullet mobile left" data-glide-dir="<"></button>
-                    <button class="glide__bullet mobile right" data-glide-dir=">"></button>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="card-last-news-mobile p-1">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/img-card-noticia-2.jpg" class="card-img-top" alt="Imagen Noticia 1">
+                    <div class="card-body">
+                      <div class="d-flex flex-row align-items-center justify-content-between mt-2">
+                          <span class="small-text date">29/08/2025</span>
+                          <a href="#" class="categoria">Categoria</a>
+                      </div>
+                    
+                      <h4 class="card-title mt-2">
+                        <a href="#">Firma de contratos de ayudas económicas para pymes...</a>
+                      </h4>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="card-last-news-mobile p-1">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/img-card-noticia-3.jpg" class="card-img-top" alt="Imagen Noticia 1">
+                    <div class="card-body">
+                      <div class="d-flex flex-row align-items-center justify-content-between mt-2">
+                          <span class="small-text date">29/08/2025</span>
+                          <a href="#" class="categoria">Categoria</a>
+                      </div>
+                    
+                      <h4 class="card-title mt-2">
+                        <a href="#">Firma de contratos de ayudas económicas para pymes...</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Controles opcionales (flechas) -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
             </div>
         </div>
-    </section>    
-    <!--ENLACES Mobile-->
+         <a href="<?php echo site_url('/noticias'); ?>" class="btn-red-wp rounded-pill my-4">Ver todas las noticias</a>
+    </div>
+</section>
+<!--Noticias Mobile-->
+
+
+<div class="container container-enlaces-inst">
+        <!-- HTML Enlaces Institucionales Mobile -->
+        <section>
+
+
+            <div class="slider-container-mobile">
+             <h1 class="text-center my-2 pt-4 mt-4 mb-4">Enlaces <br> Institucionales</h1>
+            <div class="slider-wrapper-mobile">
+            <div class="slider-mobile" id="slider-calugas-mobile-ei">
+
+                <!-- Página 1 -->
+                <div class="page">
+                    <!-- caluga 1 Atención Ciudadana -->
+                    <div class="slide-mobile">
+                    <a href="<?php echo site_url('/oficinas'); ?>" id="caluga_canales_oficiales_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir a página Atención Ciudadana de Sercotec, página de oficinas de atención, se abre en la misma pestaña">
+                        <img 
+                        src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/01_ei_atencion.svg"
+                        alt=""  width="140" height="125" role="presentation">
+                    </a>
+                    </div>
+                    <!-- caluga 2 Gobierno Transparente  -->
+                    <div class="slide-mobile">
+                    <a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=AH012" id="caluga_cdn_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio Portal de Transparencia Sercotec, se abre en una nueva pestaña">
+                        <img 
+                        src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/02_ei_gob_transparente.svg"
+                        alt=""  width="140" height="125" role="presentation">
+                    </a>
+                    </div>
+
+                    <!-- caluga 3 Solicitud de información Ley de Transparencia -->
+                    <div class="slide-mobile">
+                    <a href="https://www.portaltransparencia.cl/PortalPdT/ingreso-sai-v2?idOrg=58300" id="caluga_barrios_mob" target="_blank" rel="noopener noreferrer" aria-label="Ir al sitio Portal de Transparencia, Solicitud de información Ley de Transparencia, se abre en una nueva pestaña">
+                    <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/03_ei_sol_transparencia.svg" alt=""  width="140" height="125" role="presentation">
+                    </a>          
+                    </div>
+                    <!-- caluga 4 Solicitud de audiencia Ley de Lobby -->
+                    <div class="slide-mobile">
+                    <a href="https://www.leylobby.gob.cl/admin/auth/prelogin?redirect_int=https://www.leylobby.gob.cl/solicitud/audiencia/403" id="caluga_sustentabilidad_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir Plataforma Ley de Lobby, se abre en una nueva pestaña">
+                <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/04_ei_ley_lobby.svg" alt=""  width="140" height="125" role="presentation">
+                    </a>
+                    </div>
+                </div>
+
+                <!-- Página 2 -->
+                <div class="page">
+                    <!-- caluga 5 Información presupuestaria y financiera -->
+                    <div class="slide-mobile">
+                    <a href="<?php echo site_url('/descargas'); ?>" id="caluga_pymes_en_linea_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir página interior de Información presupuestaria y financiera de Sercotec, se abre en la misma pestaña">
+                <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/05_ei_presupuesto.svg" alt=""  width="140" height="125" role="presentation">                
+                    </a>
+                    </div>
+                    <!-- caluga 6 Participación ciudadana-->
+                    <div class="slide-mobile">
+                    <a href="https://www.sercotec.cl/participacion-ciudadana" id="caluga_portal_capacitacion_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Participación ciudadana de Sercotec, se abre en una nueva pestaña">
+                    <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/06_ei_participacion_ciudadana.svg" alt=""  width="140" height="125" role="presentation">    
+                    </a>
+                    </div>
+                    <!-- caluga 7 Cuenta pública Gestión 2024-->
+                    <div class="slide-mobile">
+                    <a href="<?php echo site_url('/cuenta-publica-2024'); ?>" id="caluga_ruta_digital_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir página interior de Cuenta pública Gestión 2024 de Sercotec, se abre la misma pestaña">
+                        <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/07_ei_cta_publica_2024.svg" alt=""  width="140" height="125" role="presentation"> 
+                    </a>
+                    </div>
+                    <!-- caluga 8 Integridad Institucional-->
+                    <div class="slide-mobile">
+                    <a href="https://sites.google.com/sercotec.cl/integridad-institucional" id="caluga_asesoria_legal_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir al sitio de Integridad Institucional de Sercotec, se abre en una nueva pestaña">
+                        <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/08_ei_integridad_institucional.svg" alt=""  width="140" height="125" role="presentation"> 
+                    </a>
+                    </div>
+                </div>
+
+                    <!-- Página 3 -->
+                    <div class="page">
+                        <!-- caluga 9 Programas y servicios digitalizados-->
+                        <div class="slide-mobile">
+                        <a href="<?php echo site_url('/programas-y-servicios-digitalizados'); ?>" id="caluga_explorador_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir la página interior de Programas y servicios digitalizados de Sercotec, se abre la misma pestaña">
+                            <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/09_ei_programas_digitalizados.svg" alt=""  width="140" height="125" role="presentation">
+                        </a>
+                        </div>
+                        <!-- caluga 10 Concursos publicos-->
+                        <div class="slide-mobile">
+                        <a href="<?php echo site_url('/concursos-publicos2'); ?>" id="caluga_somos_empresarias_mob" target="_self" rel="noopener noreferrer"  aria-label="Ir la página interior de Concursos públicos de Sercotec, se abre la misma pestaña">
+                        <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/10_ei_concursos_publicos.svg" alt=""  width="140" height="125" role="presentation">
+                        </a>
+                        </div>
+                        <!-- caluga 11 Estudio Emprendimiento Femenino 2023-->
+                        <div class="slide-mobile">
+                        <a href="https://www.sercotec.cl/wp-content/uploads/2024/12/Estudio-de-emprendimiento-y-microempresa_v2.pdf" id="caluga_concursos_publicos_mob" target="_blank" rel="noopener noreferrer"  aria-label="Ir a PDF de Estudio Emprendimiento Femenino 2023 de Sercotec, se abre en nueva pestaña">
+                        <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/11_ei_estudios_empren_femenino.svg" alt=""  width="140" height="125" role="presentation">
+                        </a>
+                        </div>
+                        <!-- caluga 12 Diagnóstico mujeres beneficiaras 2023 / 2024 Capital Semilla y Abeja-->
+                        <div class="slide-mobile">
+                        <a href="https://www.sercotec.cl/wp-content/uploads/2025/11/diagnostico_mujeres_Emprende_2023_2024_genero.pdf" id="caluga_canales_oficiales_mob_2" target="_blank" rel="noopener noreferrer"  aria-label="Ir a PDF de Diagnóstico mujeres beneficiaras 2023 / 2024 Capital Semilla y Abeja de Sercotec, se abre en nueva pestaña">
+                        <img  src="<?php echo get_template_directory_uri(); ?>/img/enlaces-institucionales-mob/12_ei_diagnostico_mujeres_beneficiaras.svg" alt=""  width="140" height="125" role="presentation">
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flechas -->
+            <div class="slider-arrows" style="text-align:center; margin:20px 0;">
+                <button class="arrow prev" id="prevBtnMobile-ei" aria-label="Calugas anteriores" aria-disabled="true">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_left.svg" width="40" height="40" alt="Anterior">
+                </button>
+                <button class="arrow next" id="nextBtnMobile-ei" aria-label="Calugas siguientes" aria-disabled="false">
+                <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/glide_arrow_right.svg" width="40" height="40" alt="Siguiente">
+                </button>
+            </div>
+            </div>
+        </section>
+        <!-- HTML Calugas Mobile -->    
+
     <!--ENLACES Escritorio-->
     <section> 
         <div class="container-ei-desktop">
@@ -449,7 +536,7 @@ get_header();
                     </a>
                 </div>
                 <div class="link-enlaces">
-                    <a href="https://www.sercotec.cl/descargas/" target="_self">
+                    <a href="<?php echo site_url('/descargas'); ?>" target="_self">
                         <p> Información presupuestaria y financiera</p>
                     </a>
                 </div>
@@ -458,9 +545,9 @@ get_header();
                         <p>Participación ciudadana</p>
                     </a>
                 </div>
-                <div class="link-enlaces">
-                    <a href="https://www.sercotec.cl/cuenta-publica-de-la-gestion-2022" target="_self">
-                        <p> Cuenta pública Gestión 2023</p>
+                <div class="link-enlaces"> 
+                    <a href="<?php echo site_url('/cuenta-publica/cuenta-publica-2024/'); ?>" target="_self">
+                        <p> Cuenta pública Gestión 2024</p>
                     </a>
                 </div>
                 <div class="link-enlaces">
@@ -469,7 +556,7 @@ get_header();
                     </a>
                 </div>
                 <div class="link-enlaces">
-                    <a href="https://www.sercotec.cl/programas-y-servicios-digitalizados/" target="_self">
+                    <a href="<?php echo site_url('/programas-y-servicios-digitalizados'); ?>" target="_self">
                         <p>Programas y servicios digitalizados</p>
                     </a>
                 </div>
@@ -479,7 +566,7 @@ get_header();
                     </a>
                 </div>
                 <div class="link-enlaces">
-                    <a href="https://www.sercotec.cl/concursos-publicos2/" target="_self">
+                    <a href="<?php echo site_url('/concursos-publicos2'); ?>" target="_self">
                         <p>Concursos públicos</p>
                     </a>
                 </div>

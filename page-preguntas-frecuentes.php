@@ -199,7 +199,21 @@ get_header();
         </section> 
         <!--acordeon final-->
     </div>
-</div>
+  </div>
+
+  <div class="row justify-content-center" style="margin-top: 56px;">
+    <div class="col-sm-12 col-md-4">
+      <div class="gray-box">
+        <div style="position: relative;">
+            <img style="position: absolute; top:-61px; right:45%;" src="<?php echo get_template_directory_uri(); ?>/img/icon_interrogacion.svg" role="presentation" alt=""> 
+        </div>
+          <h3 class="text-center mt-3 pb-2">¿No encontraste lo que buscabas? </h3>             
+          <a  href="<?php echo site_url('/contacto'); ?>" class="btn-primary rounded-pill text-decoration-none mx-auto"> ¡Escríbenos!
+            <span class="material-symbols-outlined align-middle"> arrow_right_alt </span>
+          </a>
+      </div>
+    </div>
+  </div>
 
   
 
