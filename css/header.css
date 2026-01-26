@@ -86,6 +86,14 @@ header.wp-header .header-menu-mob a.search-btn-header-wp span.search-icon {
   font-size: 2rem;
   color: rgba(var(--font-color), 1);
 }
+
+header.wp-header .header-menu-mob button.search-btn-header-wp span.search-icon {
+  font-size: 2rem;
+  color: rgba(var(--font-color), 1);
+}
+
+
+
 /*Header Menu Tablet - Mobile 📱 */
 
 /*Header Menu Escritorio 🖥️ */

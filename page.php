@@ -3,7 +3,7 @@ get_header();
 ?>
 
 
-<main class="container my-1">
+<main class="container container-programas my-1">
   <!--MIGAS DE PAN--> 
     <div class="d-flex justify-content-between flex-column flex-md-row">           
       <div class="breadcrumbs flex-grow-1">
@@ -135,6 +135,9 @@ get_header();
                 <ul class="check-list">
                     <li>$350.000 CLP para asistencia técnica, capacitación y marketing para promover el negocio en la era digital.</li>
                     <li>Y 2.000.000 CLP para la adquisición de máquinas, equipos y herramientas digitales, para fortalecer la gestión interna y los procesos de venta del almacén.</li>
+                </ul>
+                <ul>
+                  <li>este es un test</li>
                 </ul>
         </div>
           <div class="content-block">

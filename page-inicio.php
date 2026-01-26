@@ -85,9 +85,17 @@ get_header();
                 <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/02_barrios_desktop_glide.svg" width="240" height="154" alt="Barrios Comerciales de Sercotec">
             </a>
         </div>
+        <!--Glide #3 Cooperativas-->
+        <div class="slide">
+            <a href="<?php echo site_url('/cooperativas'); ?>" id="caluga_cooperativas" target="_self" rel="noopener noreferrer"  aria-label="Ir al sitio de Sustentabilidad de Sercotec (se abre en una nueva pestaña)">
+                 <img src="<?php echo get_template_directory_uri(); ?>/img/mini-carousel/cooperativas_desktop.svg" width="240" height="154" alt="Sustentabilidad de Sercotec">
+            </a>
+        </div>
+
         <!--Glide #3 Sustentabilidad-->
         <div class="slide">
-            <a href="https://www.sercotec.cl/sello-impacta-sustentable/" id="caluga_sustentabilidad" target="_self" rel="noopener noreferrer"  aria-label="Ir al sitio de Sustentabilidad de Sercotec (se abre en una nueva pestaña)">
+            <a  href="https://www.sercotec.cl/sello-impacta-sustentable/" id="caluga_sustentabilidad" target="_self" rel="noopener noreferrer"  aria-label="Ir al página interior de Cooperativas de">
+
                 <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/03_sustentabilidad_desktop_glide.svg" width="240" height="154" alt="Sustentabilidad de Sercotec">
             </a>
         </div>
@@ -162,7 +170,6 @@ get_header();
     <div class="slider-container-mobile">
     <div class="slider-wrapper-mobile">
         <div class="slider-mobile" id="slider-calugas-mobile">
-
         <!-- Página 1 -->
         <div class="page">
             <!-- caluga 1 punto de atencion -->
@@ -311,6 +318,7 @@ get_header();
 <!--Noticias Mobile-->
 <section>
     <div class="container-noticias-inicio-mob mb-4 mx-2">
+        <h1 class="text-center">Noticias</h1>
         <div class="sidebar-carrusel-mobile">
             <div id="newsCarousel" class="carousel slide mb-xl" data-bs-ride="false" aria-label="Carrusel de noticias">
 

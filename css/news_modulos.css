@@ -17,7 +17,7 @@
 }
 
 /* A partir de 834px , referencia iPad Pro 11 (tablet/desktop) */
-@media (min-width: 834px) {
+@media (min-width: 768px) {
   .container-noticias-inicio {
     display: block;
   }

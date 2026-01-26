@@ -82,7 +82,8 @@ body>footer {
 
 .glide-carousel-inicio h1,
 .container-enlaces-inst h1,
-.container-noticias-inicio h1 {
+.container-noticias-inicio h1,
+.container-noticias-inicio-mob h1{
   color: rgba(var(--font-color), 1);
   font-size: var(--font-size-h1-mob);
   font-family: var(--font-family-sans-s);
@@ -373,7 +374,7 @@ section div.modulo-cuestionario p {
 /*TÍTULOS*/
 .main-content h1, .main-content-oficinas h1, .content-wrapper h1, .container-programa-mobile h1, .main-preguntas h1, 
 .main-content-cooperativas h1{
-  font-size: var( --heading-x-large);
+  font-size: var( --heading-x-large-mob);
   font-family: var( --font-family-sans-s);
   color: rgba(var(--font-color), 1);
   line-height: normal;
@@ -1720,3 +1721,5 @@ button:has(img):focus-visible {
   outline: 3px solid rgba(var(--yellow-focus), 1);
   outline-offset: 4px;
 }
+
+

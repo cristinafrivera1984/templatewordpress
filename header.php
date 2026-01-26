@@ -28,7 +28,7 @@
             <a href="https://cl.linkedin.com/company/sercotecchile" target="_blank" rel="noopener noreferrer" aria-label="Linkedin de Sercotec, se abre en una nueva pestaña">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/icon_linkedin.svg" width="24" height="25" alt="Sercotec Linkedin">
             </a>
-            <a href="https://www.sercotec.cl/contacto" target="_self">
+            <a href="<?php echo site_url('/contacto'); ?>" target="_self">
                 <img class="me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon-contactanos.svg" width="26" height="20" alt="Contáctanos"> <span class="ph-word">Contáctanos</span>
             </a>                         
         </div>
@@ -67,14 +67,14 @@
             <!-- Botón que abre el buscador -->
                 <button
                 type="button"
-                class="btn btn-link text-decoration-none search-btn-header-wp"
+                class="reset-button btn-link text-decoration-none search-btn-header-wp"
                 data-bs-toggle="modal"
                 data-bs-target="#searchModal"
                 aria-haspopup="dialog"
                 >
                 <span class="material-symbols-outlined align-middle search-icon">
                     search </span>
-              <span class="search-btn-header-wp">Buscar</span>
+                <span class="search-btn-header-wp">Buscar</span>
                 </button>
             
         </div>
@@ -92,7 +92,7 @@
   aria-hidden="true"
 >
   <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content search-modal">
+  <div class="modal-content search-modal">
 
 <!-- Botón cerrar -->
     <button
@@ -103,8 +103,6 @@
     >
     ✕
     </button>
-
-
       <div class="modal-body d-flex align-items-center container-search">
         <div class="container">
           <form role="search" novalidate>
@@ -445,7 +443,7 @@
                                     <h3 class="title card-fin-2"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-ase-01.svg" width="32" height="32" alt="Icono Asesoría Experta"> Asesoría Experta </h3>
                                         <div class="row">
                                             <div class="col-md-6 col-lg-4">
-                                                    <a  href="<?php echo site_url('/centros-de-negocios'); ?>"  class="card-link-borderless card-asesoria-experta">
+                                                    <a  href="<?php echo site_url('/centros-de-negocios'); ?>" target="_blank"  rel="noopener" class="card-link-borderless card-asesoria-experta">
                                                         <article class="card-menu-main">
                                                         <h3>Centros de Desarrollo de Negocios</h3>
                                                         <p> Red de apoyo que ofrece asesoría experta, capacitación y orientación con el objetivo de fortalecer los negocios y fomentar su crecimiento sostenible. </p>
@@ -463,7 +461,7 @@
                                                     </a>
                                             </div>
                                             <div class="col-md-6 col-lg-4">
-                                                    <a href="https://asesoriavirtual.sercotec.cl/Usuario/Autenticar?ReturnUrl=%2f" class="card-link-borderless card-asesoria-experta">
+                                                    <a href="https://asesoriavirtual.sercotec.cl/Usuario/Autenticar?ReturnUrl=%2f" class="card-link-borderless card-asesoria-experta" target="_blank" rel="noopener">
                                                     <article class="card-menu-main">
                                                     <h3>Asesoría Legal Virtual</h3>
                                                     <p>Servicio especializado que ofrece orientación legal en temas como leyes laborales, contratos, impuestos y propiedad intelectual.</p>
@@ -548,7 +546,7 @@
                                                     </a>
                                             </div>
                                             <div class="col-md-6 col-lg-4">
-                                                    <a  href="<?php echo site_url('/noticias'); ?>" target="_blank" rel="noopener noreferrer" class="card-link-borderless card-nosotros">
+                                                    <a  href="<?php echo site_url('/noticias'); ?>" class="card-link-borderless card-nosotros">
                                                     <article class="card-menu-main">
                                                     <h3>Noticias</h3>
                                                     <p>Infórmate sobre programas, convocatorias y novedades de Sercotec. </p>
@@ -575,7 +573,7 @@
                                                     </a>
                                             </div>                                              
                                              <div class="col-md-6 col-lg-4">
-                                                    <a href="/preguntas-frecuentes/" class="card-link-borderless card-nosotros">
+                                                    <a href="<?php echo site_url('/preguntas-frecuentes'); ?>" class="card-link-borderless card-nosotros">
                                                     <article class="card-menu-main">
                                                     <h3>Preguntas frecuentes</h3>
                                                     <p>Encuentra respuestas claras y rápidas sobre  Sercotec, sus programas y postulaciones.</p> 
@@ -625,18 +623,24 @@
 
 <!--MODAL DE MENU MAIN-->
 
-
     <!--Fin Header mobile tablet--> 
+
     <div class="header-menu-mob d-flex flex-row align-items-center justify-content-evenly">
         <a href="<?php echo site_url('/'); ?>">
             <img class="img-logo-header" src="<?php echo get_template_directory_uri(); ?>/img/logo-sercotec.svg" alt="Sercotec" width="145" height="74">
         </a>
         <div>
-            <a href="#" class="search-btn-header-wp">
-            <span class="material-symbols-outlined align-middle search-icon">
-               search </span>
-              <span class="search-btn-header-wp d-none">Buscar</span>               
-            </a>
+            <button
+                type="button"
+                class="reset-button fs-4 btn-link text-decoration-none search-btn-header-wp"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+                aria-haspopup="dialog"
+                >
+                <span class="material-symbols-outlined align-middle search-icon">
+                    search </span>
+                <span class="search-btn-header-wp"></span>
+            </button>
         </div>
          <!-- Botón que abre el menú (visible sólo en mobile) -->
           <button class="btn-mobile-menu btn-transparent">
@@ -667,7 +671,7 @@
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Regístrate aquí</a></li>
-                    <li><a class="dropdown-item" href="#">Regístrate aquí</a></li>
+                    <li><a class="dropdown-item" href="#">Inicia sesión</a></li>
 
                 </ul>
             </div>
@@ -677,7 +681,7 @@
         <span class="material-icons">close</span>
       </button>-->
 
-      <button type="button" class="btn-transparent btn-close-menu" data-bs-dismiss="modal" aria-label="Cerrar menú">
+      <button type="button" class="btn-transparent btn-close-menu text-light" data-bs-dismiss="modal" aria-label="Cerrar menú">
         <span class="material-symbols-outlined">
                 close
         </span>
@@ -694,19 +698,19 @@
   <section class="menu-screen active" id="screen-main">
     <nav class="menu-primary">
 
-      <a href="/" class="menu-item">
+      <a  href="<?php echo site_url('/'); ?>" class="menu-item">
         <span class="material-symbols-outlined align-middle"> home </span></span> Inicio
       </a>
 
-      <a href="/nosotros" class="menu-item"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon_nosotros.svg" alt="Sercotec" width="25" height="5"> 
+      <a href="<?php echo site_url('/'); ?>" class="menu-item"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon_nosotros.svg" alt="Sercotec" width="25" height="5"> 
         Nosotros
       </a>
 
-      <a href="/oficinas" class="menu-item">
+      <a href="<?php echo site_url('/oficinas'); ?>" class="menu-item">
         <span class="material-symbols-outlined align-middle"> location_on </span> Oficinas
       </a>
 
-      <a href="/postulaciones" class="menu-item">
+      <a href="<?php echo site_url('/postulaciones-abiertas'); ?>" class="menu-item">
         <span class="material-symbols-outlined align-middle"> campaign </span>
         Postulaciones abiertas
       </a>
@@ -733,7 +737,7 @@
        <span class="material-symbols-outlined align-middle"> keyboard_arrow_right </span>
       </button>
 
-      <a href="https://centroschile.cl" target="_blank" rel="noopener" class="menu-item">
+      <a href="https://www.sercotec.cl/centros-de-negocios" target="_blank" rel="noopener" class="menu-item">
         Centros de Desarrollo de Negocios
         <span class="material-symbols-outlined align-middle"> keyboard_arrow_right </span>       
       </a>
@@ -758,9 +762,9 @@
 
         <div class="acc-content">
               <ul class="acc-content">
-                <li><a href="/capital-abeja-emprende/">Capital Abeja Emprende</a></li>
-                <li><a href="/capital-semilla-emprende/">Capital Semilla Emprende</a></li>
-                <li><a href="/capital-pioneras/">Capital Pioneras</a></li>
+                <li><a href="<?php echo site_url('/capital-abeja-emprende'); ?>">Capital Abeja Emprende</a></li>
+                <li><a href="<?php echo site_url('/capital-semilla-emprende'); ?>">Capital Semilla Emprende</a></li>
+                <li><a href="<?php echo site_url('/capital-pioneras'); ?>">Capital Pioneras</a></li>
               </ul>
         </div>
       </div>
@@ -776,15 +780,15 @@
 
         <div class="acc-content">
               <ul class="acc-content">
-                <li><a href="/crece/">Crece</a></li>
-                <li><a href="/crece-sostenible/">Crece Sostenible</a></li>
-                <li><a href="/digitaliza-tu-almacen/">Digitaliza tu Almacén</a></li>
-                <li><a href="/ruta-digital/">Kit Digital</a></li>
-                <li><a href="/pymes-globales-2025/">Pymes Globales</a></li>
-                <li><a href="/negocios-digitales-2025/">Negocios Digitales</a></li>
-                <li><a href="/mejora-negocios/">MejoraNegocios</a></li>
-                <li><a href="/promocion-y-canales-de-comercializacion/">Promoción y canales</a></li>
-                <li><a href="/redes-de-oportunidades-de-negocios/">Redes de oportunidades</a></li>
+                <li><a href="<?php echo site_url('/crece'); ?>">Crece</a></li>
+                <li><a href="<?php echo site_url('/crece-sostenible'); ?>">Crece Sostenible</a></li>
+                <li><a href="<?php echo site_url('/digitaliza-tu-almacen'); ?>">Digitaliza tu Almacén</a></li>
+                <li><a href="<?php echo site_url('/ruta-digital'); ?>">Kit Digital</a></li>
+                <li><a href="<?php echo site_url('/pymes-globales-2025'); ?>">Pymes Globales</a></li>
+                <li><a href="<?php echo site_url('/negocios-digitales-2025'); ?>">Negocios Digitales</a></li>
+                <li><a href="<?php echo site_url('/mejora-negocios'); ?>">MejoraNegocios</a></li>
+                <li><a href="<?php echo site_url('/promocion-y-canales-de-comercializacion'); ?>">Promoción y canales</a></li>
+                <li><a href="<?php echo site_url('/redes-de-oportunidades-de-negocios'); ?>">Redes de oportunidades</a></li>
               </ul>
         </div>
       </div>
@@ -800,11 +804,11 @@
 
         <div class="acc-content">
               <ul class="acc-content">
-                <li><a href="/fondo-barrios-comerciales/">Barrios Comerciales</a></li>
-                <li><a href="/ferias-libres/">Ferias Libres</a></li>
-                <li><a href="/fortalecimiento-gremial-y-cooperativo/">Fortalecimiento de asociaciones gremiales</a></li>
-                <li><a href="/gremios-nacionales/">Gremios Nacionales</a></li>
-                <li><a href="/creacion-y-fortalecimiento-de-cooperativas/">Creación y fortalecimiento de cooperativas</a></li>
+                <li><a href="<?php echo site_url('/fondo-barrios-comerciales'); ?>">Barrios Comerciales</a></li>
+                <li><a href="<?php echo site_url('/ferias-libres'); ?>">Ferias Libres</a></li>
+                <li><a href="<?php echo site_url('/fortalecimiento-gremial-y-cooperativo'); ?>">Fortalecimiento de asociaciones gremiales</a></li>
+                <li><a href="<?php echo site_url('/gremios-nacionales'); ?>">Gremios Nacionales</a></li>
+                <li><a href="<?php echo site_url('/creacion-y-fortalecimiento-de-cooperativas'); ?>">Creación y fortalecimiento de cooperativas</a></li>
               </ul>
         </div>
       </div>
@@ -829,8 +833,8 @@
 
       
               <ul class="module-menu-content">
-                <li><a href="/centros-de-negocios/" target="_blank" rel="noopener noreferrer">Centros de Desarrollo de Negocios</a></li>
-                <li><a href="/contacto/">Puntos Mipe</a></li>
+                <li><a href="https://www.sercotec.cl/centros-de-negocios/" target="_blank" rel="noopener">Centros de Desarrollo de Negocios</a></li>
+                <li><a href="<?php echo site_url('/oficinas'); ?>" href="/contacto/">Puntos Mipe</a></li>
                 <li><a href="https://asesoriavirtual.sercotec.cl/Usuario/Autenticar?ReturnUrl=%2f" target="_blank" rel="noopener noreferrer">Asesoría Legal Virtual</a></li>
               </ul>       
       </div>
@@ -869,17 +873,17 @@
       <div class="module-menu-content">
           <span class="title"><h2> Nosotros</h2> </span>  
               <ul class="module-menu-content">
-                <li><a href="https://www.sercotec.cl/quienes-somos">Quienes somos</a></li>
-                <li><a href="https://www.sercotec.cl/oficinas">Canales de atención</a></li>
-                <li><a href="https://www.sercotec.cl/noticias">Noticias</a></li>
-                <li><a href="https://www.sercotec.cl/somosempresarias/" target="_blank" rel="noopener noreferrer">Somos Empresarias</a></li>
-                <li><a  href="https://www.sercotec.cl/sustentabilidad/">Sustentabilidad</a></li>
-                <li><a href="https://www.sercotec.cl/barrios-comerciales/" target="_blank" rel="noopener noreferrer">Barrios Comerciales</a></li>
-                <li><a href="https://www.sercotec.cl/preguntas-frecuentes/">Preguntas frecuentes</a></li>
+                <li><a href="<?php echo site_url('/quienes-somos'); ?>">Quienes somos</a></li>
+                <li><a href="<?php echo site_url('/oficinas'); ?>">Canales de atención</a></li>
+                <li><a href="<?php echo site_url('/noticias'); ?>">Noticias</a></li>
+                <li><a href="https://www.sercotec.cl/somosempresarias" target="_blank" rel="noopener">Somos Empresarias</a></li>
+                <li><a href="<?php echo site_url('/sustentabilidad'); ?>">Sustentabilidad</a></li>
+                <li><a href="https://www.sercotec.cl/barrios-comerciales" target="_blank" rel="noopener noreferrer">Barrios Comerciales</a></li>
+                <li><a href="<?php echo site_url('/preguntas-frecuentes'); ?>">Preguntas frecuentes</a></li>
                 <li><a href="#" class="text-decoration-none">Informes interactivos </a>
                     <ul style="list-style: none;">
-                      <li><a href="https://explorador.sercotec.cl/" target="_blank" rel="noopener noreferrer">Explorador territorial</a></li>
-                      <li><a href="https://www.catastroferiaslibres.cl/" target="_blank" rel="noopener noreferrer">Catastro Ferias Libres</a></li>
+                      <li><a href="https://explorador.sercotec.cl" target="_blank" rel="noopener">Explorador territorial</a></li>
+                      <li><a href="https://www.catastroferiaslibres.cl" target="_blank" rel="noopener">Catastro Ferias Libres</a></li>
                     </ul>
                 </li>                                              
               </ul>       

@@ -139,3 +139,9 @@ a.link-blue_01, button.link-blue_01 {
 .white-space-fix, button.white-space-fix , a.white-space-fix {
   white-space: nowrap!important;
 }
+
+button.reset-button {
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+}

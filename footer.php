@@ -4,22 +4,21 @@
     <div class="row container-footer-wp">
         <div class="col-lg-4 col-md-6 my-2">
             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">
-                <a href="https://www.economia.gob.cl/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-MinEconomia_blanco.png" class="m-2 img-fluid" width="150" height="137" alt="Logo Ministerio de Economía, Fomento y Turismo" title="Logo Ministerio de Economía, Fomento y Turismo"></a>
+                <a href="https://www.economia.gob.cl/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-MinEconomia_blanco.png" class="m-2 img-fluid" width="150" height="137" alt="Logo Ministerio de Economía, Fomento y Turismo"></a>
                 <ul class="list-footer">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quiénes Somos</a></li>
-                    <li><a href="#">Programas y Servicios</a></li>
-                    <li><a href="#">Explorador Territorial</a></li>
-                    <li><a href="#">Contáctanos OIRS</a></li>
-                    <li><a href="#">Mapa de Sitio</a></li>
+                    <li><a href="<?php echo site_url('/'); ?>">Inicio</a></li>
+                    <li><a href="<?php echo site_url('/quienes-somos'); ?>">Quiénes Somos</a></li>
+                    <li><a href="<?php echo site_url('/programas-y-servicios-digitalizados'); ?>">Programas y Servicios</a></li>
+                    <li><a href="https://explorador.sercotec.cl" target="_blank" rel="noopener">Explorador Territorial</a></li>
+                    <li><a href="<?php echo site_url('/contacto'); ?>">Contáctanos OIRS</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="col-lg-4 col-md-6 my-2 d-flex justify-content-center">
             <div class="d-flex flex-row align-items-center">
-                <a href="https://www.selloee.cl" target="_blank" aria-label="Sitio web Sello de Excelencia Energética, abre en una nueva pestaña"><img class="mx-2 my-1" src="<?php echo get_template_directory_uri(); ?>/img/icon-sello-excelencia-energetica.png" width="164"  height="51" alt="Sello de Excelencia Energética" title="Sello de Excelencia Energética"></a>
-                <a href="https://plataforma-indice.lab.gob.cl" target="_blank" aria-label="Sitio web Sello Compromiso con la Innovación, abre en una nueva pestaña"><img class="mx-2 my-1" src="<?php echo get_template_directory_uri(); ?>/img/icon-sello-compromiso-innovacion.png" width="90" height="90" alt="Sello Compromiso con la Innovación" title="Sello Compromiso con la Innovación"></a>
+                <a href="https://www.selloee.cl" target="_blank" aria-label="Sitio web Sello de Excelencia Energética, abre en una nueva pestaña"><img class="mx-2 my-1" src="<?php echo get_template_directory_uri(); ?>/img/icon-sello-excelencia-energetica.png" width="164"  height="51" alt="Sello de Excelencia Energética"></a>
+                <a href="https://plataforma-indice.lab.gob.cl" target="_blank" aria-label="Sitio web Sello Compromiso con la Innovación, abre en una nueva pestaña"><img class="mx-2 my-1" src="<?php echo get_template_directory_uri(); ?>/img/icon-sello-compromiso-innovacion.png" width="90" height="90" alt="Sello Compromiso con la Innovación"></a>
             </div>
         </div>
         
@@ -56,20 +55,20 @@
                     </a> 
                 </div>
                 <div class="box-cont-footer">
-                    <a href="https://www.sercotec.cl/contacto" target="_self">
+                    <a href="<?php echo site_url('/contacto'); ?>" target="_self">
                         <img class="me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon-contactanos.svg" width="26" height="20" alt="Ícono Contáctanos" title="Contáctanos">Contáctanos
                     </a>                     
                 </div>                                                    
             </div>
             <div class="box-cont-footer2"> 
-                <a href="https://www.sercotec.cl/contacto" target="_self">
-                    <img class="me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon-contactanos.svg" width="26" height="20" alt="Ícono Contáctanos" title="Contáctanos">Contáctanos
+                <a href="<?php echo site_url('/contacto'); ?>" target="_self">
+                    <img class="me-2" src="<?php echo get_template_directory_uri(); ?>/img/icon-contactanos.svg" width="26" height="20" alt="Ícono Contáctanos">Contáctanos
                 </a> 
            </div>
 
         </div>
   </div>
-  <div><p class="text-center pb-3 small-text"> <a href="#">  Términos de uso</a> &#9679; <a href="#">Política de privacidad</a> &#9679; Todos los derechos reservados Sercotec <?php echo date('Y'); ?></p> </div>
+  <div><p class="text-center pb-3 small-text"> <a href="#"> Términos de uso</a> &#9679; <a href="#">Política de privacidad</a> &#9679; Todos los derechos reservados Sercotec <?php echo date('Y'); ?></p> </div>
     <div><p class="text-center pb-3 small-text"> <a href="#">  Agregar check de accesibilidad y TD  </a> </div>
 
  </footer>   

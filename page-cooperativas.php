@@ -42,7 +42,7 @@ get_header();
               <h3 class="color-blue-dark-1">Creación y fortalecimiento de cooperativas</h3>
               <p>Fondo concursable que busca fortalecer a las cooperativas, impulsar su gestión y fomentar la inclusión de mujeres.</p>
               <a href="<?php echo site_url('/creacion-y-fortalecimiento-de-cooperativas'); ?>" target="_self" class="btn-primary rounded-pill text-decoration-none my-3">  
-                Haz clic aquí para más información <span class="material-symbols-outlined align-middle"> arrow_forward </span></a>
+                Más información aquí <span class="material-symbols-outlined align-middle"> arrow_forward </span></a>
             </div>
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -50,7 +50,7 @@ get_header();
               <h3 class="color-blue-dark-1">Crece</h3>
               <p>Fondo concursable que apoya a MiPymes y cooperativas en su fortalecimiento, consolidación y competitividad. </p>
               <a href="<?php echo site_url('/crece'); ?>" target="_self" class="btn-primary rounded-pill text-decoration-none my-3">  
-                Haz clic aquí para más información <span class="material-symbols-outlined align-middle"> arrow_forward </span></a>
+                Más información aquí <span class="material-symbols-outlined align-middle"> arrow_forward </span></a>
             </div>
         </div>
         </div>
@@ -126,6 +126,7 @@ get_header();
 <!--Noticias Mobile-->
 <section>
     <div class="container-noticias-inicio-mob mb-4 mx-2">
+       <h1 class="text-center">Noticias</h1>
         <div class="sidebar-carrusel-mobile">
             <div id="newsCarousel" class="carousel slide mb-xl" data-bs-ride="false" aria-label="Carrusel de noticias">
 

@@ -294,7 +294,7 @@ get_header();
 
 <!--SECTION CANALES DE ATENCIÓN-->
     <section>
-      <div class="container-fluid gray-box border-0 rounded-0 p-2 p-md-4 p-lg-5">
+      <div class="container-fluid gray-box border-0 rounded-0 px-2 pt-3 p-md-4 p-lg-5">
         <h2 class="text-center">Canales de atención</h2>
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-4">
@@ -323,7 +323,7 @@ get_header();
 <section class="bg-newsletter p-0 m-0">
   <div class="container-fluid p-0 m-0">
       <div class="row justify-content-center p-0 m-0">
-        <div class="col-md-6 p-0 m-0">
+        <div class="col-md-6 col-md-6 px-2">
           <h2 class="text-center">Newsletter</h2>
           <p class="text-center ff-sans-s fw-normal">Mantente al día de todas nuestras noticias y novedades</p>
 
