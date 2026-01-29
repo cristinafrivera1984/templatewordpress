@@ -657,6 +657,24 @@ myModal.addEventListener('shown.bs.modal', () => {
 })
 
 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('iframeModalCuestionario');
+  const iframe = document.getElementById('iframeTool');
+  const iframeURL = 'https://sctwidgets.qa.sercotec.cl/cuestionario';
+
+  modal.addEventListener('show.bs.modal', function () {
+    iframe.src = iframeURL;
+  });
+
+  modal.addEventListener('hidden.bs.modal', function () {
+    iframe.src = '';
+  });
+});
+
+
 });
 
 

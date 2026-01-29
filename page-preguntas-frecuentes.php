@@ -34,9 +34,8 @@ get_header();
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Para crear tu cuenta y ser parte de la red de usuarios, <a href="https://misdatos.sercotec.cl"  target="_blank"  rel="noopener noreferrer" aria-label="Página Mis Datos: sección de registro de Sercotec, abre en nueva pestaña"> ingresa al registro de Sercotec.<span class="visually-hidden">(se abre en una nueva pestaña) </span></a> Este registro te permite postular a nuestros programas, recibir información, así como también formular consultas, reclamos, sugerencias y felicitaciones.
-                  <span style="color: red;">Siba hice un pequeño ajuste en este texto, por fa revisar </span> 
+                  <div class="accordion-body">
+                  Crea tu cuenta en el <a href="https://misdatos.sercotec.cl"  target="_blank"  rel="noopener noreferrer" aria-label="Página Mis Datos: sección de registro de Sercotec, abre en nueva pestaña"> registro de Sercotec </a> y únete a nuestra red para acceder a nuestros programas y beneficios. Además, tendrás un canal directo para resolver dudas, enviar sugerencias o felicitaciones.
                 </div>
               </div>
             </div>
@@ -60,7 +59,7 @@ get_header();
                 <div class="accordion-body">
                  <p> Si olvidaste tu contraseña, ingresa a <a href="https://misdatos.sercotec.cl/RecuperarPassword"  target="_blank"  rel="noopener noreferrer" aria-label="Página de Mis Datos: sección Recuperar contraseña de Sercotec, abre en nueva pestaña"> Mis Datos<span class="visually-hidden">(se abre en una nueva pestaña) </span></a> y digita tu RUT. Recibirás en tu correo electrónico las instrucciones para recuperar tu cuenta. </p>
 
-                 <p> En el caso de que el mensaje no llegue a tu bandeja de entrada, revisa la carpeta de <strong> “Correos no deseados” o “spam”.</strong> Si pasados 15 minutos el problema persiste, comunícate con el Punto Mipe de tu región. Sus datos de contacto los encuentras en <a href="https://www.sercotec.cl" target="_self"> Sercotec.cl</a> <span style="color: red;">(después ese enlace va a oficinas) </span> </p>
+                 <p> En el caso de que el mensaje no llegue a tu bandeja de entrada, revisa la carpeta de <strong> “Correos no deseados” o “spam”.</strong> Si pasados 15 minutos el problema persiste, comunícate con el Punto Mipe de tu región. Sus datos de contacto los encuentras en <a href="<?php echo site_url('/oficinas'); ?>" target="_self"> Sercotec.cl/oficinas</a></p>
 
                 </div>
               </div>
@@ -83,7 +82,7 @@ get_header();
                  aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                 <p>Comunícate con el Punto Mipe más cercano. Ellos te ayudarán a recuperar tu cuenta. Encuentra sus datos de contacto en <a href="https://www.sercotec.cl" target="_self"> Sercotec.cl</a> seleccionando tu región. <span style="color: red;">(después ese enlace va a oficinas) </span> </p>         
+                 <p>Comunícate con el Punto Mipe más cercano. Ellos te ayudarán a recuperar tu cuenta. Encuentra sus datos de contacto en <a href="<?php echo site_url('/oficinas'); ?>" target="_self"> Sercotec.cl/oficinas</a> seleccionando tu región.  </p>         
                 </div>
               </div>
             </div>
@@ -105,7 +104,8 @@ get_header();
                  aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                 <p>Encuentra los programas y talleres disponibles en tu región en el “Calendario de convocatorias y actividades abiertas” en <a href="https://www.sercotec.cl" target="_self"> Sercotec.cl</a> o si prefieres, desde la misma página puedes seleccionar tu zona (norte, centro, sur) <span style="color: red;">Siba: ojo este texto se debe modificar ya que en el nuevo diseño cambia. (podemos hacer referencia a el botón de arriba de "postulaciones abiertas" o al módulo de 3 pestañas) </span></p>         
+                  <p>Encuentra las convocatorias activas en el botón <a href="<?php echo site_url('/postulaciones-abiertas'); ?>" target="_self">“Postulaciones abiertas”</a> o comunicate con nuestros <a href="<?php echo site_url('/oficinas'); ?>">Puntos Mipe </a> para que te orienten. </p>
+                 </p>         
                 </div>
               </div>
             </div>
@@ -153,7 +153,7 @@ get_header();
 
                     <p>Los Puntos Mipe están presentes de Arica a Magallanes y la Antártica Chilena. Orientan sobre programas vigentes, requisitos, postulación y fondos concursables.</p><br>
 
-                    <p>Nuestros ejecutivos atienden de manera <strong>gratuita</strong> en forma presencial, telefónica o a través de <a href="https://www.sercotec.cl/contacto" target="_self">“Contáctanos/OIRS”</a> en <a href="https://www.sercotec.cl/contacto" target="_self">Sercotec.cl</a>. En este mismo sitio web encuentras sus datos de contacto, seleccionando tu región. <span style="color: red;">Siba: con el nuevo diseño deberiamos llevarlos a "Oficinas" ?</span></p>
+                    <p>Nuestros ejecutivos atienden de manera <strong>gratuita</strong> en forma presencial, telefónica o a través de <a href="<?php echo site_url('/oficinas'); ?>" target="_self">“Oficinas”</a> en <a href="<?php echo site_url('/oficinas'); ?>" target="_self">Sercotec.cl</a>. En este mismo sitio web encuentras sus datos de contacto, seleccionando tu región.</p>
       
                 </div>
               </div>

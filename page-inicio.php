@@ -56,7 +56,7 @@ get_header();
         <div class="col-lg-5 col-md-6 col-sm-12">
             <div class="position-relative">
                 <div class="nave">
-                    <a href="#">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#iframeModalCuestionario">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/cohete_2.svg" class="img-fluid" width="199" height="157" alt="Icono">
                     </a>
                 </div>
@@ -64,6 +64,37 @@ get_header();
         </div>
     </div>
 </section>
+<!--MODAL DEL CUESTIONARIO-->
+    <div class="modal fade" id="iframeModalCuestionario" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+        <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="iframeModalLabel">
+                    </h2>
+                    <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar">
+                    </button>
+                </div>
+
+                <div class="modal-body p-0">
+                    <div class="iframe-wrapper-cuestionario">
+                    <iframe
+                        id="iframeTool"
+                        src="https://sctwidgets.qa.sercotec.cl/cuestionario"
+                        title="Herramienta interactiva de Sercotec - Ingresa y descubre la oferta programática de Sercotec"
+                        loading="lazy"
+                        referrerpolicy="no-referrer"
+                        allowfullscreen>
+                    </iframe>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+<!--MODAL DEL CUESTIONARIO-->
 <!-- Módulo Cuestionario-->
 
 
@@ -522,7 +553,7 @@ get_header();
             <!--ENLACES Escritorio-->
             <div class="enlaces-inst mx-auto" style="max-width: 1280px;">
                 <div class="link-enlaces">
-                    <a href="https://www.sercotec.cl/mapa-de-oficinas/" target="_blank">
+                    <a href="<?php echo site_url('/oficinas'); ?>" target="_blank">
                         <p>
                             Atención ciudadana
                         </p>

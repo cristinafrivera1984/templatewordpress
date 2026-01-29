@@ -35,7 +35,7 @@ get_header();
     <div class="col-md-4">
        <img class="img-fluid img-class-qs" src="<?php echo get_template_directory_uri(); ?>/img/01_quienes_somos.webp" width="488" height="496" role="presentation" alt="">
     </div>
-    <div class="col-md-7 d-flex flex-column mx-4 ms-auto px-4">      
+    <div class="col-md-7 d-flex flex-column mx-4 px-4">      
         <h2 class="white pt-3 pt-md-1">Nuestra misión</h2>
         <p class="white ff-sans-s fw-normal">Apoyar el desarrollo de la <strong>micro y pequeña empresa</strong>, así como del emprendimiento, mediante asistencia técnica especializada y fomento de la <strong> asociatividad y cooperativismo</strong>. Promovemos la articulación entre actores públicos y privados a nivel territorial, con el propósito de fortalecer los ecosistemas productivos y de impulsar un desazrrollo económico sostenible e inclusivo, facilitando la inserción competitiva en la economía y mejorando el bienestar de las personas.</p>
     </div>

@@ -37,12 +37,12 @@
 
     <!--Inicio Header-->
     <div class="header-menu d-flex align-items-center justify-content-evenly">
-        <a type="button" data-bs-toggle="modal" data-bs-target="#fullscreenMenuModal" class="d-flex flex-column menu-btn-header-wp" href="#">
+        <a type="button" data-bs-toggle="modal" data-bs-target="#fullscreenMenuModal" class="d-flex flex-column menu-btn-header-wp" href="#" aria-label="Botón de menú">
             <img src="<?php echo get_template_directory_uri(); ?>/img/icon-burger.svg" width="39" height="19" role="presentation" alt="">
             MENÚ
         </a>
-        <a href="<?php echo site_url('/'); ?>" aria-label="Enlace a inicio de sitio web">
-            <img class="img-logo-header" src="<?php echo get_template_directory_uri(); ?>/img/logo-sercotec.svg" alt="Sercotec" width="145" height="74">
+        <a href="<?php echo site_url('/'); ?>" aria-label="Logo con enlace a inicio de sitio web">
+            <img class="img-logo-header" src="<?php echo get_template_directory_uri(); ?>/img/logo-sercotec.png" alt="Sercotec" width="145" height="74">
         </a>
             <ul class="menu-inicio">
                 <li>
@@ -670,8 +670,8 @@
                 <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon_claveunica.svg" alt="Sercotec" width="24" height="24"> Inicia sesión
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Regístrate aquí</a></li>
-                    <li><a class="dropdown-item" href="#">Inicia sesión</a></li>
+                    <li><a class="dropdown-item" href="https://misdatos.sercotec.cl" target="_blank" rel="noopener">Regístrate aquí</a></li>
+                    <li><a class="dropdown-item" href="https://login.sercotec.cl/Web/index.html#/?idapp=6" target="_blank" rel="noopener">Inicia sesión</a></li>
 
                 </ul>
             </div>

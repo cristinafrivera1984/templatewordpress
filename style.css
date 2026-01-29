@@ -1723,3 +1723,38 @@ button:has(img):focus-visible {
 }
 
 
+/*iframe de postulaciones abiertas*/
+
+.iframe-postulaciones {
+  height: 100vh;
+}
+
+.iframe-postulaciones iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*iframe de postulaciones abiertas*/
+
+
+
+/*IFRAME CUESTIONARIO HOME*/
+.iframe-wrapper-cuestionario {
+  position: relative;
+  height: calc(100vh - 140px); /* header del modal */
+}
+
+.modal-fullscreen-md-down .iframe-wrapper-cuestionario {
+  height: calc(100vh - 120px);
+}
+
+.iframe-wrapper-cuestionario iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+
+/*IFRAME CUESTIONARIO HOME*/

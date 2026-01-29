@@ -62,7 +62,7 @@ get_header();
 
 <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 p-0">       
+      <div class="col-md-auto me-4 p-0">       
         <img class="img-class-coop-2 img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/cooperativas_imagen_02.webp" width="600" height="355" role="presentation" alt="">
       </div>
       <div class="col-md-6">
