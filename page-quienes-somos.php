@@ -72,7 +72,7 @@ get_header();
         <div class="container-fluid p-0 m-0">
             <h2 class="white text-center pt-0 pt-md-1">Nuestra historia</h2>
           <a href="#" data-bs-toggle="modal" data-bs-target="#modalVideoQuienes">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/quienes_somos_03.png" width="100%" height="100%" role="presentation" alt="">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/quienes_somos_03.webp" width="100%" height="100%" role="presentation" alt="">
           </a>
           <!--MODAL video-->
                 <div class="modal fade" id="modalVideoQuienes" tabindex="-1" aria-hidden="true">
