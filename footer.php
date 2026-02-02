@@ -11,6 +11,7 @@
                     <li><a href="<?php echo site_url('/programas-y-servicios-digitalizados'); ?>">Programas y Servicios</a></li>
                     <li><a href="https://explorador.sercotec.cl" target="_blank" rel="noopener">Explorador Territorial</a></li>
                     <li><a href="<?php echo site_url('/contacto'); ?>">Contáctanos OIRS</a></li>
+                    <li><a href="<?php echo site_url('/mapa-de-sitio'); ?>">Mapa de Sitio</a></li>
                 </ul>
             </div>
         </div>
