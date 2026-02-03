@@ -113,7 +113,7 @@ get_header();
             </div>
 
             <div class="container-bases">
-                <ul class="download-list">
+                <ul class="">
                   <li><a href="#" target="_blank" rel="noopener"> <span class="visually-hidden">Se abre en nueva pestaña</span></span> Bases Crece Multisectorial Provincia de Concepción Región del Biobío (PDF)</a></li>
                   <li><a href="#" target="_blank" rel="noopener"> Bases Crece Multisectorial Provincia de Concepción Región del Biobío (DOCX)</a></li>
                   <li><a href="#" target="_blank" rel="noopener">  <span class="visually-hidden">Se abre en nueva pestaña</span></span> Ampliación - Crece Multisectorial Provincia de Concepción Región del Biobío (PDF)</a></li>               

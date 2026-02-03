@@ -48,41 +48,40 @@ div.gray-box-bases h3  {
 }
 
 
-
-.download-list {
+.gray-box-bases ul {
   list-style: none;
   padding: 0;
   margin: 0 0 0 6px;
 }
 
-.download-list li {
+.gray-box-bases  li {
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 1.4rem;
 }
 
-.download-list li a {
+.gray-box-bases li a {
  color:rgba(var(--font-color), 1);
  text-decoration: underline;
 }
 
-.download-list li a:hover {
+.gray-box-bases li a:hover {
  color:rgba(var(--base-blue), 1);
  text-decoration: underline;
 }
 
-.download-list li a:focus {
+.gray-box-bases li a:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
 }
 
-.download-list li a:visited {
+.gray-box-bases li a:visited {
   color: rgba(var( --link-visited), 1);
 }
 
 
 
-.download-list li::before {
+.gray-box-bases li::before {
   content: "";
   background-image: url(../img/icon-download-bases.svg);
   background-repeat: no-repeat;
