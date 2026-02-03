@@ -215,7 +215,7 @@ get_header();
               <img style="position: absolute; top:-61px; right:45%;" src="<?php echo get_template_directory_uri(); ?>/img/icon_interrogacion.svg" role="presentation" alt=""> 
           </div>
         <h3 class="text-center mt-3 pb-2">¿Tienes dudas?</h3>                
-            <a href="" class="btn-primary rounded-pill text-decoration-none mx-auto">Comunícate con tu Punto Mipe <span class="material-symbols-outlined align-middle"> arrow_right_alt </span></a>
+            <a   href="<?php echo site_url('/oficinas'); ?>" class="btn-primary rounded-pill text-decoration-none mx-auto">Comunícate con tu Punto Mipe <span class="material-symbols-outlined align-middle"> arrow_right_alt </span></a>
       </div>
 
     </aside>

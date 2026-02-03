@@ -21,7 +21,7 @@ get_header();
 
       <!--CONTAINER LEFT-->
       <div class="main-content d-flex flex-column w-100">
-          <div class="accordion accordion-custom sct-inicio w-100" id="accordionExample">
+          <div class="accordion accordion-custom sct-inicio w-100 container-convocatorias" id="accordionExample">
              <h1>Crece Multisectorial Provincia de Concepción Región del Biobío 2024</h1>
               <div class="d-flex flex-column flex-sm-row my-3">
                   <div class="me-2 my-1"><span class="material-symbols-outlined align-bottom"> calendar_month</span> <strong>Inicio:</strong> 12/12/2025</div>
@@ -71,7 +71,7 @@ get_header();
                   aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                      <ul class="check-list">
+                      <ul class="">
                           <li>$350.000 CLP para asistencia técnica, capacitación y marketing para promover el negocio en la era digital.</li>
                           <li>Y 2.000.000 CLP para la adquisición de máquinas, equipos y herramientas digitales, para fortalecer la gestión interna y los procesos de venta del almacén.</li>
                       </ul>

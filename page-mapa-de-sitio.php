@@ -80,7 +80,7 @@ get_header();
                     </li>
                     <li>
                       <a  href="https://www.catastroferiaslibres.cl" target="_blank" rel="noopener" class="text-decoration-underline me-1"> 
-                      Catastro de Ferias Libres</a>
+                      Catastro de Ferias Libres <span class="material-symbols-outlined align-middle ms-1"> open_in_new </span> <span class="visually-hidden">Abre en una nueva pestaña</span></a>
                     </li>                                        
                     <li>
                       <a  href="<?php echo site_url('/preguntas-frecuentes'); ?>" class="text-decoration-underline me-1"> 
@@ -104,7 +104,12 @@ get_header();
                     <li>
                       <a  href="<?php echo site_url('/preguntas-frecuentes'); ?>" class="text-decoration-underline me-1"> 
                       Cuenta pública 2020</a>
-                    </li>                                          
+                    </li> 
+                    <li>
+                      <a  href="<?php echo site_url('/descargas'); ?>" class="text-decoration-underline me-1"> 
+                      Información presupuestaria y financiera</a>
+                    </li>                      
+                    
                </ul>
           </div>
         </section> 

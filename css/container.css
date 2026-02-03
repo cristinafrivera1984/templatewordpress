@@ -135,14 +135,14 @@
 }
 
 /*Estilos de cuenta pública*/
-.container-programas  ul {
+.container-programas  ul, .container-convocatorias ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 
-.container-programas li  {
+.container-programas li, .container-convocatorias li  {
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 0.9rem;
@@ -150,7 +150,7 @@
 
 
 
-.container-programas li::before {
+.container-programas li::before, .container-convocatorias li::before{
   content: "";
   background-image: url(../img/check-list.svg);
   background-repeat: no-repeat;
