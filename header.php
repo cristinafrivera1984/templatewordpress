@@ -182,7 +182,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://www.sercotec.cl/centros-de-negocios/"  target="_blank" rel="noopener noreferrer">
+                                            <a class="nav-link"  href="#" data-target="#content-cdn">
                                                Centros de Desarrollo de Negocios
                                             </a>
                                         </li>
@@ -582,6 +582,39 @@
                                                     </a>
                                             </div>                                                                        
                                         </div>
+                                    <h3 class="title card-fin-2">Sustentabilidad</h3>
+                                    <div class="row">
+                                            <div class="col-md-6 col-lg-4">
+                                                    <a href="<?php echo site_url('/sustentabilidad'); ?>" class="card-link-borderless card-nosotros">
+                                                        <article class="card-menu-main">
+                                                        <h3>Sustentabilidad</h3>
+                                                        <p>Fomentamos negocios sostenibles con impacto económico, social y ambiental.</p>                                      
+                                                        <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
+                                                        </article>
+                                                    </a>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                    <a href="<?php echo site_url('/sello-impacta-sustentable'); ?>" class="card-link-borderless card-nosotros">
+                                                    <article class="card-menu-main">
+                                                    <h3>Sello Impacta Sostenible </h3>
+                                                    <p> Distinción de Sercotec y la U. de Chile para pymes y cooperativas por su gestión sustentable. </p>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
+                                                    </article>
+                                                    </a>
+                                            </div>
+                                              <div class="col-md-6 col-lg-4">
+                                                    <a href="https://form.typeform.com/to/JgVTAX1y?typeform-source=www.google.com" target="_blank" rel="noopener noreferrer" class="card-link-borderless card-nosotros">
+                                                    <article class="card-menu-main">
+                                                    <h3>Calculadora de circularidad </h3>
+                                                    <p> Herramienta gratuita de Sercotec y Sofofa para medir la circularidad y sustentabilidad de pymes.</p>
+                                                    <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
+                                                    </article>
+                                                    </a>
+                                            </div>
+
+                                       </div>
+
+
                                     <h3 class="title card-fin-2">Informes Interactivos</h3>
                                     <div class="row">
                                             <div class="col-md-6 col-lg-4">
@@ -813,11 +846,6 @@
         </div>
       </div>
     <!--modulo Tengo una pyme-->      
-
-
-
-
-
     </div>
   </section>
 
@@ -830,8 +858,6 @@
     <!--modulo Asesoría Experta-->
       <div class="module-menu-content">
           <span class="title"><img class="img-fluid me-2 align-middle" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-ase-01.svg" width="23" height="21" alt="Icono quiero emprender"> <h2>Asesoría Experta</h2> </span>
-
-      
               <ul class="module-menu-content">
                 <li><a href="https://www.sercotec.cl/centros-de-negocios/" target="_blank" rel="noopener">Centros de Desarrollo de Negocios</a></li>
                 <li><a href="<?php echo site_url('/oficinas'); ?>" href="/contacto/">Puntos Mipe</a></li>
@@ -850,9 +876,7 @@
     <!--modulo CAPACITACIONES-->
       <div class="module-menu-content">
           <span class="title"><img class="img-fluid me-2 align-middle" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-cap-01.svg" width="23" height="21" alt="Icono quiero emprender"> <h2> Capacitaciones</h2> </span>
-
-      
-              <ul class="module-menu-content">
+             <ul class="module-menu-content">
                 <li><a href="https://capacitacion.sercotec.cl/portal/" target="_blank" rel="noopener noreferrer">Portal de Capacitación</a></li>
                 <li><a href="https://agendaeventos.sercotec.cl/Centro/Detalle?regionId=0">Agenda de actividades Centros de Desarrollo de Negocios </a></li>
                 <li><a href="https://www.rutadigital.cl" target="_blank" rel="noopener noreferrer">Ruta Digital </a></li>
@@ -873,11 +897,16 @@
       <div class="module-menu-content">
           <span class="title"><h2> Nosotros</h2> </span>  
               <ul class="module-menu-content">
-                <li><a href="<?php echo site_url('/quienes-somos'); ?>">Quienes somos</a></li>
+                <li><a href="<?php echo site_url('/quienes-somos'); ?>">Quiénes somos</a></li>
                 <li><a href="<?php echo site_url('/oficinas'); ?>">Canales de atención</a></li>
                 <li><a href="<?php echo site_url('/noticias'); ?>">Noticias</a></li>
                 <li><a href="https://www.sercotec.cl/somosempresarias" target="_blank" rel="noopener">Somos Empresarias</a></li>
-                <li><a href="<?php echo site_url('/sustentabilidad'); ?>">Sustentabilidad</a></li>
+                <li><a href="#" class="text-decoration-none">Sustentabilidad</a></li>
+                    <ul style="list-style: none;">
+                      <li><a href="<?php echo site_url('/sustentabilidad'); ?>">Sustentabilidad</a></li>
+                      <li><a href="<?php echo site_url('/sello-impacta-sustentable'); ?>">Sello Impacta Sostenible</a></li>
+                      <li><a href="https://form.typeform.com/to/JgVTAX1y?typeform-source=www.google.com" target="_blank" rel="noopener">Calculadora de circularidad</a></li>
+                    </ul>
                 <li><a href="https://www.sercotec.cl/barrios-comerciales" target="_blank" rel="noopener noreferrer">Barrios Comerciales</a></li>
                 <li><a href="<?php echo site_url('/preguntas-frecuentes'); ?>">Preguntas frecuentes</a></li>
                 <li><a href="#" class="text-decoration-none">Informes interactivos </a>

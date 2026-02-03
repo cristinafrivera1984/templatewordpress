@@ -18,7 +18,7 @@ get_header();
           </div> 
        <!--MIGAS DE PAN--> 
 
-      <h1>Desde drones fumigadores hasta pulseras que salvan vidas: las innovadoras pymes que estuvieron presentes en Expo Smart City 2025</h1>
+      <h1 class="title-news">Desde drones fumigadores hasta pulseras que salvan vidas: las innovadoras pymes que estuvieron presentes en Expo Smart City 2025</h1>
 
 <!--fecha con rrss-->
       <div class="d-flex flex-column flex-md-row justify-content-between">
@@ -150,7 +150,7 @@ get_header();
                       <div class="me-3"> <img src="<?php echo get_template_directory_uri(); ?>/img/noticia-1-ejemplo.png"></div>
                       <div class=""> 
                         <span class="small-text me-3 date">29/08/2025</span>
-                        <a href="#" class="categoria">Los Lagos</p>
+                        <a href="#" class="categoria">Los Lagos</a>
                         <h4><a href=""> Firma de contratos de ayudas económicas para pymes tras tornado en Puerto..</a></h4>
                       </div>
                   </div>
