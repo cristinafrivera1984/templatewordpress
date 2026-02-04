@@ -92,7 +92,7 @@ get_header();
 <!--fecha con rrss-->
 
 <!--IMG destacada-->
-<img class="noticia-img" src="<?php echo get_template_directory_uri(); ?>/img/img-card-main.jpg" alt="Gerenta junto a: XXXXXXX">
+<img class="noticia-img img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/img-card-main.jpg" alt="Gerenta junto a: XXXXXXX">
 <!--IMG destacada-->
 
 <!--Div botones de categorías-->
@@ -167,7 +167,7 @@ get_header();
                       <div class="me-3"> <img src="<?php echo get_template_directory_uri(); ?>/img/noticia-1-ejemplo.png"></div>
                       <div class=""> 
                         <span class="small-text me-3 date">29/08/2025</span>
-                        <a href="#" class="categoria">Los Lagos</p>
+                        <a href="#" class="categoria">Los Lagos</a>
                         <h4><a href=""> Firma de contratos de ayudas económicas para pymes tras tornado en Puerto..</a></h4>
                       </div>
                   </div>

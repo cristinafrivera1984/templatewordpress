@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-
+<main>
 <!-- Hero Banner Inicio -->
 <div class="hero-banner-wrapper">
   <div class="hero-banner-slider" id="heroSlider" role="region" aria-label="Banner principal con actualizaciones con información relevante y convocatorias abiertas">
@@ -309,7 +309,7 @@ get_header();
             <!--NOTICIAS INICIO-->
             <div class="module-news-index">
                 <div class="main-news">
-                    <a href="#"><img class="main-img" src="<?php echo get_template_directory_uri(); ?>/img/fake-news-main.jpg"></a>
+                    <a href="#"><img class="main-img" src="<?php echo get_template_directory_uri(); ?>/img/fake-news-main.webp"></a>
                     <p class="fecha-news pt-1">20/02/2024</p>
                     <h1> <a href="#">Sercotec celebra el Día del Amor y la Amistad con una muestra de Mipymes</a></h1>
                     <a href="#" class="vermas">Ver más</a>
@@ -317,7 +317,7 @@ get_header();
 
                 <div class="main-news-2">
                     <div>
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/fake-news-2.jpg"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/fake-news-2.webp"></a>
                     </div>
                     <div>
                         <p class="fecha-news">20/02/2024</p>
@@ -328,7 +328,7 @@ get_header();
 
                 <div class="main-news-2">
                     <div>
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/fake-news-3.jpg"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/fake-news-3.webp"></a>
                     </div>
                     <div>
                         <p class="fecha-news">20/02/2024</p>
@@ -626,7 +626,7 @@ get_header();
     </section>
     <!--ENLACES Escritorio-->
 </div>
-
+</main>
 <?php
 get_footer();
 ?>

@@ -675,6 +675,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const header = document.querySelector('.wp-header');
+
+function setHeaderHeight() {
+  document.body.style.paddingTop = `${header.offsetHeight}px`;
+}
+
+setHeaderHeight();
+window.addEventListener('resize', setHeaderHeight);
+
+
+
+
+
 });
 
 

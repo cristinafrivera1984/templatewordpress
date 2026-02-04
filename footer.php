@@ -1,4 +1,4 @@
-<section>
+ 
 <!--FOOTER-->
  <footer class="footer-wp">
     <div class="row container-footer-wp">
@@ -74,7 +74,7 @@
 
  </footer>   
 <!--FOOTER-->
-</section>
+ 
 
 <?php 
 wp_footer()

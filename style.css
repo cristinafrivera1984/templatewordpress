@@ -25,6 +25,7 @@
 @import url("./css/container.css");
 
 
+
 html {
   margin: 0;
   /* Elimina márgenes */
@@ -33,7 +34,9 @@ html {
   overflow-x: hidden;
   /* Oculta el scroll horizontal */
 }
-
+html, body {
+  min-height: 100%;
+}
 
 
 body {
@@ -42,11 +45,13 @@ body {
   font-family: "Roboto", sans-serif!important;
   line-height: 1.5;
   margin: 0;
-  /* Elimina márgenes */
   padding: 0;
-  /* Elimina relleno */
   overflow-x: hidden;
-  /* Oculta el scroll horizontal */
+  /*padding-top:144px;  */
+
+}
+main {
+  padding-top: 144px;
 }
 
 body>footer {

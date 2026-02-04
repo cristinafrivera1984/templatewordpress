@@ -4,7 +4,12 @@ header.wp-header {
   margin: 0 !important;
   padding: 0 !important;
   font-family: "Roboto", serif;
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1020; 
+  background-color: #fff; 
 }
 
 header.wp-header .pre-header {
@@ -66,7 +71,7 @@ header.wp-header .container-header-wp {
 
 /*Header Menu Tablet - Mobile 📱 */
 /* Mostrar menú móvil desde 0 hasta 768px */
-@media (max-width: 768px) {
+@media (max-width: 929px) {
   header.wp-header .header-menu-mob {
     display: block;
   }
@@ -99,7 +104,7 @@ header.wp-header .header-menu-mob button.search-btn-header-wp span.search-icon {
 /*Header Menu Escritorio 🖥️ */
 
 /* Mostrar menú de escritorio desde 769px en adelante */
-@media (min-width: 769px) {
+@media (min-width: 928px) {
   header.wp-header .header-menu {
     display: flex;
     background-color: white;
@@ -124,7 +129,7 @@ header.wp-header .header-menu ul.menu-inicio {
 }
 
 /* a partir de 768, 769 etc */
-@media (min-width: 768px) {
+@media (min-width: 929px) {
   header.wp-header .header-menu ul.menu-inicio li {
     display: inline;
     margin: 0 1rem;
@@ -153,7 +158,7 @@ header.wp-header .header-menu ul.menu-inicio li a:active {
 
 
 /* Hasta el 888px etc */
-@media (max-width: 888px) {
+@media (max-width: 928px) {
   header.wp-header .header-menu ul.menu-inicio li a {
     color: rgba(var(--font-color), 1);
     font-size: var(--font-size-small);
@@ -161,7 +166,7 @@ header.wp-header .header-menu ul.menu-inicio li a:active {
   }
 }
 
-@media (min-width: 889px) {
+@media (min-width: 929px) {
   a.btn-secondary.btn-open-post {
     font-size: 1rem;
   }
@@ -173,7 +178,7 @@ header.wp-header .header-menu ul.menu-inicio li a:active {
   }
 }
 
-@media (max-width: 907px) {
+@media (max-width: 928px) {
   header.wp-header
     .header-menu
     a.search-btn-header-wp
@@ -182,7 +187,7 @@ header.wp-header .header-menu ul.menu-inicio li a:active {
   }
 }
 
-@media (min-width: 907px) {
+@media (min-width: 929px) {
   header.wp-header
     .header-menu
     button.search-btn-header-wp
@@ -198,7 +203,7 @@ header.wp-header .header-menu a.search-btn-header-wp {
   color: rgba(var(--font-color), 1);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 928px) {
   header.wp-header .header-menu  button.search-btn-header-wp span.search-icon {
     font-size: 2.4rem;
     color: rgba(var(--font-color), 1);
