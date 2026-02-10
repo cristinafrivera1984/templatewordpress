@@ -45,9 +45,16 @@ div.card-resultado a.categoria, div.card-last-news a.categoria, .card-last-news-
 
 div.card-resultado a.categoria:hover , div.card-last-news a.categoria:hover, .card-last-news-mobile a.categoria:hover  {
   color: rgba(var(--base-blue-dark-4), 1);
-
 }
 
+div.card-resultado a.categoria:focus  , div.card-last-news a.categoria:focus, .card-last-news-mobile a.categoria:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--yellow-focus),1)
+}
+
+div.card-resultado a.categoria:active  , div.card-last-news a.categoria:active, .card-last-news-mobile a.categoria:active {
+  color: rgba(var(--base-blue-dark-3), 1);
+}
 
 
 div.card-resultado a.categoria:last-child, div.card-last-news a.categoria:last-child, .card-last-news-mobile a.categoria:last-child {
@@ -172,9 +179,26 @@ Card resultado de búsqueda*/
 .card-last-news  h4 a, .card-last-news-mobile h4 a{
   font-size: var(--heading-small-mob);
   margin-bottom: calc(var( --heading-medium) * 1.4) ;
+  text-decoration:none;
+  color: rgba(var(--font-color), 1);
+}
+
+
+.card-last-news  h4 a:hover, .card-last-news-mobile h4 a:hover{
   text-decoration: underline;
   color: rgba(var(--font-color), 1);
 }
+
+.card-last-news  h4 a:active, .card-last-news-mobile h4 a:active{
+  color: black;
+}
+
+
+.card-last-news  h4 a:focus, .card-last-news-mobile h4 a:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--yellow-focus),1);
+}
+
 
 .card-last-news img {
   width: 100px;

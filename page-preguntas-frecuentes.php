@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<main class="mx-2 container">
+<main class="mx-3">
   <div class="row justify-content-center main-preguntas">
     <div class="col-12 col-sm-12 col-lg-8">
         <!--MIGAS DE PAN-->
@@ -201,7 +201,7 @@ get_header();
     </div>
   </div>
 
-  <div class="row justify-content-center" style="margin-top: 56px;">
+  <div class="row justify-content-center mb-4" style="margin-top: 56px;">
     <div class="col-sm-12 col-md-4">
       <div class="gray-box">
         <div style="position: relative;">
@@ -214,28 +214,7 @@ get_header();
       </div>
     </div>
   </div>
-
-  
-
 </main>
-
-
-
-<main class="container-oficinas my-1">
-  <!--MIGAS DE PAN-->
-
-  <!--MIGAS DE PAN-->
-
-   
-
-
-  
-
-</main>
-
-
-
-
 
 <?php
 get_footer();

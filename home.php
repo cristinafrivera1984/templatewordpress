@@ -3,7 +3,7 @@ get_header();
 ?>
 
 
-<h1 style="color: yellow; background-color:purple; padding:1rem;">holi test para hacer loop</h1>
+<h1 style="color: yellow; background-color:purple; padding:1rem;">Test para hacer loop</h1>
 
  
 

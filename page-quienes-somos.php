@@ -37,7 +37,7 @@ get_header();
     </div>
     <div class="col-md-7 d-flex flex-column mx-4 px-4">      
         <h2 class="white pt-3 pt-md-1">Nuestra misión</h2>
-        <p class="white ff-sans-s fw-normal">Apoyar el desarrollo de la <strong>micro y pequeña empresa</strong>, así como del emprendimiento, mediante asistencia técnica especializada y fomento de la <strong> asociatividad y cooperativismo</strong>. Promovemos la articulación entre actores públicos y privados a nivel territorial, con el propósito de fortalecer los ecosistemas productivos y de impulsar un desazrrollo económico sostenible e inclusivo, facilitando la inserción competitiva en la economía y mejorando el bienestar de las personas.</p>
+        <p class="white ff-sans-s fw-normal">Apoyar el desarrollo de la <strong>micro y pequeña empresa</strong>, así como del emprendimiento, mediante asistencia técnica especializada y fomento de la <strong> asociatividad y cooperativismo</strong>. Promovemos la articulación entre actores públicos y privados a nivel territorial, con el propósito de fortalecer los ecosistemas productivos y de impulsar un desarrollo económico sostenible e inclusivo, facilitando la inserción competitiva en la economía y mejorando el bienestar de las personas.</p>
     </div>
   </div>
 
@@ -49,7 +49,7 @@ get_header();
               <div class="col-lg-6">
                 <div class="card-qs d-flex flex-row">
                     <span class="number-qs">1.</span>
-                    <p class="white fw-medium">Fortalecer la capacidad de gestión y desarrollo de micro y pequeños empresas, gremios, cooperativas, barrios comerciales y ferias libres.</p>
+                    <p class="white fw-medium">Fortalecer la capacidad de gestión y desarrollo de micro y pequeñas empresas, gremios, cooperativas, barrios comerciales y ferias libres.</p>
                 </div>
               </div>
               <div class="col-lg-6">
@@ -325,14 +325,14 @@ get_header();
       <div class="row justify-content-center p-0 m-0">
         <div class="col-md-6 col-md-6 px-2">
           <h2 class="text-center">Newsletter</h2>
-          <p class="text-center ff-sans-s fw-normal">Mantente al día de todas nuestras noticias y novedades</p>
+          <p class="text-center ff-sans-s fw-bold">Mantente al día de todas nuestras noticias y novedades</p>
 
               <div class="d-flex flex-sm-row flex-column justify-content-center my-4">                   
                 <div class="m-1">
                 <label for="Mostrar" class="form-label kit-gob mb-0">Correo electrónico:</label>  
-                <input type="email" class="input-footer border border-black" id="subscripcion" placeholder="Correo electrónico">
+                <input type="email" class="input-footer border border-black" id="subscripcion" placeholder="Escribe tu correo aquí">
                 </div>
-                <div class="m-1"><button type="submit" class="btn-red-wp rounded-pill margin-btn-newsletter white-space-fix">Subscríbete aquí</button> </div>
+                <div class="m-1"><button type="submit" class="btn-red-wp rounded-pill margin-btn-newsletter white-space-fix px-4">Enviar</button> </div>
               </div>              
               
         </div>

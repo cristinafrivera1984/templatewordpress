@@ -14,7 +14,7 @@ get_header();
           </div>
         </div>
         <!--MIGAS DE PAN-->
-        <h1>Preguntas frecuentes</h1>
+        <h1>Postulaciones abiertas</h1>
 
     </div>
   </div>

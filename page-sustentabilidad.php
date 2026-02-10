@@ -25,15 +25,15 @@ get_header();
   <div class="hero-banner-wrapper">
     <div class="hero-banner-slider" id="heroSlider" role="region" aria-label="Banner principal con actualizaciones con información relevante y convocatorias abiertas">
       <div class="hero-slide">
-        <a href="#" target="_self" rel="noopener noreferrer"  aria-label="Llamado concurso público 2025 Operadores de Centros de Desarrollo de Negocios - Pueblos Originarios - Botón: Postula Aquí, se abre en la misma pestaña">
-          <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/banner_catastro_escritorio.webp" alt="Llamado concurso público 2025 Operadores de Centros de Desarrollo de Negocios - Pueblos Originarios - Botón: Postula Aquí" class="desktop-img">     
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/banner_catastro_celu.webp" alt="Llamado concurso público 2025 Operadores de Centros de Desarrollo de Negocios - Pueblos Originarios - Botón: Postula Aquí (version celular)" class="tablet-img">
+        <a href="<?php echo site_url('/sello-impacta-sustentable'); ?>" target="_self" aria-label="Sello Impacta Sustentable - botón más información, abre en misma pestaña.">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/banner_sello_impacta_sustentable_escritorio.webp" alt="Sello Impacta Sustentable - botón más información, abre en misma pestaña." class="desktop-img">     
+            <img src="<?php echo get_template_directory_uri(); ?>/img/banner_sello_impacta_sustentable_mobile.webp" alt="Sello Impacta Sustentable - botón más información, abre en misma pestaña." class="tablet-img">
       </a>
     </div>    
       <div class="hero-slide">
-        <a href="https://www.sercotec.cl/sercotec-invita-a-utilizar-sus-canales-de-atencion-puntos-mipe/" target="_self" rel="noopener noreferrer"  aria-label="Postula ahora, se abre en la misma pestaña">
-          <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/banner_navidad_escritorio.webp" alt="Atención al cliente - ¿Necesitas saber cómo contactarnos? Punto MIPE - Botón: Más información" class="desktop-img">     
-            <img src="https://www.sercotec.cl/wp-content/uploads/media/banner-inicio/banner_navidad_mobile.webp" alt="Atención al cliente - ¿Necesitas saber cómo contactarnos? Punto MIPE - Botón: Más información - (version celular)" class="tablet-img">
+        <a href="https://form.typeform.com/to/JgVTAX1y?typeform-source=www.google.com" target="_blank" rel="noopener"  aria-label="Calcula la Circularidad de tu empresa - botón más información, abre en una nueva pestaña.">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/banner_calculadora_circularidad_escritorio.webp" alt="Calcula la Circularidad de tu empresa - botón más información, abre en una nueva pestaña." class="desktop-img">     
+            <img src="<?php echo get_template_directory_uri(); ?>/img/banner_calculadora_circularidad_mobile.webp" alt="Calcula la Circularidad de tu empresa - botón más información, abre en una nueva pestaña." class="tablet-img">
       </a>
     </div>       
     </div>

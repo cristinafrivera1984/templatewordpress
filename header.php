@@ -367,7 +367,16 @@
                                                         <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                         </article>
                                                     </a>
-                                            </div>                                                                                        
+                                            </div> 
+                                            <div class="col-md-6 col-lg-4">
+                                                    <a  href="<?php echo site_url('/sello-impacta-sustentable'); ?>" class="card-link-borderless card-tengo-pyme">
+                                                        <article class="card-menu-main">
+                                                        <h3>Sello Impacta Sostenible</h3>
+                                                        <p>Distinción de Sercotec y la U. de Chile para pymes y cooperativas por su gestión sustentable.</p>
+                                                        <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
+                                                        </article>
+                                                    </a>
+                                            </div>                                                                                                                                   
                                         </div>
                                   </div>
                                     </div>
@@ -410,7 +419,7 @@
                                                             </a>
                                                     </div>
                                                     <div class="col-md-6 col-lg-4">
-                                                            <a  href="<?php echo site_url('/gremios-nacionales'); ?>" class="card-link-borderless card-tengo-organizacion">
+                                                            <a  href="<?php echo site_url('/programa-confederaciones-y-federaciones-nacionales'); ?>" class="card-link-borderless card-tengo-organizacion">
                                                             <article class="card-menu-main">
                                                             <h3>Gremios Nacionales</h3>
                                                             <p>Fondo concursable para fortalecer gremios y cooperativas nacionales, impulsando gestión, sustentabilidad e inclusión.</p>
@@ -426,7 +435,16 @@
                                                             <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
                                                             </article>
                                                             </a>
-                                                    </div>                                                                        
+                                                    </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                    <a  href="<?php echo site_url('/sello-impacta-sustentable'); ?>" class="card-link-borderless card-tengo-pyme">
+                                                        <article class="card-menu-main">
+                                                        <h3>Sello Impacta Sostenible</h3>
+                                                        <p>Distinción de Sercotec y la U. de Chile para pymes y cooperativas por su gestión sustentable.</p>
+                                                        <span class="ver-mas">Más información<span class="material-symbols-outlined align-middle">arrow_forward</span></span>
+                                                        </article>
+                                                    </a>
+                                            </div>                                                                                                                             
                                                 </div>
                                         </div>
                                     </div>
@@ -735,7 +753,7 @@
         <span class="material-symbols-outlined align-middle"> home </span></span> Inicio
       </a>
 
-      <a href="<?php echo site_url('/'); ?>" class="menu-item"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon_nosotros.svg" alt="Sercotec" width="25" height="5"> 
+      <a href="<?php echo site_url('/quienes-somos'); ?>" class="menu-item"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon_nosotros.svg" alt="Sercotec" width="25" height="5"> 
         Nosotros
       </a>
 
@@ -822,6 +840,7 @@
                 <li><a href="<?php echo site_url('/mejora-negocios'); ?>">MejoraNegocios</a></li>
                 <li><a href="<?php echo site_url('/promocion-y-canales-de-comercializacion'); ?>">Promoción y canales</a></li>
                 <li><a href="<?php echo site_url('/redes-de-oportunidades-de-negocios'); ?>">Redes de oportunidades</a></li>
+                 <li><a href="<?php echo site_url('/sello-impacta-sustentable'); ?>">Sello Impacta Sostenible</a></li>
               </ul>
         </div>
       </div>
@@ -840,9 +859,11 @@
                 <li><a href="<?php echo site_url('/fondo-barrios-comerciales'); ?>">Barrios Comerciales</a></li>
                 <li><a href="<?php echo site_url('/ferias-libres'); ?>">Ferias Libres</a></li>
                 <li><a href="<?php echo site_url('/fortalecimiento-gremial-y-cooperativo'); ?>">Fortalecimiento de asociaciones gremiales</a></li>
-                <li><a href="<?php echo site_url('/gremios-nacionales'); ?>">Gremios Nacionales</a></li>
+                <li><a href="<?php echo site_url('/programa-confederaciones-y-federaciones-nacionales
+'); ?>">Gremios Nacionales</a></li>
                 <li><a href="<?php echo site_url('/creacion-y-fortalecimiento-de-cooperativas'); ?>">Creación y fortalecimiento de cooperativas</a></li>
-              </ul>
+                 <li><a href="<?php echo site_url('/sello-impacta-sustentable'); ?>">Sello Impacta Sostenible</a></li>
+             </ul>
         </div>
       </div>
     <!--modulo Tengo una pyme-->      

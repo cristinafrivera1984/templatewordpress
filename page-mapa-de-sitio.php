@@ -217,7 +217,7 @@ get_header();
                        Crece Sostenible</a>
                     </li>
                     <li>
-                      <a href="<?php echo site_url('/digitaliza-tu-almacen'); ?>" class="text-decoration-underline me-1"> 
+                      <a href="<?php echo site_url('/programas/digitaliza-tu-almancen'); ?>" class="text-decoration-underline me-1"> 
                        Digitaliza tu Almacén</a> 
                     </li> 
                     <li>
@@ -252,6 +252,10 @@ get_header();
                 <h2 class="color-blue-dark-1 my-md-4 my-2">Tengo una organización</h2>
                 <ul class="square-list-2">
                     <li>
+                      <a href="<?php echo site_url('/fondo-barrios-comerciales'); ?>" class="text-decoration-underline me-1"> 
+                       Fondo de Barrios Comerciales</a>
+                    </li>                 
+                    <li>
                       <a href="<?php echo site_url('/ferias-libres'); ?>" class="text-decoration-underline me-1"> 
                        Fondo de Desarrollo de Ferias Libres</a>
                     </li>
@@ -260,7 +264,7 @@ get_header();
                       Creación y Fortalecimiento de Cooperativas</a>
                     </li>
                     <li>
-                      <a  href="<?php echo site_url('/gremios-nacionales'); ?>" class="text-decoration-underline me-1"> 
+                      <a  href="<?php echo site_url('/programa-confederaciones-y-federaciones-nacionales'); ?>" class="text-decoration-underline me-1"> 
                        Fortalecimiento de Asociaciones Gremiales</a>
                     </li> 
                      <li>

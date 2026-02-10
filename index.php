@@ -1,15 +1,22 @@
-
-
-
 <?php
 get_header();
 ?>
 
 
-<h1 style="color: pink; background-color:black; padding:1rem;">desde index.php</h1>
+<h1 style="color: yellow; background-color:purple; padding:1rem;">Test para hacer loop</h1>
 
  
 
+    <?php
+
+    while (have_posts() )  {
+        the_post();
+        get_template_part('template-parts/blog');
+    }
+
+    ?>
+
+ 
 
 <?php
 get_footer();

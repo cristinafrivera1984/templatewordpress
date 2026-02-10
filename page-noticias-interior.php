@@ -110,7 +110,7 @@ get_header();
  <p class="bajada">Sercotec convocó a 15 empresas y cooperativas para que den a conocer sus productos y servicios pensados para ciudades inteligentes en el evento internacional realizado en el Centro Cultural Estación Mapocho.</p> 
 </div>
 
-<p>Soluciones sustentables y desarrollos tecnológicos para los desafíos de las ciudades modernas son algunos de los ejes que marcaron la participación de 15 pymes chilenas en la Expo Smart City, congreso internacional que se desarrolló entre el 24 y 26 de julio en el Centro Cultural Estación Mapocho.</p>
+<p>Soluciones sustentables y desarrollos tecnológicos para los desafíos de las ciudades modernas son algunos de los ejes que marcaron la participación de 15 pymes chilenas en la <a href="#">Smart City</a> , congreso internacional que se desarrolló entre el 24 y 26 de julio en el Centro Cultural Estación Mapocho.</p>
 
 <figure class="alignleft">
     <img class="alignleft" src="<?php echo get_template_directory_uri(); ?>/img/noticia-1-ejemplo.png" alt="Descripción de la imagen">

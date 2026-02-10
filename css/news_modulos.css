@@ -174,13 +174,13 @@
 .wp-block-image.alignleft,
 .alignleft {
   float: left;
-  margin: 0 0.8rem 1rem 0; /* derecha + abajo */
+  margin: 1rem 0.8rem 1rem 0; /* derecha + abajo */
 }
 
 .wp-block-image.alignright,
 .alignright {
   float: right;
-  margin: 0 0 1rem 0.8rem; /* izquierda + abajo */
+  margin: 1rem 0 1rem 0.8rem; /* izquierda + abajo */
 }
 
 figcaption {

@@ -555,6 +555,40 @@ font-family: var( --font-family-sans-slab);
 }
 
 
+.inner-news a  {
+  color: rgba(var(--font-color), 1)!important;
+    text-decoration: none;
+  font-weight: 700;
+}
+
+.inner-news a:link  {
+  color: rgba(var(--font-color), 1)!important;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.inner-news a:visited  {
+  color: rgba(var(--link-visited), 1);  
+}
+
+.inner-news a:hover {
+  color: rgba(var(--base-blue-dark-3),1);
+  text-decoration: underline;
+}
+
+
+.inner-news a:active  {
+  color: rgba(var(--base-blue-dark-3), 1);
+}
+
+.inner-news a:focus  {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--yellow-focus),1)
+}
+
+
+
+
 .noticia-img {
   width: 100%;
   min-width: 320px; /* tamaño más bien cuadrado en móvil */
@@ -1763,3 +1797,74 @@ button:has(img):focus-visible {
 
 
 /*IFRAME CUESTIONARIO HOME*/
+
+
+div.breadcrumbs a:link {
+  color: rgba(var(--font-color), 1)!important;
+  text-decoration: none;
+  font-weight: 400;  
+}
+
+div.breadcrumbs a:hover {
+  color: rgba(var(--font-color), 1);
+  text-decoration:underline;  
+}
+
+div.breadcrumbs a:active{
+  color: black;
+}
+
+div.breadcrumbs a:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--yellow-focus),1)
+}
+
+div.breadcrumbs a.active{
+  font-weight: 700;  
+}
+
+
+/*galeria imagenes para entradas/noticias*/
+
+/* Galería de WordPress */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas como indica gallery-columns-4 */
+    gap: 10px; /* Espacio entre imágenes */
+    margin: 20px 0;
+}
+
+.gallery-item {
+    margin: 0;
+}
+
+.gallery-icon {
+    display: block;
+}
+
+.gallery-icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+}
+
+
+.gallery-columns-2 { grid-template-columns: repeat(2, 1fr); }
+.gallery-columns-3 { grid-template-columns: repeat(3, 1fr); }
+.gallery-columns-4 { grid-template-columns: repeat(4, 1fr); }
+.gallery-columns-5 { grid-template-columns: repeat(5, 1fr); }
+
+/*galeria imagenes para entradas/noticias*/
