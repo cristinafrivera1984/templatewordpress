@@ -905,11 +905,11 @@ font-weight: 500;
 
 /*OTROS*/
 h2.color-blue-dark-1 {
-    color: rgba(var(--base-blue-dark-1), 1);
+    color: rgba(var(--base-blue-dark-1), 1)!important;
 }
 
 .color-blue-dark-2 {
-  color: rgba(var(--base-blue-dark-2), 1);
+  color: rgba(var(--base-blue-dark-2), 1)!important;
   /*filter: invert(18%) sepia(91%) saturate(1681%) hue-rotate(200deg) brightness(91%) contrast(109%);*/
 }
 
@@ -1344,7 +1344,7 @@ img.sombrilla-hidden {
 /*ESTILOS DE QUIENES SOMOS*/
 
  .main-content-cooperativas h2.white, .main-content-cooperativas p.white { 
-    color: white;
+    color: white!important;
   }
 
 
@@ -1465,11 +1465,11 @@ img.sombrilla-hidden {
 }
 
 .slider-puntos h2{
-   color: #fff;
+   color: white!important;
 }
 
 .slider-puntos p{
-   color: #fff;
+   color: white!important;
    font-size: var(--heading-small);
    line-height: 1.5;
    font-weight: normal;

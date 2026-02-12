@@ -284,6 +284,9 @@ get_header();
                         Centros de Desarrollo de Negocios <span class="material-symbols-outlined align-middle ms-1"> open_in_new </span> <span class="visually-hidden">Abre en una nueva pestaña</span></a>
                     </li>
                     <li>
+                      <a href="<?php echo site_url('/oficinas'); ?>"  class="text-decoration-underline me-1" target="_blank" > Puntos Mipes </a>
+                    </li>                      
+                    <li>
                       <a href="https://asesoriavirtual.sercotec.cl/Usuario/Autenticar?ReturnUrl=%2f" class="text-decoration-underline me-1" target="_blank" rel="noopener noreferrer"> 
                       Asesoría Legal Virtual <span class="material-symbols-outlined align-middle ms-1"> open_in_new </span> <span class="visually-hidden">Abre en una nueva pestaña</span></a>
                     </li>                                             
@@ -346,8 +349,24 @@ get_header();
               </li>                                                                           
             </ul>
             
-             <h3 class="color-blue-dark-1 my-md-4 my-2">Agentes Operadores Sercotec</h3>
+            <h3 class="color-blue-dark-1 my-md-4 my-2">Agentes Operadores Sercotec</h3>
             <ul class="square-list-2">
+              <li>
+                <a href="<?php echo site_url('/convocatoria-agentes-operadores-region-metropolitana-2026'); ?>" class="text-decoration-underline me-1"> Convocatoria Agentes Operadores Región Metropolitana - 2026</a>
+              </li>
+
+              <li>
+                <a href="<?php echo site_url('/convocatoria-agentes-operadores-region-de-magallanes-2026'); ?>" class="text-decoration-underline me-1"> Convocatoria Agentes Operadores Región de Magallanes - 2026</a>
+              </li>
+
+              <li>
+                <a href="<?php echo site_url('/convocatoria-agentes-operadores-region-de-araucania-2026'); ?>" class="text-decoration-underline me-1">Convocatoria Agentes Operadores Región de La Araucanía - 2026</a>
+              </li>
+
+              <li>
+                <a href="<?php echo site_url('/convocatoria-agentes-operadores-region-de-atacama-2026'); ?>" class="text-decoration-underline me-1">Convocatoria Agentes Operadores Región de Atacama - 2026</a>
+              </li>
+              
               <li>
                 <a href="<?php echo site_url('/convocatoria-agentes-operadores-region-de-los-lagos-2025'); ?>" class="text-decoration-underline me-1"> Convocatoria Agentes Operadores Región de Los Lagos – 2025</a>
               </li>
@@ -373,7 +392,7 @@ get_header();
                 <a href="<?php echo site_url('/convocatoria-agentes-operadores-region-de-valparaiso'); ?>" class="text-decoration-underline me-1"> Convocatoria Agentes Operadores Región de Valparaíso</a>
               </li>
               <li>
-                <a  href="<?php echo site_url('/convocatoria-agente-operador-sercotec-nacional-2024'); ?>" class="text-decoration-underline me-1"> Convocatoria Agente Operador Sercotec Nacional 2024</a>
+                <a href="<?php echo site_url('/convocatoria-agente-operador-sercotec-nacional-2024'); ?>" class="text-decoration-underline me-1"> Convocatoria Agente Operador Sercotec Nacional 2024</a>
               </li>                                                                                                       
             </ul>                   
           </div>

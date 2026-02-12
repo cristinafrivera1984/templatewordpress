@@ -1,5 +1,5 @@
   /*BOTON ROJO QUE VA EN WORDPRESS,❌❌❌ BORRAR DESPUES DE SUBIR CDN*/
-  button.btn-red-wp, a.btn-red-wp{
+  button.btn-red-wp, a.btn-red-wp, input.btn-red-wp{
     width: 100%;
     margin: 4px 2px;
     border: none;
@@ -13,22 +13,22 @@
     text-decoration: none;
   }
   
-  button.btn-red-wp:hover, a:hover.btn-red-wp{
+  button.btn-red-wp:hover, a:hover.btn-red-wp, input:hover.btn-red-wp{
     background-color: #C10101;
   }
 
-  button.btn-red-wp:active, a:active.btn-red-wp{
+  button.btn-red-wp:active, a:active.btn-red-wp, input:active.btn-red-wp{
     background-color: #A50000;
   }
 
-    button.btn-red-wp:focus, a:focus.btn-red-wp{
+    button.btn-red-wp:focus, a:focus.btn-red-wp, input:focus.btn-red-wp{
    outline: none;
   box-shadow: 0 0 0 3px #ffcc00;
   }
 
 
  @media only screen and (min-width: 576px) {
-   .btn-red-wp, a.btn-red-wp{
+   button.btn-red-wp, a.btn-red-wp, input.btn-red-wp{
         width: fit-content;
     }
 }

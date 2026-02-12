@@ -25,7 +25,7 @@ div.card-resultado h2  {
 
 div.card-resultado h2 a {
   text-decoration: underline;
-  color: rgba(var(--font-color), 1);
+  color: rgba(var(--font-color), 1)!important;
 }
 
 div.card-resultado h2 a:hover {
@@ -188,7 +188,7 @@ Card resultado de búsqueda*/
 .card-last-news  h4 a, .card-last-news-mobile h4 a{
   font-size: var(--heading-small-mob);
   margin-bottom: calc(var( --heading-medium) * 1.4) ;
-  text-decoration:none;
+ /* text-decoration:none;*/
   color: rgba(var(--font-color), 1);
 }
 

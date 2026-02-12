@@ -483,7 +483,7 @@ button.select-news-categoria.dropdown-toggle::after {
 }
 @media only screen and (min-width: 540px) {
  .margin-btn-newsletter {
-   margin-top:24px ;
+   margin-top:24px!important;
     }
 }
 /*CARDS NOTICIAS PÁGINA GENERAL*/

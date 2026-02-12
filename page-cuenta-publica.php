@@ -37,7 +37,7 @@ $historicos = new WP_Query([
   'post_type'      => 'page',
   'post_parent'    => $parent_id,
   'posts_per_page' => -1,
-  'orderby'        => 'menu_order',
+  'orderby'        => 'date',
   'order'          => 'DESC'
 ]);
 ?>

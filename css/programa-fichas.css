@@ -251,7 +251,7 @@ div.gray-box-postular  p  {
 
 .download-list li a {
  color:rgba(var(--font-color), 1);
- text-decoration: none;
+ text-decoration: underline;
 }
 
 .download-list li a:hover {
