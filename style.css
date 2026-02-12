@@ -185,8 +185,9 @@ div.link-enlaces-mob a,
 div.link-enlaces a {
   color: var(--font-color);
   text-decoration: none;
-
 }
+
+
 
 div.link-enlaces {
   border: 1px solid white;
@@ -229,6 +230,11 @@ div.link-enlaces-mob {
 div.link-enlaces:hover {
   border: 1px solid rgba(var(--grey-20), 1);
   border-radius: 10px;
+}
+
+div.link-enlaces:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1)
 }
 
 /*ESTILOS ENLACES INSTUCIONALES*/
@@ -381,7 +387,7 @@ section div.modulo-cuestionario p {
 .main-content-cooperativas h1{
   font-size: var( --heading-x-large-mob);
   font-family: var( --font-family-sans-s);
-  color: rgba(var(--font-color), 1);
+  color: rgba(var(--font-color), 1)!important;
   line-height: normal;
   font-weight: 700;
   padding: 0;
@@ -401,7 +407,7 @@ section div.modulo-cuestionario p {
 .main-content-cooperativas h2 {
   font-size: var(--heading-medium-mob);
   font-family: var( --font-family-sans-slab);
-  color: rgba(var(--font-color), 1);
+  color: rgba(var(--font-color), 1)!important;
   line-height: normal;
   font-weight: 500;
   padding: 0;
@@ -419,7 +425,7 @@ section div.modulo-cuestionario p {
  .gray-box h4{
   font-size: var(--heading-small-mob);
   font-family: var( --font-family-sans-slab);
-  color: rgba(var(--font-color), 1);
+  color: rgba(var(--font-color), 1)!important;
   line-height: normal;
   font-weight: 500;
   padding: 0;
@@ -556,14 +562,14 @@ font-family: var( --font-family-sans-slab);
 
 
 .inner-news a  {
-  color: rgba(var(--font-color), 1)!important;
-    text-decoration: none;
+  color: rgba(var(--base-blue-dark-1),1)!important;
+  text-decoration: underline;
   font-weight: 700;
 }
 
 .inner-news a:link  {
-  color: rgba(var(--font-color), 1)!important;
-  text-decoration: none;
+  color: rgba(var(--base-blue-dark-1),1)!important;
+  text-decoration: underline;
   font-weight: 700;
 }
 
@@ -572,13 +578,13 @@ font-family: var( --font-family-sans-slab);
 }
 
 .inner-news a:hover {
-  color: rgba(var(--base-blue-dark-3),1);
+  color: rgba(var(--base-blue-dark-4),1)!important;
   text-decoration: underline;
 }
 
 
 .inner-news a:active  {
-  color: rgba(var(--base-blue-dark-3), 1);
+  color: rgba(var(--base-blue-dark-3), 1)!important;
 }
 
 .inner-news a:focus  {
@@ -749,7 +755,7 @@ filter: brightness(0) saturate(100%) invert(8%) sepia(46%) saturate(4437%) hue-r
 }
  
 
-ul.square-list li a:link {
+ul.square-list li a:link, ul.square-list-2 li a:link {
   color: rgba(var(--font-color), 1);
   text-decoration: none;
 }
@@ -1798,7 +1804,11 @@ button:has(img):focus-visible {
 
 /*IFRAME CUESTIONARIO HOME*/
 
-
+div.breadcrumbs a {
+  color: rgba(var(--font-color), 1)!important;
+  text-decoration: none;
+  font-weight: 400;  
+}
 div.breadcrumbs a:link {
   color: rgba(var(--font-color), 1)!important;
   text-decoration: none;
@@ -1868,3 +1878,27 @@ div.breadcrumbs a.active{
 .gallery-columns-5 { grid-template-columns: repeat(5, 1fr); }
 
 /*galeria imagenes para entradas/noticias*/
+
+
+/*ESTILO DE PAGINACION FIXED*/
+/* Focus visible para navegación por teclado */
+.page-link.kit-gob:focus-visible {
+    outline: 3px solid #0d6efd;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    z-index: 3;
+}
+
+/* Opcional: remover outline en click de mouse */
+.page-link.kit-gob:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Asegurar que los enlaces activos y deshabilitados no reciban focus */
+.page-item.kit-gob.disabled .page-link.kit-gob,
+.page-item.kit-gob.active .page-link.kit-gob {
+    pointer-events: none;
+}
+
+/*ESTILO DE PAGINACION FIXED*/

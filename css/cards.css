@@ -40,7 +40,7 @@ div.card-resultado a.categoria, div.card-last-news a.categoria, .card-last-news-
   color: rgba(var(--base-blue-dark-1), 1);
   margin-bottom: 0;
   font-weight: 700;
- /* margin-right: 12px;*/
+ margin-right: 12px;
 }
 
 div.card-resultado a.categoria:hover , div.card-last-news a.categoria:hover, .card-last-news-mobile a.categoria:hover  {
@@ -162,6 +162,15 @@ Card resultado de búsqueda*/
     display: none!important;
   }
 }
+
+/* A partir de 768px (tablet/desktop) */
+@media (min-width: 768px) {
+  .redes-desktop p {
+    font-weight: bold!important;
+    color: rgba(var(--font-color), 1)!important;
+  }
+}
+
 
 
 .ultimas-noticias .card-last-news {
