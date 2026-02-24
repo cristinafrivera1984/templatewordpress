@@ -105,21 +105,17 @@
     </button>
       <div class="modal-body d-flex align-items-center container-search">
         <div class="container">
-<form role="search" method="get" action="<?php echo home_url('/'); ?>" novalidate>
+          <form role="search" novalidate>
             <div class="row justify-content-center align-items-center">
                     <div class="col-lg-8">
                         <label for="exampleFormControlTextarea1" class="form-label kit-gob text-light fs-5">¿Qué estás buscando?</label>
-
-						<input 
-  class="form-control kit-gob form-control-lg search-modal__input"
-  type="search"
-  id="searchInput"
-  name="s"
-  placeholder="Busca programas, noticias o contenidos del sitio"
-  aria-describedby="searchHelp"
-  autofocus
->
-
+                        <input class="form-control kit-gob form-control-lg"
+                        type="search"
+                        id="searchInput"
+                        class="search-modal__input"
+                        placeholder="Busca programas, noticias o contenidos del sitio"
+                        aria-describedby="searchHelp"
+                        autofocus>
                         <p id="searchHelp" class="search-modal__help">
                             Puedes buscar programas, noticias y otros contenidos del sitio.
                         </p>
@@ -186,7 +182,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a target="_blank" class="nav-link"  href="https://www.sercotec.cl/centros-de-negocios/" rel="noopener" >
+                                            <a class="nav-link"  href="#" data-target="#content-cdn">
                                                Centros de Desarrollo de Negocios
                                             </a>
                                         </li>
@@ -465,7 +461,7 @@
                                     <h3 class="title card-fin-2"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/icons-menu-main/icon-ase-01.svg" width="32" height="32" alt="Icono Asesoría Experta"> Asesoría Experta </h3>
                                         <div class="row">
                                             <div class="col-md-6 col-lg-4">
-                                                    <a  href="https://www.sercotec.cl/centros-de-negocios/" target="_blank"  rel="noopener" class="card-link-borderless card-asesoria-experta">
+                                                    <a  href="<?php echo site_url('/centros-de-negocios'); ?>" target="_blank"  rel="noopener" class="card-link-borderless card-asesoria-experta">
                                                         <article class="card-menu-main">
                                                         <h3>Centros de Desarrollo de Negocios</h3>
                                                         <p> Red de apoyo que ofrece asesoría experta, capacitación y orientación con el objetivo de fortalecer los negocios y fomentar su crecimiento sostenible. </p>
@@ -744,12 +740,9 @@
   </header>
 
   <!-- BUSCADOR -->
-<!-- BUSCADOR -->
   <div class="mobile-search">
-    <form role="search" method="get" action="<?php echo home_url('/'); ?>" novalidate>
-      <span class="material-symbols-outlined"> search </span>
-      <input class="form-control kit-gob" type="search" name="s" placeholder="Buscar..." aria-label="Botón de buscador del sitio">
-    </form>
+    <span class="material-symbols-outlined"> search </span>
+    <input class="form-control kit-gob" type="text" placeholder="Buscar..." aria-label="Botón de buscador del sitio">
   </div>
 
   <!-- PANTALLA PRINCIPAL -->

@@ -118,14 +118,14 @@ get_header();
         </div>
         <!--Glide #3 Cooperativas-->
         <div class="slide">
-            <a href="<?php echo site_url('/cooperativas'); ?>" id="caluga_cooperativas" target="_self" rel="noopener noreferrer"  aria-label="Ir al sitio de Sustentabilidad de Sercotec (se abre en una nueva pestaña)">
-                 <img src="<?php echo get_template_directory_uri(); ?>/img/mini-carousel/cooperativas_desktop.svg" width="240" height="154" alt="Sustentabilidad de Sercotec">
+            <a href="<?php echo site_url('/cooperativas'); ?>" id="caluga_cooperativas" aria-label="Ir al sitio de Sustentabilidad de Cooperativas de Sercotec">
+                 <img src="<?php echo get_template_directory_uri(); ?>/img/mini-carousel/cooperativas_desktop.svg" width="240" height="154" alt="Cooperativas de Sercotec">
             </a>
         </div>
 
         <!--Glide #3 Sustentabilidad-->
         <div class="slide">
-            <a  href="https://www.sercotec.cl/sello-impacta-sustentable/" id="caluga_sustentabilidad" target="_self" rel="noopener noreferrer"  aria-label="Ir al página interior de Cooperativas de">
+            <a  href="<?php echo site_url('/sello-impacta-sustentable'); ?>" id="caluga_sustentabilidad" aria-label="Ir al página interior de Sustentabilidad de Sercotec">
 
                 <img src="https://www.sercotec.cl/wp-content/uploads/media/glide-home/03_sustentabilidad_desktop_glide.svg" width="240" height="154" alt="Sustentabilidad de Sercotec">
             </a>

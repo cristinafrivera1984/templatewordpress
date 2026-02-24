@@ -128,7 +128,7 @@ get_header();
       <h1 class="d-flex">Digitaliza tu almacén</h1>
         <div class="content-block">
             <h2>¿Qué es?</h2>
-            <p>Es un aporte de Sercotec de $2.350.000 CLP para inversiones, asistencia técnica, capacitación, acciones de marketing y tecnologías digitales que aporten nuevos conocimientos para la gestión del almacén y la captura de nuevas oportunidades para el negocio.</p>
+            <p>Es un aporte de Sercotec de <a href="#">$2.350.000 CLP</a> para inversiones, asistencia técnica, capacitación, acciones de marketing y tecnologías digitales que aporten nuevos conocimientos para la gestión del almacén y la captura de nuevas oportunidades para el negocio.</p>
         </div>
         <div class="content-block">
             <h2>¿Qué apoyo entrega?</h2>
@@ -215,7 +215,7 @@ get_header();
               <img style="position: absolute; top:-61px; right:45%;" src="<?php echo get_template_directory_uri(); ?>/img/icon_interrogacion.svg" role="presentation" alt=""> 
           </div>
         <h3 class="text-center mt-3 pb-2">¿Tienes dudas?</h3>                
-            <a   href="<?php echo site_url('/oficinas'); ?>" class="btn-primary rounded-pill text-decoration-none mx-auto">Comunícate con tu Punto Mipe <span class="material-symbols-outlined align-middle"> arrow_right_alt </span></a>
+            <a href="<?php echo site_url('/oficinas'); ?>" class="btn-primary rounded-pill text-decoration-none mx-auto">Comunícate con tu Punto Mipe <span class="material-symbols-outlined align-middle"> arrow_right_alt </span></a>
       </div>
 
     </aside>

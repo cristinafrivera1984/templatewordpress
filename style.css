@@ -561,23 +561,23 @@ font-family: var( --font-family-sans-slab);
 }
 
 
-.inner-news a  {
+.inner-news a, main.container-programas .content-block a {
   color: rgba(var(--base-blue-dark-1),1)!important;
   text-decoration: underline;
   font-weight: 700;
 }
 
-.inner-news a:link  {
+.inner-news a:link,  main.container-programas .content-block a:link{
   color: rgba(var(--base-blue-dark-1),1)!important;
   text-decoration: underline;
   font-weight: 700;
 }
 
-.inner-news a:visited  {
+.inner-news a:visited{
   color: rgba(var(--link-visited), 1);  
 }
 
-.inner-news a:hover {
+.inner-news a:hover{
   color: rgba(var(--base-blue-dark-4),1)!important;
   text-decoration: underline;
 }
@@ -765,7 +765,7 @@ ul.square-list li a:visited {
 }
 
 ul.square-list li a:hover, ul.square-list-2 li a:hover {
-  color: rgba(var(--base-blue), 1);
+  color: rgba(var(--base-blue-dark-1), 1);
   text-decoration: underline;
 }
 

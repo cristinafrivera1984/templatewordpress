@@ -392,6 +392,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     menuLinks.forEach(link => {
         link.addEventListener('click', function (event) {
+            if (this.getAttribute('target') === '_blank') {
+                return; // No hacer nada, dejar que el navegador maneje el enlace
+            }          
             event.preventDefault();
 
             // 1. Ocultar todas las áreas de contenido
@@ -683,9 +686,6 @@ function setHeaderHeight() {
 
 setHeaderHeight();
 window.addEventListener('resize', setHeaderHeight);
-
-
-
 
 
 });
